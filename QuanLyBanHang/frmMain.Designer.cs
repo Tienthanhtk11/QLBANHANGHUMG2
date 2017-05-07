@@ -29,227 +29,289 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.btnQLHH = new System.Windows.Forms.Button();
-            this.btnQLNV = new System.Windows.Forms.Button();
-            this.btnQLKH = new System.Windows.Forms.Button();
-            this.btnQLNCC = new System.Windows.Forms.Button();
-            this.btnQLNXK = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.qUẢNLÝHỆTHỐNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đĂNGNHẬPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đĂNGXUẤTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đỔIMẬTKHẨUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đĂNGKÝToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qUẢNLÝDANHMỤCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mẶTHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nHÀCUNGCẤPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kHÁCHHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qUẢNLÝBÁNHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tỒNĐẦUKỲToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lẬPPHIẾUNHẬPKHOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lẬPPHIẾUXUẤTKHOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lẬPHÓAĐƠNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bÁOCÁOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bÁOCÁOBÁNHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bÁOCÁODOANHTHUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bÁOCÁOTỒNKHOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tHOÁTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tHOÁTToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ẩNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pHÓNGTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.btnHDN = new System.Windows.Forms.Button();
-            this.btnBCBanNhieu = new System.Windows.Forms.Button();
-            this.btnTonKho = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.menuStrip1.SuspendLayout();
+            this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnQLHH
+            // menuStrip1
             // 
-            this.btnQLHH.BackColor = System.Drawing.Color.LightCoral;
-            this.btnQLHH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLHH.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.btnQLHH.ForeColor = System.Drawing.Color.White;
-            this.btnQLHH.Location = new System.Drawing.Point(9, 12);
-            this.btnQLHH.Name = "btnQLHH";
-            this.btnQLHH.Size = new System.Drawing.Size(203, 36);
-            this.btnQLHH.TabIndex = 0;
-            this.btnQLHH.Text = "QUẢN LÝ HÀNG HÓA";
-            this.btnQLHH.UseVisualStyleBackColor = false;
-            this.btnQLHH.Click += new System.EventHandler(this.btnQLHH_Click);
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.qUẢNLÝHỆTHỐNGToolStripMenuItem,
+            this.qUẢNLÝDANHMỤCToolStripMenuItem,
+            this.qUẢNLÝBÁNHÀNGToolStripMenuItem,
+            this.bÁOCÁOToolStripMenuItem,
+            this.tHOÁTToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
             // 
-            // btnQLNV
+            // qUẢNLÝHỆTHỐNGToolStripMenuItem
             // 
-            this.btnQLNV.BackColor = System.Drawing.Color.Teal;
-            this.btnQLNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLNV.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.btnQLNV.ForeColor = System.Drawing.Color.White;
-            this.btnQLNV.Location = new System.Drawing.Point(9, 54);
-            this.btnQLNV.Name = "btnQLNV";
-            this.btnQLNV.Size = new System.Drawing.Size(203, 36);
-            this.btnQLNV.TabIndex = 1;
-            this.btnQLNV.Text = "QUẢN LÝ NHÂN VIÊN";
-            this.btnQLNV.UseVisualStyleBackColor = false;
-            this.btnQLNV.Click += new System.EventHandler(this.btnQLNV_Click);
+            this.qUẢNLÝHỆTHỐNGToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.đĂNGNHẬPToolStripMenuItem,
+            this.đĂNGKÝToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.đỔIMẬTKHẨUToolStripMenuItem,
+            this.đĂNGXUẤTToolStripMenuItem});
+            resources.ApplyResources(this.qUẢNLÝHỆTHỐNGToolStripMenuItem, "qUẢNLÝHỆTHỐNGToolStripMenuItem");
+            this.qUẢNLÝHỆTHỐNGToolStripMenuItem.Name = "qUẢNLÝHỆTHỐNGToolStripMenuItem";
             // 
-            // btnQLKH
+            // đĂNGNHẬPToolStripMenuItem
             // 
-            this.btnQLKH.BackColor = System.Drawing.Color.Teal;
-            this.btnQLKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLKH.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.btnQLKH.ForeColor = System.Drawing.Color.White;
-            this.btnQLKH.Location = new System.Drawing.Point(9, 96);
-            this.btnQLKH.Name = "btnQLKH";
-            this.btnQLKH.Size = new System.Drawing.Size(203, 36);
-            this.btnQLKH.TabIndex = 2;
-            this.btnQLKH.Text = "QUẢN LÝ KHÁCH HÀNG";
-            this.btnQLKH.UseVisualStyleBackColor = false;
-            this.btnQLKH.Click += new System.EventHandler(this.btnQLKH_Click);
+            resources.ApplyResources(this.đĂNGNHẬPToolStripMenuItem, "đĂNGNHẬPToolStripMenuItem");
+            this.đĂNGNHẬPToolStripMenuItem.Name = "đĂNGNHẬPToolStripMenuItem";
             // 
-            // btnQLNCC
+            // đĂNGXUẤTToolStripMenuItem
             // 
-            this.btnQLNCC.BackColor = System.Drawing.Color.Teal;
-            this.btnQLNCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLNCC.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.btnQLNCC.ForeColor = System.Drawing.Color.White;
-            this.btnQLNCC.Location = new System.Drawing.Point(9, 138);
-            this.btnQLNCC.Name = "btnQLNCC";
-            this.btnQLNCC.Size = new System.Drawing.Size(203, 36);
-            this.btnQLNCC.TabIndex = 3;
-            this.btnQLNCC.Text = "QUẢN LÝ NHÀ CUNG CẤP";
-            this.btnQLNCC.UseVisualStyleBackColor = false;
-            this.btnQLNCC.Click += new System.EventHandler(this.btnQLNCC_Click);
+            resources.ApplyResources(this.đĂNGXUẤTToolStripMenuItem, "đĂNGXUẤTToolStripMenuItem");
+            this.đĂNGXUẤTToolStripMenuItem.Name = "đĂNGXUẤTToolStripMenuItem";
             // 
-            // btnQLNXK
+            // đỔIMẬTKHẨUToolStripMenuItem
             // 
-            this.btnQLNXK.BackColor = System.Drawing.Color.Teal;
-            this.btnQLNXK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLNXK.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.btnQLNXK.ForeColor = System.Drawing.Color.White;
-            this.btnQLNXK.Location = new System.Drawing.Point(9, 222);
-            this.btnQLNXK.Name = "btnQLNXK";
-            this.btnQLNXK.Size = new System.Drawing.Size(203, 36);
-            this.btnQLNXK.TabIndex = 4;
-            this.btnQLNXK.Text = "HÓA ĐƠN XUẤT";
-            this.btnQLNXK.UseVisualStyleBackColor = false;
-            this.btnQLNXK.Click += new System.EventHandler(this.btnQLNXK_Click);
+            resources.ApplyResources(this.đỔIMẬTKHẨUToolStripMenuItem, "đỔIMẬTKHẨUToolStripMenuItem");
+            this.đỔIMẬTKHẨUToolStripMenuItem.Name = "đỔIMẬTKHẨUToolStripMenuItem";
+            // 
+            // đĂNGKÝToolStripMenuItem
+            // 
+            resources.ApplyResources(this.đĂNGKÝToolStripMenuItem, "đĂNGKÝToolStripMenuItem");
+            this.đĂNGKÝToolStripMenuItem.Name = "đĂNGKÝToolStripMenuItem";
+            // 
+            // qUẢNLÝDANHMỤCToolStripMenuItem
+            // 
+            this.qUẢNLÝDANHMỤCToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.qLToolStripMenuItem,
+            this.mẶTHÀNGToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.nHÀCUNGCẤPToolStripMenuItem,
+            this.kHÁCHHÀNGToolStripMenuItem});
+            resources.ApplyResources(this.qUẢNLÝDANHMỤCToolStripMenuItem, "qUẢNLÝDANHMỤCToolStripMenuItem");
+            this.qUẢNLÝDANHMỤCToolStripMenuItem.Name = "qUẢNLÝDANHMỤCToolStripMenuItem";
+            // 
+            // qLToolStripMenuItem
+            // 
+            resources.ApplyResources(this.qLToolStripMenuItem, "qLToolStripMenuItem");
+            this.qLToolStripMenuItem.Name = "qLToolStripMenuItem";
+            // 
+            // mẶTHÀNGToolStripMenuItem
+            // 
+            resources.ApplyResources(this.mẶTHÀNGToolStripMenuItem, "mẶTHÀNGToolStripMenuItem");
+            this.mẶTHÀNGToolStripMenuItem.Name = "mẶTHÀNGToolStripMenuItem";
+            this.mẶTHÀNGToolStripMenuItem.Click += new System.EventHandler(this.mẶTHÀNGToolStripMenuItem_Click);
+            // 
+            // nHÀCUNGCẤPToolStripMenuItem
+            // 
+            resources.ApplyResources(this.nHÀCUNGCẤPToolStripMenuItem, "nHÀCUNGCẤPToolStripMenuItem");
+            this.nHÀCUNGCẤPToolStripMenuItem.Name = "nHÀCUNGCẤPToolStripMenuItem";
+            this.nHÀCUNGCẤPToolStripMenuItem.Click += new System.EventHandler(this.nHÀCUNGCẤPToolStripMenuItem_Click);
+            // 
+            // kHÁCHHÀNGToolStripMenuItem
+            // 
+            resources.ApplyResources(this.kHÁCHHÀNGToolStripMenuItem, "kHÁCHHÀNGToolStripMenuItem");
+            this.kHÁCHHÀNGToolStripMenuItem.Name = "kHÁCHHÀNGToolStripMenuItem";
+            this.kHÁCHHÀNGToolStripMenuItem.Click += new System.EventHandler(this.kHÁCHHÀNGToolStripMenuItem_Click);
+            // 
+            // qUẢNLÝBÁNHÀNGToolStripMenuItem
+            // 
+            this.qUẢNLÝBÁNHÀNGToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tỒNĐẦUKỲToolStripMenuItem,
+            this.lẬPHÓAĐƠNToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.lẬPPHIẾUNHẬPKHOToolStripMenuItem,
+            this.lẬPPHIẾUXUẤTKHOToolStripMenuItem});
+            resources.ApplyResources(this.qUẢNLÝBÁNHÀNGToolStripMenuItem, "qUẢNLÝBÁNHÀNGToolStripMenuItem");
+            this.qUẢNLÝBÁNHÀNGToolStripMenuItem.Name = "qUẢNLÝBÁNHÀNGToolStripMenuItem";
+            // 
+            // tỒNĐẦUKỲToolStripMenuItem
+            // 
+            resources.ApplyResources(this.tỒNĐẦUKỲToolStripMenuItem, "tỒNĐẦUKỲToolStripMenuItem");
+            this.tỒNĐẦUKỲToolStripMenuItem.Name = "tỒNĐẦUKỲToolStripMenuItem";
+            // 
+            // lẬPPHIẾUNHẬPKHOToolStripMenuItem
+            // 
+            resources.ApplyResources(this.lẬPPHIẾUNHẬPKHOToolStripMenuItem, "lẬPPHIẾUNHẬPKHOToolStripMenuItem");
+            this.lẬPPHIẾUNHẬPKHOToolStripMenuItem.Name = "lẬPPHIẾUNHẬPKHOToolStripMenuItem";
+            this.lẬPPHIẾUNHẬPKHOToolStripMenuItem.Click += new System.EventHandler(this.lẬPPHIẾUNHẬPKHOToolStripMenuItem_Click);
+            // 
+            // lẬPPHIẾUXUẤTKHOToolStripMenuItem
+            // 
+            resources.ApplyResources(this.lẬPPHIẾUXUẤTKHOToolStripMenuItem, "lẬPPHIẾUXUẤTKHOToolStripMenuItem");
+            this.lẬPPHIẾUXUẤTKHOToolStripMenuItem.Name = "lẬPPHIẾUXUẤTKHOToolStripMenuItem";
+            this.lẬPPHIẾUXUẤTKHOToolStripMenuItem.Click += new System.EventHandler(this.lẬPPHIẾUXUẤTKHOToolStripMenuItem_Click);
+            // 
+            // lẬPHÓAĐƠNToolStripMenuItem
+            // 
+            resources.ApplyResources(this.lẬPHÓAĐƠNToolStripMenuItem, "lẬPHÓAĐƠNToolStripMenuItem");
+            this.lẬPHÓAĐƠNToolStripMenuItem.Name = "lẬPHÓAĐƠNToolStripMenuItem";
+            // 
+            // bÁOCÁOToolStripMenuItem
+            // 
+            this.bÁOCÁOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bÁOCÁODOANHTHUToolStripMenuItem,
+            this.bÁOCÁOBÁNHÀNGToolStripMenuItem,
+            this.bÁOCÁOTỒNKHOToolStripMenuItem});
+            resources.ApplyResources(this.bÁOCÁOToolStripMenuItem, "bÁOCÁOToolStripMenuItem");
+            this.bÁOCÁOToolStripMenuItem.Name = "bÁOCÁOToolStripMenuItem";
+            // 
+            // bÁOCÁOBÁNHÀNGToolStripMenuItem
+            // 
+            resources.ApplyResources(this.bÁOCÁOBÁNHÀNGToolStripMenuItem, "bÁOCÁOBÁNHÀNGToolStripMenuItem");
+            this.bÁOCÁOBÁNHÀNGToolStripMenuItem.Name = "bÁOCÁOBÁNHÀNGToolStripMenuItem";
+            // 
+            // bÁOCÁODOANHTHUToolStripMenuItem
+            // 
+            resources.ApplyResources(this.bÁOCÁODOANHTHUToolStripMenuItem, "bÁOCÁODOANHTHUToolStripMenuItem");
+            this.bÁOCÁODOANHTHUToolStripMenuItem.Name = "bÁOCÁODOANHTHUToolStripMenuItem";
+            // 
+            // bÁOCÁOTỒNKHOToolStripMenuItem
+            // 
+            resources.ApplyResources(this.bÁOCÁOTỒNKHOToolStripMenuItem, "bÁOCÁOTỒNKHOToolStripMenuItem");
+            this.bÁOCÁOTỒNKHOToolStripMenuItem.Name = "bÁOCÁOTỒNKHOToolStripMenuItem";
+            // 
+            // tHOÁTToolStripMenuItem
+            // 
+            this.tHOÁTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pHÓNGTOToolStripMenuItem,
+            this.ẩNToolStripMenuItem,
+            this.tHOÁTToolStripMenuItem1});
+            resources.ApplyResources(this.tHOÁTToolStripMenuItem, "tHOÁTToolStripMenuItem");
+            this.tHOÁTToolStripMenuItem.Name = "tHOÁTToolStripMenuItem";
+            // 
+            // tHOÁTToolStripMenuItem1
+            // 
+            resources.ApplyResources(this.tHOÁTToolStripMenuItem1, "tHOÁTToolStripMenuItem1");
+            this.tHOÁTToolStripMenuItem1.Name = "tHOÁTToolStripMenuItem1";
+            this.tHOÁTToolStripMenuItem1.Click += new System.EventHandler(this.tHOÁTToolStripMenuItem1_Click);
+            // 
+            // ẩNToolStripMenuItem
+            // 
+            resources.ApplyResources(this.ẩNToolStripMenuItem, "ẩNToolStripMenuItem");
+            this.ẩNToolStripMenuItem.Name = "ẩNToolStripMenuItem";
+            this.ẩNToolStripMenuItem.Click += new System.EventHandler(this.ẩNToolStripMenuItem_Click);
+            // 
+            // pHÓNGTOToolStripMenuItem
+            // 
+            resources.ApplyResources(this.pHÓNGTOToolStripMenuItem, "pHÓNGTOToolStripMenuItem");
+            this.pHÓNGTOToolStripMenuItem.Name = "pHÓNGTOToolStripMenuItem";
+            this.pHÓNGTOToolStripMenuItem.Click += new System.EventHandler(this.pHÓNGTOToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
             // 
             // pnlMain
             // 
-            this.pnlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlMain.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMain.Location = new System.Drawing.Point(218, 12);
+            resources.ApplyResources(this.pnlMain, "pnlMain");
+            this.pnlMain.Controls.Add(this.label2);
+            this.pnlMain.Controls.Add(this.label1);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(763, 460);
-            this.pnlMain.TabIndex = 5;
             // 
-            // button6
+            // label1
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button6.BackColor = System.Drawing.Color.Teal;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(58, 436);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(154, 36);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "ĐĂNG XUẤT";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
             // 
-            // button7
+            // label2
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button7.BackColor = System.Drawing.Color.Teal;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(12, 436);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 36);
-            this.button7.TabIndex = 7;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // btnHDN
-            // 
-            this.btnHDN.BackColor = System.Drawing.Color.Teal;
-            this.btnHDN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHDN.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.btnHDN.ForeColor = System.Drawing.Color.White;
-            this.btnHDN.Location = new System.Drawing.Point(9, 264);
-            this.btnHDN.Name = "btnHDN";
-            this.btnHDN.Size = new System.Drawing.Size(203, 36);
-            this.btnHDN.TabIndex = 8;
-            this.btnHDN.Text = "HÓA ĐƠN NHẬP";
-            this.btnHDN.UseVisualStyleBackColor = false;
-            this.btnHDN.Click += new System.EventHandler(this.btnHDN_Click);
-            // 
-            // btnBCBanNhieu
-            // 
-            this.btnBCBanNhieu.BackColor = System.Drawing.Color.Teal;
-            this.btnBCBanNhieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBCBanNhieu.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.btnBCBanNhieu.ForeColor = System.Drawing.Color.White;
-            this.btnBCBanNhieu.Location = new System.Drawing.Point(9, 306);
-            this.btnBCBanNhieu.Name = "btnBCBanNhieu";
-            this.btnBCBanNhieu.Size = new System.Drawing.Size(203, 49);
-            this.btnBCBanNhieu.TabIndex = 8;
-            this.btnBCBanNhieu.Text = "BÁO CÁO MẶT HÀNG BÁN ĐƯỢC NHIỀU";
-            this.btnBCBanNhieu.UseVisualStyleBackColor = false;
-            this.btnBCBanNhieu.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnTonKho
-            // 
-            this.btnTonKho.BackColor = System.Drawing.Color.Teal;
-            this.btnTonKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTonKho.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.btnTonKho.ForeColor = System.Drawing.Color.White;
-            this.btnTonKho.Location = new System.Drawing.Point(9, 361);
-            this.btnTonKho.Name = "btnTonKho";
-            this.btnTonKho.Size = new System.Drawing.Size(203, 49);
-            this.btnTonKho.TabIndex = 9;
-            this.btnTonKho.Text = "BÁO CÁO MẶT HÀNG TỒN KHO";
-            this.btnTonKho.UseVisualStyleBackColor = false;
-            this.btnTonKho.Click += new System.EventHandler(this.btnTonKho_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(9, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 36);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "BÁN HÀNG";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(993, 484);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnTonKho);
-            this.Controls.Add(this.btnBCBanNhieu);
-            this.Controls.Add(this.btnHDN);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.pnlMain);
-            this.Controls.Add(this.btnQLNXK);
-            this.Controls.Add(this.btnQLNCC);
-            this.Controls.Add(this.btnQLKH);
-            this.Controls.Add(this.btnQLNV);
-            this.Controls.Add(this.btnQLHH);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
-            this.Text = "Quản lý bán hàng";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.pnlMain.ResumeLayout(false);
+            this.pnlMain.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnQLHH;
-        private System.Windows.Forms.Button btnQLNV;
-        private System.Windows.Forms.Button btnQLKH;
-        private System.Windows.Forms.Button btnQLNCC;
-        private System.Windows.Forms.Button btnQLNXK;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem qUẢNLÝHỆTHỐNGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đĂNGNHẬPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đĂNGXUẤTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đỔIMẬTKHẨUToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đĂNGKÝToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem qUẢNLÝDANHMỤCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem qLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mẶTHÀNGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nHÀCUNGCẤPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kHÁCHHÀNGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem qUẢNLÝBÁNHÀNGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tỒNĐẦUKỲToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lẬPPHIẾUNHẬPKHOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lẬPPHIẾUXUẤTKHOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lẬPHÓAĐƠNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bÁOCÁOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bÁOCÁOBÁNHÀNGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bÁOCÁODOANHTHUToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bÁOCÁOTỒNKHOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tHOÁTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tHOÁTToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ẩNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pHÓNGTOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.Panel pnlMain;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button btnHDN;
-        private System.Windows.Forms.Button btnBCBanNhieu;
-        private System.Windows.Forms.Button btnTonKho;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

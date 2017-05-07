@@ -10,11 +10,11 @@ namespace QuanLyBanHang
     {
         public static void SetDefaultDataGridView(System.Windows.Forms.DataGridView dgv)
         {
-            dgv.BackgroundColor = System.Drawing.Color.LightSeaGreen;
+            dgv.BackgroundColor = System.Drawing.Color.Gray;
             dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dgv.EnableHeadersVisualStyles = false;
-            dgv.GridColor = System.Drawing.Color.WhiteSmoke;
-            dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dgv.GridColor = System.Drawing.Color.Gray;
+            //dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dgv.ShowCellErrors = false;
             dgv.ShowCellToolTips = false;
             dgv.ShowEditingIcon = false;
