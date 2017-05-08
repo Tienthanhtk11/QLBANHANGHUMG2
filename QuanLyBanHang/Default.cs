@@ -23,6 +23,7 @@ namespace QuanLyBanHang
             dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dgv.RowHeadersVisible = false;
             dgv.AllowUserToResizeRows = false;
+            dgv.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.LightCoral;
         }
     }
 }

@@ -188,7 +188,7 @@ namespace QuanLyBanHang
         private void frmMain_Load(object sender, EventArgs e)
         {
             Bitmap bmp = new Bitmap(pnlMain.BackgroundImage);
-            pnlMain.BackgroundImage = bmp;
+            pnlMain.BackgroundImage = null;
         }
 
         private void nHÀCUNGCẤPToolStripMenuItem_Click(object sender, EventArgs e)
