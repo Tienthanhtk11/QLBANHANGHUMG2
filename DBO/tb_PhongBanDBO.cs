@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DBO
 {
-    class tb_PhongBanDBO
+    public class tb_PhongBanDBO
     {
         string _MaPhongBan, _TenPhongBan;
 

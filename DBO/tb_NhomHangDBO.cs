@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DBO
 {
-    class tb_NhomHangDBO
+    public class tb_NhomHangDBO
     {
         string _MaNhomHang, _TenNhomHang;
 

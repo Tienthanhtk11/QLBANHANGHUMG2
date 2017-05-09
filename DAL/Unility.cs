@@ -30,7 +30,7 @@ namespace DAL
                 cnn.Open();
             }
         }
-        public static DataTable getDataTable(string sql)
+        public static DataTable GetDataTable(string sql)
         {
 
             openCon();
