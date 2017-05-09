@@ -23,11 +23,29 @@ namespace QuanLyBanHang
             {
                 MessageBox.Show(ex.Message);
             };
-        }
+            cbName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbName.AutoCompleteSource = AutoCompleteSource.ListItems;
 
-        public static void LoadDatagridview(DataGridView dgvName, string sqlstr)
+        }
+        public static void Datagridview(DataGridView dgv)
         {
-            dgvName.DataSource = Unility.getDataTable(sqlstr);
+            dgv.BackgroundColor = System.Drawing.Color.White;
+            dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.GridColor = System.Drawing.Color.WhiteSmoke;
+            dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dgv.ShowCellErrors = false;
+            dgv.ShowCellToolTips = false;
+            dgv.ShowEditingIcon = false;
+            dgv.ShowRowErrors = false;
+            dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.RowHeadersVisible = false;
+            dgv.AllowUserToResizeRows = false;
+        }
+        public static void LoadDatagridview(DataGridView dgvName, DataTable datatable)
+        {
+            dgvName.DataSource = datatable;
         }
         public static DataGridView dtg;
         public static void InDt(DataGridView dt)

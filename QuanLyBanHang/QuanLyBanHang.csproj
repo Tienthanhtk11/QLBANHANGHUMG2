@@ -54,7 +54,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllSql.cs" />
     <Compile Include="Default.cs" />
     <Compile Include="FORM\frmBanHang.cs">
       <SubType>Form</SubType>

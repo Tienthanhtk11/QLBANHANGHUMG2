@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace QuanLyBanHang
+using DAL;
+using DBO;
+namespace BLL
 {
-    public class AllSql
+    public class tb_HoaDonBanBLL
     {
-        
     }
 }
