@@ -11,11 +11,11 @@ namespace QuanLyBanHang
 {
     public class MethodLoad
     {
-        public static void LoadCombobox(ComboBox cbName, string display, string value, string sqlstr)
+        public static void LoadCombobox(ComboBox cbName, DataTable db, string value, string display)
         {
             try
             {
-                cbName.DataSource = Unility.getDataTable(sqlstr);
+                cbName.DataSource = db;
                 cbName.DisplayMember = display;
                 cbName.ValueMember = value;
             }
