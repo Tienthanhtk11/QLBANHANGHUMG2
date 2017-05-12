@@ -145,6 +145,8 @@
             // 
             this.nHÓMHÀNGToolStripMenuItem.Name = "nHÓMHÀNGToolStripMenuItem";
             resources.ApplyResources(this.nHÓMHÀNGToolStripMenuItem, "nHÓMHÀNGToolStripMenuItem");
+
+            this.nHÓMHÀNGToolStripMenuItem.Click += new System.EventHandler(this.nHÓMHÀNGToolStripMenuItem_Click);
             // 
             // mẶTHÀNGToolStripMenuItem
             // 
@@ -179,6 +181,12 @@
             // 
             this.pHÒNGBANToolStripMenuItem.Name = "pHÒNGBANToolStripMenuItem";
             resources.ApplyResources(this.pHÒNGBANToolStripMenuItem, "pHÒNGBANToolStripMenuItem");
+            // 
+            // pHÒNGBANToolStripMenuItem
+            // 
+            this.pHÒNGBANToolStripMenuItem.Name = "pHÒNGBANToolStripMenuItem";
+            resources.ApplyResources(this.pHÒNGBANToolStripMenuItem, "pHÒNGBANToolStripMenuItem");
+            this.pHÒNGBANToolStripMenuItem.Click += new System.EventHandler(this.pHÒNGBANToolStripMenuItem_Click);
             // 
             // qUẢNLÝBÁNHÀNGToolStripMenuItem
             // 

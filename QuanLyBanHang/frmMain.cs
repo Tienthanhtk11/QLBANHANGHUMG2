@@ -210,7 +210,7 @@ namespace QuanLyBanHang
         private void lẬPPHIẾUNHẬPKHOToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pnlMain.BackgroundImage = null;
-            ucNhapKho uc = new ucNhapKho();
+            ucHoaDonNhap uc = new ucHoaDonNhap();
             uc.Dock = DockStyle.Fill;
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);
@@ -225,10 +225,20 @@ namespace QuanLyBanHang
             pnlMain.Controls.Add(uc);
         }
 
-        private void nHÂNVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nHÓMHÀNGToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pnlMain.BackgroundImage = null;
-            ucNhanVien uc = new ucNhanVien();
+            ucNhomHang uc = new ucNhomHang();
+            uc.Dock = DockStyle.Fill;
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(uc);
+        }
+
+        private void pHÒNGBANToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlMain.BackgroundImage = null;
+            ucPhongBan uc = new ucPhongBan();
+
             uc.Dock = DockStyle.Fill;
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);

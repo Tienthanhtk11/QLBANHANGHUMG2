@@ -1,6 +1,6 @@
 ﻿namespace QuanLyBanHang.USERCONTROLS
 {
-    partial class ucHangTon
+    partial class ucTonDauKy
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,6 +35,9 @@
             this.TaiLaiok = new System.Windows.Forms.ToolStripMenuItem();
             this.Inok = new System.Windows.Forms.ToolStripMenuItem();
             this.xuâtFileExcellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTonDu)).BeginInit();
             this.Vll.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +53,7 @@
             this.dtgTonDu.Location = new System.Drawing.Point(3, 30);
             this.dtgTonDu.Name = "dtgTonDu";
             this.dtgTonDu.ReadOnly = true;
-            this.dtgTonDu.Size = new System.Drawing.Size(558, 374);
+            this.dtgTonDu.Size = new System.Drawing.Size(558, 345);
             this.dtgTonDu.TabIndex = 0;
             // 
             // label1
@@ -95,14 +98,56 @@
             this.xuâtFileExcellToolStripMenuItem.Text = "Xuât file Excell";
             this.xuâtFileExcellToolStripMenuItem.Click += new System.EventHandler(this.xuâtFileExcellToolStripMenuItem_Click);
             // 
-            // ucHangTon
+            // btnXoa
+            // 
+            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXoa.BackColor = System.Drawing.Color.LightCoral;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(490, 381);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(71, 23);
+            this.btnXoa.TabIndex = 11;
+            this.btnXoa.Text = "XÓA";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSua.BackColor = System.Drawing.Color.LightCoral;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Location = new System.Drawing.Point(413, 381);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(71, 23);
+            this.btnSua.TabIndex = 10;
+            this.btnSua.Text = "SỬA";
+            this.btnSua.UseVisualStyleBackColor = false;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThem.BackColor = System.Drawing.Color.LightCoral;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(335, 381);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(72, 23);
+            this.btnThem.TabIndex = 9;
+            this.btnThem.Text = "THÊM";
+            this.btnThem.UseVisualStyleBackColor = false;
+            // 
+            // ucTonDauKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ContextMenuStrip = this.Vll;
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgTonDu);
-            this.Name = "ucHangTon";
+            this.Name = "ucTonDauKy";
             this.Size = new System.Drawing.Size(564, 407);
             this.Load += new System.EventHandler(this.ucHangTon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgTonDu)).EndInit();
@@ -120,5 +165,8 @@
         private System.Windows.Forms.ToolStripMenuItem TaiLaiok;
         private System.Windows.Forms.ToolStripMenuItem Inok;
         private System.Windows.Forms.ToolStripMenuItem xuâtFileExcellToolStripMenuItem;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
     }
 }

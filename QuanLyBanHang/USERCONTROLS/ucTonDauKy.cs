@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyBanHang.USERCONTROLS
 {
-    public partial class ucHangTon : UserControl
+    public partial class ucTonDauKy : UserControl
     {
-        public ucHangTon()
+        public ucTonDauKy()
         {
             InitializeComponent();
         }

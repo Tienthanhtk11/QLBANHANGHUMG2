@@ -61,11 +61,29 @@
     <Compile Include="FORM\frmBanHang.Designer.cs">
       <DependentUpon>frmBanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORM\frmChiTietHDban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\frmChiTietHDban.Designer.cs">
+      <DependentUpon>frmChiTietHDban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\frmChiTietHDnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\frmChiTietHDnhap.Designer.cs">
+      <DependentUpon>frmChiTietHDnhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORM\frmHangHoa_ADD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FORM\frmHangHoa_ADD.Designer.cs">
       <DependentUpon>frmHangHoa_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\frmHoaDonBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\frmHoaDonBan.Designer.cs">
+      <DependentUpon>frmHoaDonBan.cs</DependentUpon>
     </Compile>
     <Compile Include="FORM\frmHoaDon_ADD.cs">
       <SubType>Form</SubType>
@@ -97,6 +115,24 @@
     <Compile Include="FORM\frmNhapKho.Designer.cs">
       <DependentUpon>frmNhapKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORM\frmNhomHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\frmNhomHang.Designer.cs">
+      <DependentUpon>frmNhomHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\frmPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\frmPhongBan.Designer.cs">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\frmTonDauKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\frmTonDauKy.Designer.cs">
+      <DependentUpon>frmTonDauKy.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,11 +154,17 @@
     <Compile Include="USERCONTROLS\ucBCMatHangBanDuocNhieu.Designer.cs">
       <DependentUpon>ucBCMatHangBanDuocNhieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="USERCONTROLS\ucHangTon.cs">
+    <Compile Include="USERCONTROLS\ucTonDauKy.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="USERCONTROLS\ucHangTon.Designer.cs">
-      <DependentUpon>ucHangTon.cs</DependentUpon>
+    <Compile Include="USERCONTROLS\ucTonDauKy.Designer.cs">
+      <DependentUpon>ucTonDauKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERCONTROLS\ucHoaDonBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USERCONTROLS\ucHoaDonBan.Designer.cs">
+      <DependentUpon>ucHoaDonBan.cs</DependentUpon>
     </Compile>
     <Compile Include="USERCONTROLS\ucKhachHang.cs">
       <SubType>UserControl</SubType>
@@ -142,11 +184,23 @@
     <Compile Include="USERCONTROLS\ucNhanVien.Designer.cs">
       <DependentUpon>ucNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="USERCONTROLS\ucNhapKho.cs">
+    <Compile Include="USERCONTROLS\ucHoaDonNhap.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="USERCONTROLS\ucNhapKho.Designer.cs">
-      <DependentUpon>ucNhapKho.cs</DependentUpon>
+    <Compile Include="USERCONTROLS\ucHoaDonNhap.Designer.cs">
+      <DependentUpon>ucHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERCONTROLS\ucNhomHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USERCONTROLS\ucNhomHang.Designer.cs">
+      <DependentUpon>ucNhomHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERCONTROLS\ucPhongBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USERCONTROLS\ucPhongBan.Designer.cs">
+      <DependentUpon>ucPhongBan.cs</DependentUpon>
     </Compile>
     <Compile Include="USERCONTROLS\ucQuanLyHangHoa.cs">
       <SubType>UserControl</SubType>
@@ -166,6 +220,9 @@
     <EmbeddedResource Include="FORM\frmHangHoa_ADD.resx">
       <DependentUpon>frmHangHoa_ADD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FORM\frmHoaDonBan.resx">
+      <DependentUpon>frmHoaDonBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORM\frmHoaDon_ADD.resx">
       <DependentUpon>frmHoaDon_ADD.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +237,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORM\frmNhapKho.resx">
       <DependentUpon>frmNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\frmNhomHang.resx">
+      <DependentUpon>frmNhomHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\frmPhongBan.resx">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\frmTonDauKy.resx">
+      <DependentUpon>frmTonDauKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
@@ -199,8 +265,11 @@
     <EmbeddedResource Include="USERCONTROLS\ucBCMatHangBanDuocNhieu.resx">
       <DependentUpon>ucBCMatHangBanDuocNhieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="USERCONTROLS\ucHangTon.resx">
-      <DependentUpon>ucHangTon.cs</DependentUpon>
+    <EmbeddedResource Include="USERCONTROLS\ucTonDauKy.resx">
+      <DependentUpon>ucTonDauKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERCONTROLS\ucHoaDonBan.resx">
+      <DependentUpon>ucHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="USERCONTROLS\ucKhachHang.resx">
       <DependentUpon>ucKhachHang.cs</DependentUpon>
@@ -211,8 +280,14 @@
     <EmbeddedResource Include="USERCONTROLS\ucNhanVien.resx">
       <DependentUpon>ucNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="USERCONTROLS\ucNhapKho.resx">
-      <DependentUpon>ucNhapKho.cs</DependentUpon>
+    <EmbeddedResource Include="USERCONTROLS\ucHoaDonNhap.resx">
+      <DependentUpon>ucHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERCONTROLS\ucNhomHang.resx">
+      <DependentUpon>ucNhomHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERCONTROLS\ucPhongBan.resx">
+      <DependentUpon>ucPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="USERCONTROLS\ucQuanLyHangHoa.resx">
       <DependentUpon>ucQuanLyHangHoa.cs</DependentUpon>

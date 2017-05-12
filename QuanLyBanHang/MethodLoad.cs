@@ -47,6 +47,7 @@ namespace QuanLyBanHang
         public static void LoadDatagridview(DataGridView dgvName, System.Data.DataTable datatable)
         {
             dgvName.DataSource = datatable;
+            Default.SetDefaultDataGridView(dgvName);
         }
         public static DataGridView dtg;
         public static void InDt(DataGridView dt)
