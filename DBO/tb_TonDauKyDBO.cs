@@ -13,9 +13,56 @@ namespace DBO
         int _SoLuong;
         double _GiaTriTon;
 
-        public string MaMatHang { get => _MaMatHang; set => _MaMatHang = value; }
-        public DateTime NgayCapNhat { get => _NgayCapNhat; set => _NgayCapNhat = value; }
-        public int SoLuong { get => _SoLuong; set => _SoLuong = value; }
-        public double GiaTriTon { get => _GiaTriTon; set => _GiaTriTon = value; }
+        public string MaMatHang
+        {
+            get
+            {
+                return _MaMatHang;
+            }
+
+            set
+            {
+                _MaMatHang = value;
+            }
+        }
+
+        public DateTime NgayCapNhat
+        {
+            get
+            {
+                return _NgayCapNhat;
+            }
+
+            set
+            {
+                _NgayCapNhat = value;
+            }
+        }
+
+        public int SoLuong
+        {
+            get
+            {
+                return _SoLuong;
+            }
+
+            set
+            {
+                _SoLuong = value;
+            }
+        }
+
+        public double GiaTriTon
+        {
+            get
+            {
+                return _GiaTriTon;
+            }
+
+            set
+            {
+                _GiaTriTon = value;
+            }
+        }
     }
 }

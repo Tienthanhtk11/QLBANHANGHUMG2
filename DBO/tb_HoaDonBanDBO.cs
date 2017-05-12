@@ -13,11 +13,82 @@ namespace DBO
         Boolean _DaThanhToan;
         DateTime _NgayLap;
 
-        public string MaHoaDonBan { get => _MaHoaDonBan; set => _MaHoaDonBan = value; }
-        public string MaKhachHang { get => _MaKhachHang; set => _MaKhachHang = value; }
-        public string MaNhanVien { get => _MaNhanVien; set => _MaNhanVien = value; }
-        public double TongThanhToan { get => _TongThanhToan; set => _TongThanhToan = value; }
-        public bool DaThanhToan { get => _DaThanhToan; set => _DaThanhToan = value; }
-        public DateTime NgayLap { get => _NgayLap; set => _NgayLap = value; }
+        public string MaHoaDonBan
+        {
+            get
+            {
+                return _MaHoaDonBan;
+            }
+
+            set
+            {
+                _MaHoaDonBan = value;
+            }
+        }
+
+        public string MaKhachHang
+        {
+            get
+            {
+                return _MaKhachHang;
+            }
+
+            set
+            {
+                _MaKhachHang = value;
+            }
+        }
+
+        public string MaNhanVien
+        {
+            get
+            {
+                return _MaNhanVien;
+            }
+
+            set
+            {
+                _MaNhanVien = value;
+            }
+        }
+
+        public double TongThanhToan
+        {
+            get
+            {
+                return _TongThanhToan;
+            }
+
+            set
+            {
+                _TongThanhToan = value;
+            }
+        }
+
+        public bool DaThanhToan
+        {
+            get
+            {
+                return _DaThanhToan;
+            }
+
+            set
+            {
+                _DaThanhToan = value;
+            }
+        }
+
+        public DateTime NgayLap
+        {
+            get
+            {
+                return _NgayLap;
+            }
+
+            set
+            {
+                _NgayLap = value;
+            }
+        }
     }
 }

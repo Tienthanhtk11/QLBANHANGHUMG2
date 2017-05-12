@@ -12,12 +12,95 @@ namespace DBO
         double _GiaBan;
         DateTime _NgayCapNhat;
 
-        public string MaMatHang { get => _MaMatHang; set => _MaMatHang = value; }
-        public string TenMatHang { get => _TenMatHang; set => _TenMatHang = value; }
-        public string MaNhaCungCap { get => _MaNhaCungCap; set => _MaNhaCungCap = value; }
-        public string MaNhomHang { get => _MaNhomHang; set => _MaNhomHang = value; }
-        public string DVT { get => _DVT; set => _DVT = value; }
-        public double GiaBan { get => _GiaBan; set => _GiaBan = value; }
-        public DateTime NgayCapNhat { get => _NgayCapNhat; set => _NgayCapNhat = value; }
+        public string MaMatHang
+        {
+            get
+            {
+                return _MaMatHang;
+            }
+
+            set
+            {
+                _MaMatHang = value;
+            }
+        }
+
+        public string TenMatHang
+        {
+            get
+            {
+                return _TenMatHang;
+            }
+
+            set
+            {
+                _TenMatHang = value;
+            }
+        }
+
+        public string MaNhaCungCap
+        {
+            get
+            {
+                return _MaNhaCungCap;
+            }
+
+            set
+            {
+                _MaNhaCungCap = value;
+            }
+        }
+
+        public string MaNhomHang
+        {
+            get
+            {
+                return _MaNhomHang;
+            }
+
+            set
+            {
+                _MaNhomHang = value;
+            }
+        }
+
+        public string DVT
+        {
+            get
+            {
+                return _DVT;
+            }
+
+            set
+            {
+                _DVT = value;
+            }
+        }
+
+        public double GiaBan
+        {
+            get
+            {
+                return _GiaBan;
+            }
+
+            set
+            {
+                _GiaBan = value;
+            }
+        }
+
+        public DateTime NgayCapNhat
+        {
+            get
+            {
+                return _NgayCapNhat;
+            }
+
+            set
+            {
+                _NgayCapNhat = value;
+            }
+        }
     }
 }

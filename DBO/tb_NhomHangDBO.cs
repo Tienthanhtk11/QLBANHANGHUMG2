@@ -10,7 +10,30 @@ namespace DBO
     {
         string _MaNhomHang, _TenNhomHang;
 
-        public string MaNhomHang { get => _MaNhomHang; set => _MaNhomHang = value; }
-        public string TenNhomHang { get => _TenNhomHang; set => _TenNhomHang = value; }
+        public string MaNhomHang
+        {
+            get
+            {
+                return _MaNhomHang;
+            }
+
+            set
+            {
+                _MaNhomHang = value;
+            }
+        }
+
+        public string TenNhomHang
+        {
+            get
+            {
+                return _TenNhomHang;
+            }
+
+            set
+            {
+                _TenNhomHang = value;
+            }
+        }
     }
 }

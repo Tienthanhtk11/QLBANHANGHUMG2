@@ -11,9 +11,56 @@ namespace DBO
         string _TenDangNhap, _MatKhau, _MaNhanVien;
         int _Role;
 
-        public string TenDangNhap { get => _TenDangNhap; set => _TenDangNhap = value; }
-        public string MatKhau { get => _MatKhau; set => _MatKhau = value; }
-        public string MaNhanVien { get => _MaNhanVien; set => _MaNhanVien = value; }
-        public int Role { get => _Role; set => _Role = value; }
+        public string TenDangNhap
+        {
+            get
+            {
+                return _TenDangNhap;
+            }
+
+            set
+            {
+                _TenDangNhap = value;
+            }
+        }
+
+        public string MatKhau
+        {
+            get
+            {
+                return _MatKhau;
+            }
+
+            set
+            {
+                _MatKhau = value;
+            }
+        }
+
+        public string MaNhanVien
+        {
+            get
+            {
+                return _MaNhanVien;
+            }
+
+            set
+            {
+                _MaNhanVien = value;
+            }
+        }
+
+        public int Role
+        {
+            get
+            {
+                return _Role;
+            }
+
+            set
+            {
+                _Role = value;
+            }
+        }
     }
 }

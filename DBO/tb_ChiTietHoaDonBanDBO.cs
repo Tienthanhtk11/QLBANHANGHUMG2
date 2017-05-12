@@ -12,10 +12,69 @@ namespace DBO
         double _DonGia;
         int _SoLuong;
 
-        public string MaCTHDB { get => _MaCTHDB; set => _MaCTHDB = value; }
-        public string MaHoaDonBan { get => _MaHoaDonBan; set => _MaHoaDonBan = value; }
-        public string MaMatHang { get => _MaMatHang; set => _MaMatHang = value; }
-        public double DonGia { get => _DonGia; set => _DonGia = value; }
-        public int SoLuong { get => _SoLuong; set => _SoLuong = value; }
+        public string MaCTHDB
+        {
+            get
+            {
+                return _MaCTHDB;
+            }
+
+            set
+            {
+                _MaCTHDB = value;
+            }
+        }
+
+        public string MaHoaDonBan
+        {
+            get
+            {
+                return _MaHoaDonBan;
+            }
+
+            set
+            {
+                _MaHoaDonBan = value;
+            }
+        }
+
+        public string MaMatHang
+        {
+            get
+            {
+                return _MaMatHang;
+            }
+
+            set
+            {
+                _MaMatHang = value;
+            }
+        }
+
+        public double DonGia
+        {
+            get
+            {
+                return _DonGia;
+            }
+
+            set
+            {
+                _DonGia = value;
+            }
+        }
+
+        public int SoLuong
+        {
+            get
+            {
+                return _SoLuong;
+            }
+
+            set
+            {
+                _SoLuong = value;
+            }
+        }
     }
 }

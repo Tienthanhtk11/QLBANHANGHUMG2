@@ -10,9 +10,56 @@ namespace DBO
     {
         string _MaNhaCungCap, _TenNhaCungCap, _DiaChi, _SDT;
 
-        public string MaNhaCungCap { get => _MaNhaCungCap; set => _MaNhaCungCap = value; }
-        public string TenNhaCungCap { get => _TenNhaCungCap; set => _TenNhaCungCap = value; }
-        public string DiaChi { get => _DiaChi; set => _DiaChi = value; }
-        public string SDT { get => _SDT; set => _SDT = value; }
+        public string DiaChi
+        {
+            get
+            {
+                return _DiaChi;
+            }
+
+            set
+            {
+                _DiaChi = value;
+            }
+        }
+
+        public string MaNhaCungCap
+        {
+            get
+            {
+                return _MaNhaCungCap;
+            }
+
+            set
+            {
+                _MaNhaCungCap = value;
+            }
+        }
+
+        public string SDT
+        {
+            get
+            {
+                return _SDT;
+            }
+
+            set
+            {
+                _SDT = value;
+            }
+        }
+
+        public string TenNhaCungCap
+        {
+            get
+            {
+                return _TenNhaCungCap;
+            }
+
+            set
+            {
+                _TenNhaCungCap = value;
+            }
+        }
     }
 }
