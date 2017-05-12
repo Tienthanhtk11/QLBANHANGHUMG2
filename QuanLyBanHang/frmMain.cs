@@ -224,5 +224,14 @@ namespace QuanLyBanHang
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);
         }
+
+        private void nHÂNVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlMain.BackgroundImage = null;
+            ucNhanVien uc = new ucNhanVien();
+            uc.Dock = DockStyle.Fill;
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(uc);
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace DAL
     {
         public static DataTable layDuLieu()
         {
-            return Unility.GetDataTable("SELECT MaMatHang 'Mã mặt hàng',TenMatHang 'Tên mặt hàng',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhomHang.TenNhomHang 'Nhóm hàng',DVT 'Đơn vị tính',GiaBan 'Giá bán',CONVERT(nvarchar,NgayCapNhat,103) 'Ngày cập nhật' FROM tb_MatHang join tb_NhaCungCap on tb_MatHang.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhomHang on tb_MatHang.MaNhomHang = tb_NhomHang.MaNhomHang");
+            return Unility.GetDataTable("SELECT MaMatHang 'Mã mặt hàng',TenMatHang 'Tên mặt hàng',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhomHang.TenNhomHang 'Nhóm hàng',DVT 'Đơn vị tính',GiaBan 'Giá bán',NgayCapNhat 'Ngày cập nhật' FROM tb_MatHang join tb_NhaCungCap on tb_MatHang.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhomHang on tb_MatHang.MaNhomHang = tb_NhomHang.MaNhomHang");
         }
         public static DataTable layDuLieuSoDieuKien(string MaMH)
         {
@@ -28,11 +28,11 @@ namespace DAL
         }
         public static void xoa(string MaMH)
         {
-            Unility.ExcuteSQL(string.Format("DELETE FROM tb_MatHang WHERE MaNhaCungCap =N'{0}'", MaMH));
+            Unility.ExcuteSQL(string.Format("DELETE FROM tb_MatHang WHERE MaMatHang =N'{0}'", MaMH));
         }
         public static int kiemTraTonTai(string MaMH)
         {
-            return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_MatHang WHERE MaNhaCungCap =N'{0}'", MaMH));
+            return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_MatHang WHERE MaMatHang =N'{0}'", MaMH));
         }
     }
 }

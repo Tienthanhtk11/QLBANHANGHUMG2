@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dtgNCC = new System.Windows.Forms.DataGridView();
+            this.dataNhaCungCap = new System.Windows.Forms.DataGridView();
             this.VL = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tảiLạiF5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmNhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,26 +42,27 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgNCC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataNhaCungCap)).BeginInit();
             this.VL.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtgNCC
+            // dataNhaCungCap
             // 
-            this.dtgNCC.AllowUserToAddRows = false;
-            this.dtgNCC.AllowUserToDeleteRows = false;
-            this.dtgNCC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataNhaCungCap.AllowUserToAddRows = false;
+            this.dataNhaCungCap.AllowUserToDeleteRows = false;
+            this.dataNhaCungCap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgNCC.ContextMenuStrip = this.VL;
-            this.dtgNCC.Location = new System.Drawing.Point(0, 26);
-            this.dtgNCC.Name = "dtgNCC";
-            this.dtgNCC.ReadOnly = true;
-            this.dtgNCC.Size = new System.Drawing.Size(564, 352);
-            this.dtgNCC.TabIndex = 0;
-            this.dtgNCC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNCC_CellContentClick);
-            this.dtgNCC.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNCC_CellEnter);
+            this.dataNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataNhaCungCap.ContextMenuStrip = this.VL;
+            this.dataNhaCungCap.Location = new System.Drawing.Point(0, 26);
+            this.dataNhaCungCap.Name = "dataNhaCungCap";
+            this.dataNhaCungCap.ReadOnly = true;
+            this.dataNhaCungCap.Size = new System.Drawing.Size(564, 352);
+            this.dataNhaCungCap.TabIndex = 0;
+            this.dataNhaCungCap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhaCungCap_CellClick);
+            this.dataNhaCungCap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNCC_CellContentClick);
+            this.dataNhaCungCap.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNCC_CellEnter);
             // 
             // VL
             // 
@@ -191,11 +192,11 @@
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.lblNCC);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtgNCC);
+            this.Controls.Add(this.dataNhaCungCap);
             this.Name = "ucNhaCungCap";
             this.Size = new System.Drawing.Size(564, 407);
             this.Load += new System.EventHandler(this.ucNhaCungCap_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgNCC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataNhaCungCap)).EndInit();
             this.VL.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -204,7 +205,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgNCC;
+        private System.Windows.Forms.DataGridView dataNhaCungCap;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblNCC;
         private System.Windows.Forms.ContextMenuStrip VL;

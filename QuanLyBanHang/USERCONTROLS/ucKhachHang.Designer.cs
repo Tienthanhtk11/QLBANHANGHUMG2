@@ -60,6 +60,7 @@
             this.dataKhachHang.ReadOnly = true;
             this.dataKhachHang.Size = new System.Drawing.Size(552, 354);
             this.dataKhachHang.TabIndex = 7;
+            this.dataKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataKhachHang_CellClick);
             this.dataKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataKhachHang_CellContentClick);
             this.dataKhachHang.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataKhachHang_CellEnter);
             // 

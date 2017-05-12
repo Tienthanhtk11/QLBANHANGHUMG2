@@ -31,15 +31,13 @@
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDC = new System.Windows.Forms.TextBox();
-            this.txtMa = new System.Windows.Forms.TextBox();
+            this.txtDCNhaCC = new System.Windows.Forms.TextBox();
+            this.txtMaNhaCC = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.txtTen = new System.Windows.Forms.TextBox();
-            this.txtLH = new System.Windows.Forms.TextBox();
+            this.txtSDTNhaCC = new System.Windows.Forms.TextBox();
+            this.txtTenNhaCC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnHuy
@@ -47,7 +45,7 @@
             this.btnHuy.BackColor = System.Drawing.Color.Teal;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Location = new System.Drawing.Point(197, 228);
+            this.btnHuy.Location = new System.Drawing.Point(197, 166);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 7;
@@ -60,7 +58,7 @@
             this.btnOK.BackColor = System.Drawing.Color.Crimson;
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(116, 228);
+            this.btnOK.Location = new System.Drawing.Point(116, 166);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 6;
@@ -71,20 +69,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 156);
+            this.label4.Location = new System.Drawing.Point(7, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 23;
             this.label4.Text = "Đia chỉ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Liên hệ";
             // 
             // label2
             // 
@@ -104,20 +93,20 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Mã NCC";
             // 
-            // txtDC
+            // txtDCNhaCC
             // 
-            this.txtDC.Location = new System.Drawing.Point(101, 153);
-            this.txtDC.Multiline = true;
-            this.txtDC.Name = "txtDC";
-            this.txtDC.Size = new System.Drawing.Size(171, 69);
-            this.txtDC.TabIndex = 5;
+            this.txtDCNhaCC.Location = new System.Drawing.Point(101, 91);
+            this.txtDCNhaCC.Multiline = true;
+            this.txtDCNhaCC.Name = "txtDCNhaCC";
+            this.txtDCNhaCC.Size = new System.Drawing.Size(171, 69);
+            this.txtDCNhaCC.TabIndex = 5;
             // 
-            // txtMa
+            // txtMaNhaCC
             // 
-            this.txtMa.Location = new System.Drawing.Point(101, 12);
-            this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(171, 20);
-            this.txtMa.TabIndex = 1;
+            this.txtMaNhaCC.Location = new System.Drawing.Point(101, 12);
+            this.txtMaNhaCC.Name = "txtMaNhaCC";
+            this.txtMaNhaCC.Size = new System.Drawing.Size(171, 20);
+            this.txtMaNhaCC.TabIndex = 1;
             // 
             // label5
             // 
@@ -128,51 +117,42 @@
             this.label5.TabIndex = 29;
             this.label5.Text = "Số điện thoại";
             // 
-            // txtSDT
+            // txtSDTNhaCC
             // 
-            this.txtSDT.Location = new System.Drawing.Point(101, 65);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(171, 20);
-            this.txtSDT.TabIndex = 3;
+            this.txtSDTNhaCC.Location = new System.Drawing.Point(101, 65);
+            this.txtSDTNhaCC.Name = "txtSDTNhaCC";
+            this.txtSDTNhaCC.Size = new System.Drawing.Size(171, 20);
+            this.txtSDTNhaCC.TabIndex = 3;
             // 
-            // txtTen
+            // txtTenNhaCC
             // 
-            this.txtTen.Location = new System.Drawing.Point(101, 38);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(171, 20);
-            this.txtTen.TabIndex = 2;
-            // 
-            // txtLH
-            // 
-            this.txtLH.Location = new System.Drawing.Point(101, 93);
-            this.txtLH.Multiline = true;
-            this.txtLH.Name = "txtLH";
-            this.txtLH.Size = new System.Drawing.Size(171, 54);
-            this.txtLH.TabIndex = 4;
+            this.txtTenNhaCC.Location = new System.Drawing.Point(101, 38);
+            this.txtTenNhaCC.Name = "txtTenNhaCC";
+            this.txtTenNhaCC.Size = new System.Drawing.Size(171, 20);
+            this.txtTenNhaCC.TabIndex = 2;
             // 
             // frmNCC_ADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(284, 263);
-            this.Controls.Add(this.txtLH);
+            this.ClientSize = new System.Drawing.Size(284, 204);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.txtSDTNhaCC);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDC);
-            this.Controls.Add(this.txtTen);
-            this.Controls.Add(this.txtMa);
+            this.Controls.Add(this.txtDCNhaCC);
+            this.Controls.Add(this.txtTenNhaCC);
+            this.Controls.Add(this.txtMaNhaCC);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmNCC_ADD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmNCC_ADD";
+            this.Load += new System.EventHandler(this.frmNCC_ADD_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,14 +163,12 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDC;
-        private System.Windows.Forms.TextBox txtMa;
+        private System.Windows.Forms.TextBox txtDCNhaCC;
+        private System.Windows.Forms.TextBox txtMaNhaCC;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.TextBox txtTen;
-        private System.Windows.Forms.TextBox txtLH;
+        private System.Windows.Forms.TextBox txtSDTNhaCC;
+        private System.Windows.Forms.TextBox txtTenNhaCC;
     }
 }

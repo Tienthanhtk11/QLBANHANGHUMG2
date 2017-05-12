@@ -32,8 +32,7 @@
             this.cbbNhomHang = new System.Windows.Forms.ComboBox();
             this.cbbNhaCC = new System.Windows.Forms.ComboBox();
             this.txtDonViTinh = new System.Windows.Forms.TextBox();
-            this.txtSoLuong = new System.Windows.Forms.TextBox();
-            this.txtDonGia = new System.Windows.Forms.TextBox();
+            this.txtGiaBan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.btnHuy = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtMaHang = new System.Windows.Forms.TextBox();
+            this.dtNgayCapNhat = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // txtTenHang
@@ -76,19 +76,12 @@
             this.txtDonViTinh.Size = new System.Drawing.Size(171, 20);
             this.txtDonViTinh.TabIndex = 3;
             // 
-            // txtSoLuong
+            // txtGiaBan
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(114, 160);
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(171, 20);
-            this.txtSoLuong.TabIndex = 4;
-            // 
-            // txtDonGia
-            // 
-            this.txtDonGia.Location = new System.Drawing.Point(114, 186);
-            this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(171, 20);
-            this.txtDonGia.TabIndex = 5;
+            this.txtGiaBan.Location = new System.Drawing.Point(114, 160);
+            this.txtGiaBan.Name = "txtGiaBan";
+            this.txtGiaBan.Size = new System.Drawing.Size(171, 20);
+            this.txtGiaBan.TabIndex = 4;
             // 
             // label1
             // 
@@ -131,18 +124,18 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(20, 163);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 13);
+            this.label5.Size = new System.Drawing.Size(50, 13);
             this.label5.TabIndex = 10;
-            this.label5.Text = "SỐ LƯỢNG CÒN";
+            this.label5.Text = "GIÁ BÁN";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 189);
+            this.label6.Location = new System.Drawing.Point(20, 192);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.Size = new System.Drawing.Size(94, 13);
             this.label6.TabIndex = 11;
-            this.label6.Text = "ĐƠN GIÁ";
+            this.label6.Text = "NGÀY CẬP NHẬT";
             // 
             // btnOK
             // 
@@ -186,12 +179,20 @@
             this.txtMaHang.Size = new System.Drawing.Size(171, 20);
             this.txtMaHang.TabIndex = 0;
             // 
+            // dtNgayCapNhat
+            // 
+            this.dtNgayCapNhat.Location = new System.Drawing.Point(114, 186);
+            this.dtNgayCapNhat.Name = "dtNgayCapNhat";
+            this.dtNgayCapNhat.Size = new System.Drawing.Size(171, 20);
+            this.dtNgayCapNhat.TabIndex = 16;
+            // 
             // frmHangHoa_ADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(315, 264);
+            this.Controls.Add(this.dtNgayCapNhat);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMaHang);
             this.Controls.Add(this.btnHuy);
@@ -202,8 +203,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDonGia);
-            this.Controls.Add(this.txtSoLuong);
+            this.Controls.Add(this.txtGiaBan);
             this.Controls.Add(this.txtDonViTinh);
             this.Controls.Add(this.cbbNhaCC);
             this.Controls.Add(this.cbbNhomHang);
@@ -225,8 +225,7 @@
         private System.Windows.Forms.ComboBox cbbNhomHang;
         private System.Windows.Forms.ComboBox cbbNhaCC;
         private System.Windows.Forms.TextBox txtDonViTinh;
-        private System.Windows.Forms.TextBox txtSoLuong;
-        private System.Windows.Forms.TextBox txtDonGia;
+        private System.Windows.Forms.TextBox txtGiaBan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -237,5 +236,6 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtMaHang;
+        private System.Windows.Forms.DateTimePicker dtNgayCapNhat;
     }
 }

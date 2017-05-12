@@ -67,6 +67,7 @@
             this.dataHangHoa.ReadOnly = true;
             this.dataHangHoa.Size = new System.Drawing.Size(558, 345);
             this.dataHangHoa.TabIndex = 0;
+            this.dataHangHoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHangHoa_CellClick);
             this.dataHangHoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataHangHoa.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHangHoa_CellEnter);
             // 
@@ -193,6 +194,7 @@
             this.cbNCC.Name = "cbNCC";
             this.cbNCC.Size = new System.Drawing.Size(178, 21);
             this.cbNCC.TabIndex = 1;
+            this.cbNCC.Visible = false;
             this.cbNCC.SelectedIndexChanged += new System.EventHandler(this.cbNCC_SelectedIndexChanged);
             this.cbNCC.TextChanged += new System.EventHandler(this.cbNCC_TextChanged);
             // 
@@ -206,6 +208,7 @@
             this.cbNhomHang.Name = "cbNhomHang";
             this.cbNhomHang.Size = new System.Drawing.Size(178, 21);
             this.cbNhomHang.TabIndex = 2;
+            this.cbNhomHang.Visible = false;
             this.cbNhomHang.SelectedIndexChanged += new System.EventHandler(this.cbNhomHang_SelectedIndexChanged);
             this.cbNhomHang.TextChanged += new System.EventHandler(this.cbNhomHang_TextChanged);
             // 
@@ -219,6 +222,7 @@
             this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "CÔNG CỤ LỌC";
+            this.label1.Visible = false;
             // 
             // lblNhomH
             // 

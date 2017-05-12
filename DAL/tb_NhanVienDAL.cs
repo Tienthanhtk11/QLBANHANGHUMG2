@@ -12,7 +12,7 @@ namespace DAL
     {
         public static DataTable layDuLieu()
         {
-            return Unility.GetDataTable("SELECT MaNhanVien 'Mã nhân viên' , TenNhanVien 'Tên nhân viên' ,tb_PhongBan.TenPhongBan 'Phòng ban',CONVERT(nvarchar,NgaySinh,103) 'Ngày sinh', GioiTinh 'Giới tính',SDT 'Số điện thoại', DiaChi 'Địa chỉ' FROM tb_NhanVien join tb_PhongBan on tb_NhanVien.MaPhongBan = tb_PhongBan.MaPhongBan");
+            return Unility.GetDataTable("SELECT MaNhanVien 'Mã nhân viên' , TenNhanVien 'Tên nhân viên' ,tb_PhongBan.TenPhongBan 'Phòng ban',NgaySinh 'Ngày sinh', GioiTinh 'Giới tính',SDT 'Số điện thoại', DiaChi 'Địa chỉ' FROM tb_NhanVien join tb_PhongBan on tb_NhanVien.MaPhongBan = tb_PhongBan.MaPhongBan");
         }
         public static DataTable layDuLieuSoDieuKien(string MaNV)
         {
