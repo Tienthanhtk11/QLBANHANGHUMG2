@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dtNhapKho = new System.Windows.Forms.DataGridView();
+            this.dataHoaDonBan = new System.Windows.Forms.DataGridView();
             this.MN = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tảiLạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,25 +41,27 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNhapKho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHoaDonBan)).BeginInit();
             this.MN.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtNhapKho
+            // dataHoaDonBan
             // 
-            this.dtNhapKho.AllowUserToAddRows = false;
-            this.dtNhapKho.AllowUserToDeleteRows = false;
-            this.dtNhapKho.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataHoaDonBan.AllowUserToAddRows = false;
+            this.dataHoaDonBan.AllowUserToDeleteRows = false;
+            this.dataHoaDonBan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtNhapKho.BackgroundColor = System.Drawing.Color.White;
-            this.dtNhapKho.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtNhapKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtNhapKho.Location = new System.Drawing.Point(3, 3);
-            this.dtNhapKho.Name = "dtNhapKho";
-            this.dtNhapKho.ReadOnly = true;
-            this.dtNhapKho.Size = new System.Drawing.Size(542, 296);
-            this.dtNhapKho.TabIndex = 12;
+            this.dataHoaDonBan.BackgroundColor = System.Drawing.Color.White;
+            this.dataHoaDonBan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataHoaDonBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataHoaDonBan.Location = new System.Drawing.Point(3, 3);
+            this.dataHoaDonBan.Name = "dataHoaDonBan";
+            this.dataHoaDonBan.ReadOnly = true;
+            this.dataHoaDonBan.Size = new System.Drawing.Size(542, 296);
+            this.dataHoaDonBan.TabIndex = 12;
+            this.dataHoaDonBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHoaDonBan_CellClick);
+            this.dataHoaDonBan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtNhapKho_CellContentClick);
             // 
             // MN
             // 
@@ -122,6 +124,7 @@
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -135,6 +138,7 @@
             this.btnSua.TabIndex = 17;
             this.btnSua.Text = "SỬA";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -148,6 +152,7 @@
             this.btnThem.TabIndex = 16;
             this.btnThem.Text = "THÊM";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // button1
             // 
@@ -167,13 +172,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dtNhapKho);
+            this.Controls.Add(this.dataHoaDonBan);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Name = "ucHoaDonBan";
             this.Size = new System.Drawing.Size(548, 331);
-            ((System.ComponentModel.ISupportInitialize)(this.dtNhapKho)).EndInit();
+            this.Load += new System.EventHandler(this.ucHoaDonBan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataHoaDonBan)).EndInit();
             this.MN.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -181,7 +187,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtNhapKho;
+        private System.Windows.Forms.DataGridView dataHoaDonBan;
         private System.Windows.Forms.ContextMenuStrip MN;
         private System.Windows.Forms.ToolStripMenuItem tảiLạiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thêmToolStripMenuItem;

@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dtNgayLap = new System.Windows.Forms.DateTimePicker();
+            this.cbbNhanVien = new System.Windows.Forms.ComboBox();
+            this.cbbKhachHang = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtTongThanhToan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaHoaDon = new System.Windows.Forms.TextBox();
+            this.cbbDaThanhToan = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // dtNgayLap
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(133, 113);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
-            this.dateTimePicker1.TabIndex = 54;
+            this.dtNgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtNgayLap.Location = new System.Drawing.Point(133, 113);
+            this.dtNgayLap.Name = "dtNgayLap";
+            this.dtNgayLap.Size = new System.Drawing.Size(126, 20);
+            this.dtNgayLap.TabIndex = 54;
             // 
-            // comboBox2
+            // cbbNhanVien
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(133, 86);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(126, 21);
-            this.comboBox2.TabIndex = 53;
+            this.cbbNhanVien.FormattingEnabled = true;
+            this.cbbNhanVien.Location = new System.Drawing.Point(133, 86);
+            this.cbbNhanVien.Name = "cbbNhanVien";
+            this.cbbNhanVien.Size = new System.Drawing.Size(126, 21);
+            this.cbbNhanVien.TabIndex = 53;
             // 
-            // comboBox1
+            // cbbKhachHang
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(133, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(126, 21);
-            this.comboBox1.TabIndex = 52;
+            this.cbbKhachHang.FormattingEnabled = true;
+            this.cbbKhachHang.Location = new System.Drawing.Point(133, 60);
+            this.cbbKhachHang.Name = "cbbKhachHang";
+            this.cbbKhachHang.Size = new System.Drawing.Size(126, 21);
+            this.cbbKhachHang.TabIndex = 52;
             // 
             // label5
             // 
@@ -77,13 +77,6 @@
             this.label5.TabIndex = 51;
             this.label5.Text = "Đã thanh toán";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(133, 164);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(126, 20);
-            this.textBox5.TabIndex = 50;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -93,12 +86,12 @@
             this.label6.TabIndex = 49;
             this.label6.Text = "Tổng thanh toán";
             // 
-            // textBox6
+            // txtTongThanhToan
             // 
-            this.textBox6.Location = new System.Drawing.Point(133, 138);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(126, 20);
-            this.textBox6.TabIndex = 48;
+            this.txtTongThanhToan.Location = new System.Drawing.Point(133, 138);
+            this.txtTongThanhToan.Name = "txtTongThanhToan";
+            this.txtTongThanhToan.Size = new System.Drawing.Size(126, 20);
+            this.txtTongThanhToan.TabIndex = 48;
             // 
             // label3
             // 
@@ -142,6 +135,7 @@
             this.btnOK.TabIndex = 44;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // label2
             // 
@@ -161,34 +155,47 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Mã hóa đơn";
             // 
-            // textBox1
+            // txtMaHoaDon
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 41;
+            this.txtMaHoaDon.Location = new System.Drawing.Point(133, 34);
+            this.txtMaHoaDon.Name = "txtMaHoaDon";
+            this.txtMaHoaDon.Size = new System.Drawing.Size(126, 20);
+            this.txtMaHoaDon.TabIndex = 41;
+            // 
+            // cbbDaThanhToan
+            // 
+            this.cbbDaThanhToan.DisplayMember = "0";
+            this.cbbDaThanhToan.FormattingEnabled = true;
+            this.cbbDaThanhToan.Items.AddRange(new object[] {
+            "Chưa Thanh Toán",
+            "Đã Thanh Toán"});
+            this.cbbDaThanhToan.Location = new System.Drawing.Point(133, 164);
+            this.cbbDaThanhToan.Name = "cbbDaThanhToan";
+            this.cbbDaThanhToan.Size = new System.Drawing.Size(126, 21);
+            this.cbbDaThanhToan.TabIndex = 55;
             // 
             // frmHoaDonBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 247);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbbDaThanhToan);
+            this.Controls.Add(this.dtNgayLap);
+            this.Controls.Add(this.cbbNhanVien);
+            this.Controls.Add(this.cbbKhachHang);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtTongThanhToan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMaHoaDon);
             this.Name = "frmHoaDonBan";
             this.Text = "frmHoaDonBan";
+            this.Load += new System.EventHandler(this.frmHoaDonBan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,19 +203,19 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dtNgayLap;
+        private System.Windows.Forms.ComboBox cbbNhanVien;
+        private System.Windows.Forms.ComboBox cbbKhachHang;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtTongThanhToan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaHoaDon;
+        private System.Windows.Forms.ComboBox cbbDaThanhToan;
     }
 }

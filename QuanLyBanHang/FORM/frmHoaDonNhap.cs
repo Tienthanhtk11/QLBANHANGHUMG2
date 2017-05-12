@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace QuanLyBanHang.FORM
 {
-    public partial class frmHoaDon_ADD : Form
+    public partial class frmHoaDonNhap : Form
     {
         private Boolean flag = true;
-        public frmHoaDon_ADD()
+        public frmHoaDonNhap()
         {
             InitializeComponent();
             
         }
-        public frmHoaDon_ADD(string ma, string nv, string kh, string tt, DateTime ngay, string mh, string slm)
+        public frmHoaDonNhap(string ma, string nv, string kh, string tt, DateTime ngay, string mh, string slm)
         {
             InitializeComponent();
 

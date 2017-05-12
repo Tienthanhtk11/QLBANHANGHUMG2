@@ -60,7 +60,7 @@ namespace QuanLyBanHang.USERCONTROLS
             gioitinh = dataNhanVien.Rows[e.RowIndex].Cells[4].Value.ToString();
             sodienthoai = dataNhanVien.Rows[e.RowIndex].Cells[5].Value.ToString();
             diachi = dataNhanVien.Rows[e.RowIndex].Cells[6].Value.ToString();
-            maphongban = dataNhanVien.Rows[e.RowIndex].Cells[3].Value.ToString();
+            maphongban = dataNhanVien.Rows[e.RowIndex].Cells[2].Value.ToString();
         }
 
         private void dataNhanVien_CellEnter(object sender, DataGridViewCellEventArgs e)

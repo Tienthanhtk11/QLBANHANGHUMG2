@@ -85,11 +85,11 @@
     <Compile Include="FORM\frmHoaDonBan.Designer.cs">
       <DependentUpon>frmHoaDonBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\frmHoaDon_ADD.cs">
+    <Compile Include="FORM\frmHoaDonNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\frmHoaDon_ADD.Designer.cs">
-      <DependentUpon>frmHoaDon_ADD.cs</DependentUpon>
+    <Compile Include="FORM\frmHoaDonNhap.Designer.cs">
+      <DependentUpon>frmHoaDonNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="FORM\frmKhachHang_ADD.cs">
       <SubType>Form</SubType>
@@ -223,8 +223,8 @@
     <EmbeddedResource Include="FORM\frmHoaDonBan.resx">
       <DependentUpon>frmHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\frmHoaDon_ADD.resx">
-      <DependentUpon>frmHoaDon_ADD.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\frmHoaDonNhap.resx">
+      <DependentUpon>frmHoaDonNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORM\frmKhachHang_ADD.resx">
       <DependentUpon>frmKhachHang_ADD.cs</DependentUpon>
