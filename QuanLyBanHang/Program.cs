@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyBanHang.FORM;
+using QuanLyBanHang.USERCONTROLS;
 
 namespace QuanLyBanHang
 {

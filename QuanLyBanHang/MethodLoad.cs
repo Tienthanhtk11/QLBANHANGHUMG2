@@ -6,12 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
+using System.Data;
 
 namespace QuanLyBanHang
 {
     public class MethodLoad
     {
-        public static void LoadCombobox(ComboBox cbName, DataTable db, string value, string display)
+        public static void LoadCombobox(ComboBox cbName, System.Data.DataTable db, string value, string display)
         {
             try
             {
@@ -43,9 +44,10 @@ namespace QuanLyBanHang
             dgv.RowHeadersVisible = false;
             dgv.AllowUserToResizeRows = false;
         }
-        public static void LoadDatagridview(DataGridView dgvName, DataTable datatable)
+        public static void LoadDatagridview(DataGridView dgvName, System.Data.DataTable datatable)
         {
             dgvName.DataSource = datatable;
+            Default.SetDefaultDataGridView(dgvName);
         }
         public static DataGridView dtg;
         public static void InDt(DataGridView dt)

@@ -11,10 +11,10 @@ using QuanLyBanHang.FORM;
 
 namespace QuanLyBanHang.USERCONTROLS
 {
-    public partial class ucNhapKho : UserControl
+    public partial class ucHoaDonNhap : UserControl
     {
         private int rows = 0;
-        public ucNhapKho()
+        public ucHoaDonNhap()
         {
             InitializeComponent();
         }
