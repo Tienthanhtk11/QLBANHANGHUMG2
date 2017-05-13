@@ -29,7 +29,7 @@ namespace QuanLyBanHang.USERCONTROLS
         }
         private void ucQuanLyHangHoa_Load(object sender, EventArgs e)
         {
-            dataHangHoa.DataSource = tb_MatHangBLL.layDuLieu();
+            MethodLoad.LoadDatagridview(dataHangHoa, tb_MatHangBLL.layDuLieu());
             dataHangHoa_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
         }
 
@@ -72,6 +72,13 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void dataHangHoa_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
+            mahang = dataHangHoa.Rows[e.RowIndex].Cells[0].Value.ToString();
+            tenhang = dataHangHoa.Rows[e.RowIndex].Cells[1].Value.ToString();
+            tennhacungcap = dataHangHoa.Rows[e.RowIndex].Cells[2].Value.ToString();
+            tennhomhang = dataHangHoa.Rows[e.RowIndex].Cells[3].Value.ToString();
+            donvitinh = dataHangHoa.Rows[e.RowIndex].Cells[4].Value.ToString();
+            giaban = dataHangHoa.Rows[e.RowIndex].Cells[5].Value.ToString();
+            ngaycapnhat = dataHangHoa.Rows[e.RowIndex].Cells[6].Value.ToString();
         }
 
         private void lblNhomH_Click(object sender, EventArgs e)
@@ -129,13 +136,7 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void dataHangHoa_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            mahang = dataHangHoa.Rows[e.RowIndex].Cells[0].Value.ToString();
-            tenhang = dataHangHoa.Rows[e.RowIndex].Cells[1].Value.ToString();
-            tennhacungcap = dataHangHoa.Rows[e.RowIndex].Cells[2].Value.ToString();
-            tennhomhang = dataHangHoa.Rows[e.RowIndex].Cells[3].Value.ToString();
-            donvitinh = dataHangHoa.Rows[e.RowIndex].Cells[4].Value.ToString();
-            giaban = dataHangHoa.Rows[e.RowIndex].Cells[5].Value.ToString();
-            ngaycapnhat =dataHangHoa.Rows[e.RowIndex].Cells[6].Value.ToString();
+           
         }
     }
 }
