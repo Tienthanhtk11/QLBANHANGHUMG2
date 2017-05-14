@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaNhomHang = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTenNhomHang = new System.Windows.Forms.TextBox();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtMaNhomHang
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtMaNhomHang.Location = new System.Drawing.Point(124, 55);
+            this.txtMaNhomHang.Name = "txtMaNhomHang";
+            this.txtMaNhomHang.Size = new System.Drawing.Size(126, 20);
+            this.txtMaNhomHang.TabIndex = 0;
             // 
             // label1
             // 
@@ -61,12 +61,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên nhóm";
             // 
-            // textBox2
+            // txtTenNhomHang
             // 
-            this.textBox2.Location = new System.Drawing.Point(124, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(126, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtTenNhomHang.Location = new System.Drawing.Point(124, 81);
+            this.txtTenNhomHang.Name = "txtTenNhomHang";
+            this.txtTenNhomHang.Size = new System.Drawing.Size(126, 20);
+            this.txtTenNhomHang.TabIndex = 2;
             // 
             // btnHuy
             // 
@@ -92,6 +92,7 @@
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // frmNhomHang
             // 
@@ -101,11 +102,12 @@
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTenNhomHang);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMaNhomHang);
             this.Name = "frmNhomHang";
             this.Text = "NHÓM HÀNG";
+            this.Load += new System.EventHandler(this.frmNhomHang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,10 +115,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaNhomHang;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTenNhomHang;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnOK;
     }

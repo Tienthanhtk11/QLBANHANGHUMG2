@@ -31,9 +31,9 @@
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTenPhongBan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaPhongBan = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnHuy
@@ -60,6 +60,7 @@
             this.btnOK.TabIndex = 14;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // label2
             // 
@@ -70,12 +71,12 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Tên PB";
             // 
-            // textBox2
+            // txtTenPhongBan
             // 
-            this.textBox2.Location = new System.Drawing.Point(121, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(126, 20);
-            this.textBox2.TabIndex = 12;
+            this.txtTenPhongBan.Location = new System.Drawing.Point(121, 86);
+            this.txtTenPhongBan.Name = "txtTenPhongBan";
+            this.txtTenPhongBan.Size = new System.Drawing.Size(126, 20);
+            this.txtTenPhongBan.TabIndex = 12;
             // 
             // label1
             // 
@@ -86,12 +87,12 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Mã PB";
             // 
-            // textBox1
+            // txtMaPhongBan
             // 
-            this.textBox1.Location = new System.Drawing.Point(121, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtMaPhongBan.Location = new System.Drawing.Point(121, 60);
+            this.txtMaPhongBan.Name = "txtMaPhongBan";
+            this.txtMaPhongBan.Size = new System.Drawing.Size(126, 20);
+            this.txtMaPhongBan.TabIndex = 10;
             // 
             // frmPhongBan
             // 
@@ -101,11 +102,12 @@
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTenPhongBan);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMaPhongBan);
             this.Name = "frmPhongBan";
             this.Text = "frmPhongBan";
+            this.Load += new System.EventHandler(this.frmPhongBan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,8 +118,8 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTenPhongBan;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaPhongBan;
     }
 }

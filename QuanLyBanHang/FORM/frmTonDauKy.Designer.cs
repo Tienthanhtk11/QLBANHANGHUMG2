@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNguoiNhap = new System.Windows.Forms.TextBox();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSL = new System.Windows.Forms.TextBox();
-            this.txtMaHD = new System.Windows.Forms.TextBox();
+            this.txtGiaTriTon = new System.Windows.Forms.TextBox();
+            this.txtMaHT = new System.Windows.Forms.TextBox();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.dtNgayNhap = new System.Windows.Forms.DateTimePicker();
+            this.dtNgayCapNhat = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // txtNguoiNhap
+            // txtSoLuong
             // 
-            this.txtNguoiNhap.Location = new System.Drawing.Point(123, 91);
-            this.txtNguoiNhap.Name = "txtNguoiNhap";
-            this.txtNguoiNhap.Size = new System.Drawing.Size(171, 20);
-            this.txtNguoiNhap.TabIndex = 73;
+            this.txtSoLuong.Location = new System.Drawing.Point(123, 91);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(171, 20);
+            this.txtSoLuong.TabIndex = 73;
             // 
             // label5
             // 
@@ -77,19 +77,19 @@
             this.label1.TabIndex = 78;
             this.label1.Text = "Mã hàng tồn";
             // 
-            // txtSL
+            // txtGiaTriTon
             // 
-            this.txtSL.Location = new System.Drawing.Point(123, 117);
-            this.txtSL.Name = "txtSL";
-            this.txtSL.Size = new System.Drawing.Size(171, 20);
-            this.txtSL.TabIndex = 74;
+            this.txtGiaTriTon.Location = new System.Drawing.Point(123, 117);
+            this.txtGiaTriTon.Name = "txtGiaTriTon";
+            this.txtGiaTriTon.Size = new System.Drawing.Size(171, 20);
+            this.txtGiaTriTon.TabIndex = 74;
             // 
-            // txtMaHD
+            // txtMaHT
             // 
-            this.txtMaHD.Location = new System.Drawing.Point(123, 39);
-            this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.Size = new System.Drawing.Size(171, 20);
-            this.txtMaHD.TabIndex = 71;
+            this.txtMaHT.Location = new System.Drawing.Point(123, 39);
+            this.txtMaHT.Name = "txtMaHT";
+            this.txtMaHT.Size = new System.Drawing.Size(171, 20);
+            this.txtMaHT.TabIndex = 71;
             // 
             // btnHuy
             // 
@@ -103,6 +103,7 @@
             this.btnHuy.TabIndex = 88;
             this.btnHuy.Text = "&HỦY BỎ";
             this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnOK
             // 
@@ -116,6 +117,7 @@
             this.btnOK.TabIndex = 87;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // label10
             // 
@@ -127,13 +129,13 @@
             this.label10.TabIndex = 90;
             this.label10.Text = "Ngày cập nhật";
             // 
-            // dtNgayNhap
+            // dtNgayCapNhat
             // 
-            this.dtNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtNgayNhap.Location = new System.Drawing.Point(123, 65);
-            this.dtNgayNhap.Name = "dtNgayNhap";
-            this.dtNgayNhap.Size = new System.Drawing.Size(171, 20);
-            this.dtNgayNhap.TabIndex = 89;
+            this.dtNgayCapNhat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtNgayCapNhat.Location = new System.Drawing.Point(123, 65);
+            this.dtNgayCapNhat.Name = "dtNgayCapNhat";
+            this.dtNgayCapNhat.Size = new System.Drawing.Size(171, 20);
+            this.dtNgayCapNhat.TabIndex = 89;
             // 
             // frmTonDauKy
             // 
@@ -141,32 +143,33 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 215);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dtNgayNhap);
+            this.Controls.Add(this.dtNgayCapNhat);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.txtNguoiNhap);
+            this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSL);
-            this.Controls.Add(this.txtMaHD);
+            this.Controls.Add(this.txtGiaTriTon);
+            this.Controls.Add(this.txtMaHT);
             this.Name = "frmTonDauKy";
             this.Text = "frmTonDauKy";
+            this.Load += new System.EventHandler(this.frmTonDauKy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtNguoiNhap;
+        private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSL;
-        private System.Windows.Forms.TextBox txtMaHD;
+        private System.Windows.Forms.TextBox txtGiaTriTon;
+        private System.Windows.Forms.TextBox txtMaHT;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dtNgayNhap;
+        private System.Windows.Forms.DateTimePicker dtNgayCapNhat;
     }
 }

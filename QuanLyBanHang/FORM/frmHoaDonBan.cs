@@ -14,6 +14,8 @@ namespace QuanLyBanHang.FORM
 {
     public partial class frmHoaDonBan : Form
     {
+
+        string mahoadonban, makhachhang, manhanvien, tongthanhtoan, dathanhtoan, ngaylap;
         string flag = "them";
         public frmHoaDonBan()
         {
@@ -22,8 +24,6 @@ namespace QuanLyBanHang.FORM
             FormBorderStyle = FormBorderStyle.None;
             StartPosition = FormStartPosition.CenterParent;
         }
-        string mahoadonban, makhachhang, manhanvien, tongthanhtoan, dathanhtoan, ngaylap;
-
         private void btnOK_Click(object sender, EventArgs e)
         {
             if ( txtMaHoaDon.Text != "" || txtTongThanhToan.Text != "" )

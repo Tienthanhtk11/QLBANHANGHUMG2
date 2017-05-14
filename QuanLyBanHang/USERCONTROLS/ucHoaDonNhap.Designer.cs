@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.cbNhaCC = new System.Windows.Forms.ComboBox();
-            this.dtNhapKho = new System.Windows.Forms.DataGridView();
+            this.dataHoaDonNhap = new System.Windows.Forms.DataGridView();
             this.MN = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tảiLạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +44,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNhapKho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHoaDonNhap)).BeginInit();
             this.MN.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,22 +74,24 @@
             this.cbNhaCC.SelectedIndexChanged += new System.EventHandler(this.cbNhaCC_SelectedIndexChanged);
             this.cbNhaCC.TextChanged += new System.EventHandler(this.cbNhaCC_TextChanged);
             // 
-            // dtNhapKho
+            // dataHoaDonNhap
             // 
-            this.dtNhapKho.AllowUserToAddRows = false;
-            this.dtNhapKho.AllowUserToDeleteRows = false;
-            this.dtNhapKho.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataHoaDonNhap.AllowUserToAddRows = false;
+            this.dataHoaDonNhap.AllowUserToDeleteRows = false;
+            this.dataHoaDonNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtNhapKho.BackgroundColor = System.Drawing.Color.White;
-            this.dtNhapKho.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtNhapKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtNhapKho.Location = new System.Drawing.Point(3, 29);
-            this.dtNhapKho.Name = "dtNhapKho";
-            this.dtNhapKho.ReadOnly = true;
-            this.dtNhapKho.Size = new System.Drawing.Size(558, 346);
-            this.dtNhapKho.TabIndex = 5;
-            this.dtNhapKho.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtNhapKho_CellEnter);
+            this.dataHoaDonNhap.BackgroundColor = System.Drawing.Color.White;
+            this.dataHoaDonNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataHoaDonNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataHoaDonNhap.Location = new System.Drawing.Point(3, 29);
+            this.dataHoaDonNhap.Name = "dataHoaDonNhap";
+            this.dataHoaDonNhap.ReadOnly = true;
+            this.dataHoaDonNhap.Size = new System.Drawing.Size(558, 346);
+            this.dataHoaDonNhap.TabIndex = 5;
+            this.dataHoaDonNhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHoaDonNhap_CellClick);
+            this.dataHoaDonNhap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtNhapKho_CellContentClick);
+            this.dataHoaDonNhap.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtNhapKho_CellEnter);
             // 
             // MN
             // 
@@ -228,12 +230,12 @@
             this.Controls.Add(this.lblNCC);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbNhaCC);
-            this.Controls.Add(this.dtNhapKho);
+            this.Controls.Add(this.dataHoaDonNhap);
             this.Name = "ucHoaDonNhap";
             this.Size = new System.Drawing.Size(564, 407);
             this.Load += new System.EventHandler(this.ucNhapKho_Load);
             this.Resize += new System.EventHandler(this.ucNhapKho_Resize);
-            ((System.ComponentModel.ISupportInitialize)(this.dtNhapKho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHoaDonNhap)).EndInit();
             this.MN.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -243,7 +245,7 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbNhaCC;
-        private System.Windows.Forms.DataGridView dtNhapKho;
+        private System.Windows.Forms.DataGridView dataHoaDonNhap;
         private System.Windows.Forms.ContextMenuStrip MN;
         private System.Windows.Forms.ToolStripMenuItem tảiLạiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thêmToolStripMenuItem;
