@@ -278,5 +278,14 @@ namespace QuanLyBanHang
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);
         }
+
+        private void tỒNĐẦUKỲToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlMain.BackgroundImage = null;
+            ucTonDauKy uc = new ucTonDauKy();
+            uc.Dock = DockStyle.Fill;
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(uc);
+        }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dtgTonDu = new System.Windows.Forms.DataGridView();
+            this.dataTonDauKy = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.Vll = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.TaiLaiok = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,23 +38,24 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgTonDu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTonDauKy)).BeginInit();
             this.Vll.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtgTonDu
+            // dataTonDauKy
             // 
-            this.dtgTonDu.AllowUserToAddRows = false;
-            this.dtgTonDu.AllowUserToDeleteRows = false;
-            this.dtgTonDu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataTonDauKy.AllowUserToAddRows = false;
+            this.dataTonDauKy.AllowUserToDeleteRows = false;
+            this.dataTonDauKy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgTonDu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgTonDu.Location = new System.Drawing.Point(3, 30);
-            this.dtgTonDu.Name = "dtgTonDu";
-            this.dtgTonDu.ReadOnly = true;
-            this.dtgTonDu.Size = new System.Drawing.Size(558, 345);
-            this.dtgTonDu.TabIndex = 0;
+            this.dataTonDauKy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataTonDauKy.Location = new System.Drawing.Point(3, 30);
+            this.dataTonDauKy.Name = "dataTonDauKy";
+            this.dataTonDauKy.ReadOnly = true;
+            this.dataTonDauKy.Size = new System.Drawing.Size(558, 345);
+            this.dataTonDauKy.TabIndex = 0;
+            this.dataTonDauKy.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTonDauKy_CellClick);
             // 
             // label1
             // 
@@ -110,6 +111,7 @@
             this.btnXoa.TabIndex = 11;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -123,6 +125,7 @@
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "SỬA";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -136,6 +139,7 @@
             this.btnThem.TabIndex = 9;
             this.btnThem.Text = "THÊM";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // ucTonDauKy
             // 
@@ -146,11 +150,11 @@
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtgTonDu);
+            this.Controls.Add(this.dataTonDauKy);
             this.Name = "ucTonDauKy";
             this.Size = new System.Drawing.Size(564, 407);
             this.Load += new System.EventHandler(this.ucHangTon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgTonDu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTonDauKy)).EndInit();
             this.Vll.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,7 +163,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgTonDu;
+        private System.Windows.Forms.DataGridView dataTonDauKy;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip Vll;
         private System.Windows.Forms.ToolStripMenuItem TaiLaiok;

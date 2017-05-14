@@ -197,6 +197,7 @@
             // 
             resources.ApplyResources(this.tỒNĐẦUKỲToolStripMenuItem, "tỒNĐẦUKỲToolStripMenuItem");
             this.tỒNĐẦUKỲToolStripMenuItem.Name = "tỒNĐẦUKỲToolStripMenuItem";
+            this.tỒNĐẦUKỲToolStripMenuItem.Click += new System.EventHandler(this.tỒNĐẦUKỲToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 

@@ -48,7 +48,7 @@ namespace QuanLyBanHang.FORM
 
                 if (flag == "them")
                 {
-                    if (tb_NhomHangBLL.kiemTraTonTai(obj.MaMatHang) == 1)
+                    if (tb_NhomHangBLL.kiemTraTonTai(obj.MaNhomHang) == 1)
                     {
                         MessageBox.Show("Thông Báo Đã tồn tại!");
                     }

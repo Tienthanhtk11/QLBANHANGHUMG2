@@ -28,14 +28,13 @@ namespace QuanLyBanHang.FORM
             this.Dispose();
         }
 
-        public frmTonDauKy(String MaMatHang, String NgayCapNhat, String SoLuong, String GiaTriTon)
+        public frmTonDauKy(String MaMatHang, DateTime NgayCapNhat, String SoLuong, String GiaTriTon)
         {
             InitializeComponent();
             txtMaHT.Text = MaMatHang;
             txtGiaTriTon.Text = GiaTriTon;
             txtSoLuong.Text = SoLuong;
-
-            dtNgayCapNhat.Value = Convert.ToDateTime(NgayCapNhat);
+            dtNgayCapNhat.Value = NgayCapNhat;
             txtMaHT.ReadOnly = true;
             flag = "sua";
         }
