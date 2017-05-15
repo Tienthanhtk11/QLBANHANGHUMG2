@@ -65,7 +65,7 @@ namespace QuanLyBanHang.FORM
             cbbKhachHang.Text = Makhachhang;
             cbbNhanVien.Text = Manhanvien;
             txtTongThanhToan.Text = Tongthanhtoan;
-            cbbDaThanhToan.Text = Dathanhtoan;
+            cbbDaThanhToan.SelectedIndex = Dathanhtoan.Contains("rue") ? 1 : 0;
             dtNgayLap.Value = Convert.ToDateTime(Ngaylap);
             txtMaHoaDon.ReadOnly = true;
             flag = "sua";
@@ -78,7 +78,7 @@ namespace QuanLyBanHang.FORM
 
         private void frmHoaDonBan_Load(object sender, EventArgs e)
         {
-            cbbDaThanhToan.SelectedIndex = 0;
+            //cbbDaThanhToan.SelectedIndex = 0;
             MethodLoad.LoadCombobox(cbbKhachHang, tb_KhachHangBLL.layDuLieu(), "Mã khách hàng", "Tên khách hàng");
             MethodLoad.LoadCombobox(cbbNhanVien, tb_NhanVienBLL.layDuLieu(), "Mã nhân viên", "Tên nhân viên");
         }

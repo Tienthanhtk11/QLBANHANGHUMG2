@@ -56,18 +56,13 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void ucHoaDonBan_Load(object sender, EventArgs e)
         {
-            dataHoaDonBan.DataSource = tb_HoaDonBanBLL.layDuLieu();
+           MethodLoad.LoadDatagridview(dataHoaDonBan,  tb_HoaDonBanBLL.layDuLieu());
            dataHoaDonBan_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
         }
 
         public ucHoaDonBan()
         {
             InitializeComponent();
-
-        }
-
-        private void dtNhapKho_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
     }

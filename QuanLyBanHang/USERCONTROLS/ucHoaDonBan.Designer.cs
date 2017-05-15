@@ -60,8 +60,7 @@
             this.dataHoaDonBan.ReadOnly = true;
             this.dataHoaDonBan.Size = new System.Drawing.Size(542, 296);
             this.dataHoaDonBan.TabIndex = 12;
-            this.dataHoaDonBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHoaDonBan_CellClick);
-            this.dataHoaDonBan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtNhapKho_CellContentClick);
+            this.dataHoaDonBan.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHoaDonBan_CellClick);
             // 
             // MN
             // 
