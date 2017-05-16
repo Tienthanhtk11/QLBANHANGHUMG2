@@ -57,7 +57,7 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void ucPhongBan_Load(object sender, EventArgs e)
         {
-            dataPhongBan.DataSource = tb_PhongBanBLL.layDuLieu();
+            MethodLoad.LoadDatagridview(dataPhongBan,tb_PhongBanBLL.layDuLieu());
             dataPhongBan_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
         }
     }

@@ -48,17 +48,17 @@ namespace QuanLyBanHang.USERCONTROLS
         }
         private void ucNhanVien_Load(object sender, EventArgs e)
         {
-            dataNhanVien.DataSource = tb_NhanVienBLL.layDuLieu();
+            MethodLoad.LoadDatagridview(dataNhanVien, tb_NhanVienBLL.layDuLieu());
             dataNhanVien_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
         }
 
         private void dataNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            gioitinh = dataNhanVien.Rows[e.RowIndex].Cells[4].Value.ToString();
+            sodienthoai = dataNhanVien.Rows[e.RowIndex].Cells[5].Value.ToString();
             manhanvien = dataNhanVien.Rows[e.RowIndex].Cells[0].Value.ToString();
             tennhanvien = dataNhanVien.Rows[e.RowIndex].Cells[1].Value.ToString();
             ngaysinh = dataNhanVien.Rows[e.RowIndex].Cells[3].Value.ToString();
-            gioitinh = dataNhanVien.Rows[e.RowIndex].Cells[4].Value.ToString();
-            sodienthoai = dataNhanVien.Rows[e.RowIndex].Cells[5].Value.ToString();
             diachi = dataNhanVien.Rows[e.RowIndex].Cells[6].Value.ToString();
             maphongban = dataNhanVien.Rows[e.RowIndex].Cells[2].Value.ToString();
         }

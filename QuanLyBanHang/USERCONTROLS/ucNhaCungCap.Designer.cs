@@ -60,9 +60,7 @@
             this.dataNhaCungCap.ReadOnly = true;
             this.dataNhaCungCap.Size = new System.Drawing.Size(564, 352);
             this.dataNhaCungCap.TabIndex = 0;
-            this.dataNhaCungCap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhaCungCap_CellClick);
-            this.dataNhaCungCap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNCC_CellContentClick);
-            this.dataNhaCungCap.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNCC_CellEnter);
+            this.dataNhaCungCap.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhaCungCap_CellClick);
             // 
             // VL
             // 

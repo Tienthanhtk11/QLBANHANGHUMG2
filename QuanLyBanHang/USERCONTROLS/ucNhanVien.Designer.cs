@@ -60,9 +60,7 @@
             this.dataNhanVien.ReadOnly = true;
             this.dataNhanVien.Size = new System.Drawing.Size(558, 398);
             this.dataNhanVien.TabIndex = 6;
-            this.dataNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhanVien_CellClick);
-            this.dataNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhanVien_CellContentClick);
-            this.dataNhanVien.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhanVien_CellEnter);
+            this.dataNhanVien.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhanVien_CellClick);
             // 
             // VLL
             // 

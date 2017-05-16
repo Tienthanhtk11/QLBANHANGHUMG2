@@ -22,7 +22,7 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void ucNhaCungCap_Load(object sender, EventArgs e)
         {
-            dataNhaCungCap.DataSource = tb_NhaCungCapBLL.layDuLieu();
+            MethodLoad.LoadDatagridview(dataNhaCungCap, tb_NhaCungCapBLL.layDuLieu());
             dataNhaCungCap_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
           
         }

@@ -24,7 +24,7 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void ucNhapKho_Load(object sender, EventArgs e)
         {
-            dataHoaDonNhap.DataSource = tb_HoaDonNhapBLL.layDuLieu();
+            MethodLoad.LoadDatagridview(dataHoaDonNhap, tb_HoaDonNhapBLL.layDuLieu());
             dataHoaDonNhap_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
         } 
 

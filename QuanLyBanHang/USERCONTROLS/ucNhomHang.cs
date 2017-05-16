@@ -35,8 +35,9 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void ucNhomHang_Load(object sender, EventArgs e)
         {
-            dataNhomHang.DataSource = tb_NhomHangBLL.layDuLieu();
+            MethodLoad.LoadDatagridview(dataNhomHang, tb_NhomHangBLL.layDuLieu());
             dataNhomHang_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
+            dataNhomHang.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
         }
 
         private void btnSua_Click(object sender, EventArgs e)

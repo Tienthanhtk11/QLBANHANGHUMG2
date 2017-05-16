@@ -30,7 +30,7 @@ namespace QuanLyBanHang.USERCONTROLS
         private void ucQuanLyHangHoa_Load(object sender, EventArgs e)
         {
             MethodLoad.LoadDatagridview(dataHangHoa, tb_MatHangBLL.layDuLieu());
-            dataHangHoa_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
+            dataHangHoa_CellEnter(sender, new DataGridViewCellEventArgs(0, 0));
         }
 
         private void tảiLạiToolStripMenuItem_Click(object sender, EventArgs e)
@@ -44,11 +44,6 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void xemTrướcBảnInToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void thêmHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -132,11 +127,6 @@ namespace QuanLyBanHang.USERCONTROLS
                 dataHangHoa.DataSource = tb_MatHangBLL.layDuLieu();
             }
       
-        }
-
-        private void dataHangHoa_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
         }
     }
 }

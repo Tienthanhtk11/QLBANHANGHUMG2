@@ -55,13 +55,14 @@
             this.dataTonDauKy.ReadOnly = true;
             this.dataTonDauKy.Size = new System.Drawing.Size(558, 345);
             this.dataTonDauKy.TabIndex = 0;
-            this.dataTonDauKy.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTonDauKy_CellClick);
+            this.dataTonDauKy.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTonDauKy_CellClick);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(151, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(271, 25);

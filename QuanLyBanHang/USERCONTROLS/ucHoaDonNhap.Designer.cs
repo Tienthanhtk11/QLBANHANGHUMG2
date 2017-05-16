@@ -89,9 +89,7 @@
             this.dataHoaDonNhap.ReadOnly = true;
             this.dataHoaDonNhap.Size = new System.Drawing.Size(558, 346);
             this.dataHoaDonNhap.TabIndex = 5;
-            this.dataHoaDonNhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHoaDonNhap_CellClick);
-            this.dataHoaDonNhap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtNhapKho_CellContentClick);
-            this.dataHoaDonNhap.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtNhapKho_CellEnter);
+            this.dataHoaDonNhap.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHoaDonNhap_CellClick);
             // 
             // MN
             // 

@@ -38,7 +38,7 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void ucKhachHang_Load(object sender, EventArgs e)
         {
-            dataKhachHang.DataSource = tb_KhachHangBLL.layDuLieu();
+            MethodLoad.LoadDatagridview(dataKhachHang, tb_KhachHangBLL.layDuLieu());
             dataKhachHang_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
         }
 

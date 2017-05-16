@@ -143,8 +143,8 @@
             // 
             // nHÓMHÀNGToolStripMenuItem
             // 
-            this.nHÓMHÀNGToolStripMenuItem.Name = "nHÓMHÀNGToolStripMenuItem";
             resources.ApplyResources(this.nHÓMHÀNGToolStripMenuItem, "nHÓMHÀNGToolStripMenuItem");
+            this.nHÓMHÀNGToolStripMenuItem.Name = "nHÓMHÀNGToolStripMenuItem";
             this.nHÓMHÀNGToolStripMenuItem.Click += new System.EventHandler(this.nHÓMHÀNGToolStripMenuItem_Click);
             // 
             // mẶTHÀNGToolStripMenuItem
@@ -172,14 +172,14 @@
             // 
             // nHÂNVIÊNToolStripMenuItem
             // 
-            this.nHÂNVIÊNToolStripMenuItem.Name = "nHÂNVIÊNToolStripMenuItem";
             resources.ApplyResources(this.nHÂNVIÊNToolStripMenuItem, "nHÂNVIÊNToolStripMenuItem");
+            this.nHÂNVIÊNToolStripMenuItem.Name = "nHÂNVIÊNToolStripMenuItem";
             this.nHÂNVIÊNToolStripMenuItem.Click += new System.EventHandler(this.nHÂNVIÊNToolStripMenuItem_Click);
             // 
             // pHÒNGBANToolStripMenuItem
             // 
-            this.pHÒNGBANToolStripMenuItem.Name = "pHÒNGBANToolStripMenuItem";
             resources.ApplyResources(this.pHÒNGBANToolStripMenuItem, "pHÒNGBANToolStripMenuItem");
+            this.pHÒNGBANToolStripMenuItem.Name = "pHÒNGBANToolStripMenuItem";
             this.pHÒNGBANToolStripMenuItem.Click += new System.EventHandler(this.pHÒNGBANToolStripMenuItem_Click);
             // 
             // qUẢNLÝBÁNHÀNGToolStripMenuItem
@@ -221,19 +221,19 @@
             this.lẬPHÓAĐƠNToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hÓAĐƠNNHẬPToolStripMenuItem1,
             this.hÓAĐƠNBÁNToolStripMenuItem});
-            this.lẬPHÓAĐƠNToolStripMenuItem.Name = "lẬPHÓAĐƠNToolStripMenuItem";
             resources.ApplyResources(this.lẬPHÓAĐƠNToolStripMenuItem, "lẬPHÓAĐƠNToolStripMenuItem");
+            this.lẬPHÓAĐƠNToolStripMenuItem.Name = "lẬPHÓAĐƠNToolStripMenuItem";
             // 
             // hÓAĐƠNNHẬPToolStripMenuItem1
             // 
-            this.hÓAĐƠNNHẬPToolStripMenuItem1.Name = "hÓAĐƠNNHẬPToolStripMenuItem1";
             resources.ApplyResources(this.hÓAĐƠNNHẬPToolStripMenuItem1, "hÓAĐƠNNHẬPToolStripMenuItem1");
+            this.hÓAĐƠNNHẬPToolStripMenuItem1.Name = "hÓAĐƠNNHẬPToolStripMenuItem1";
             this.hÓAĐƠNNHẬPToolStripMenuItem1.Click += new System.EventHandler(this.hÓAĐƠNNHẬPToolStripMenuItem1_Click_1);
             // 
             // hÓAĐƠNBÁNToolStripMenuItem
             // 
-            this.hÓAĐƠNBÁNToolStripMenuItem.Name = "hÓAĐƠNBÁNToolStripMenuItem";
             resources.ApplyResources(this.hÓAĐƠNBÁNToolStripMenuItem, "hÓAĐƠNBÁNToolStripMenuItem");
+            this.hÓAĐƠNBÁNToolStripMenuItem.Name = "hÓAĐƠNBÁNToolStripMenuItem";
             this.hÓAĐƠNBÁNToolStripMenuItem.Click += new System.EventHandler(this.hÓAĐƠNBÁNToolStripMenuItem_Click);
             // 
             // tÌMKIẾMToolStripMenuItem
@@ -258,8 +258,8 @@
             // 
             // nHÓMHÀNGToolStripMenuItem1
             // 
-            this.nHÓMHÀNGToolStripMenuItem1.Name = "nHÓMHÀNGToolStripMenuItem1";
             resources.ApplyResources(this.nHÓMHÀNGToolStripMenuItem1, "nHÓMHÀNGToolStripMenuItem1");
+            this.nHÓMHÀNGToolStripMenuItem1.Name = "nHÓMHÀNGToolStripMenuItem1";
             // 
             // hÀNGHÓAToolStripMenuItem
             // 
@@ -298,8 +298,8 @@
             // 
             // pHÒNGBANToolStripMenuItem1
             // 
-            this.pHÒNGBANToolStripMenuItem1.Name = "pHÒNGBANToolStripMenuItem1";
             resources.ApplyResources(this.pHÒNGBANToolStripMenuItem1, "pHÒNGBANToolStripMenuItem1");
+            this.pHÒNGBANToolStripMenuItem1.Name = "pHÒNGBANToolStripMenuItem1";
             // 
             // bÁOCÁOToolStripMenuItem
             // 

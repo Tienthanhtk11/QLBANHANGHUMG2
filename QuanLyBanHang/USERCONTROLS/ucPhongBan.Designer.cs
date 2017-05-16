@@ -76,15 +76,18 @@
             // 
             // dataPhongBan
             // 
+            this.dataPhongBan.AllowUserToAddRows = false;
+            this.dataPhongBan.AllowUserToDeleteRows = false;
             this.dataPhongBan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataPhongBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataPhongBan.Location = new System.Drawing.Point(3, 30);
             this.dataPhongBan.Name = "dataPhongBan";
+            this.dataPhongBan.ReadOnly = true;
             this.dataPhongBan.Size = new System.Drawing.Size(592, 404);
             this.dataPhongBan.TabIndex = 15;
-            this.dataPhongBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataPhongBan_CellClick);
+            this.dataPhongBan.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataPhongBan_CellClick);
             // 
             // ucPhongBan
             // 

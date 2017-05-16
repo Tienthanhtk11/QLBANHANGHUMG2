@@ -67,8 +67,6 @@
             this.dataHangHoa.ReadOnly = true;
             this.dataHangHoa.Size = new System.Drawing.Size(558, 345);
             this.dataHangHoa.TabIndex = 0;
-            this.dataHangHoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHangHoa_CellClick);
-            this.dataHangHoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataHangHoa.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHangHoa_CellEnter);
             // 
             // VLL

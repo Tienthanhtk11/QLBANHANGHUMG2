@@ -23,8 +23,8 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void ucHangTon_Load(object sender, EventArgs e)
         {
-            dataTonDauKy.DataSource = tb_TonDauKyBLL.layDuLieu();
-           /* dataTonDauKy_CellClick(sender, new DataGridViewCellEventArgs(0, 0));*/
+            MethodLoad.LoadDatagridview(dataTonDauKy, tb_TonDauKyBLL.layDuLieu());
+            try { dataTonDauKy_CellClick(sender, new DataGridViewCellEventArgs(0, 0)); } catch { };
         }
 
         private void btnThem_Click(object sender, EventArgs e)
