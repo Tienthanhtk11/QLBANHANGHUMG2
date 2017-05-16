@@ -10,6 +10,9 @@ namespace QuanLyBanHang
 {
     static class Program
     {
+        public static string tenCongTy = "XÍ NGHIỆP XĂNG DẦU TOÀN THIẾU";
+        public static string slogan = "Bán 10 lít xăng thu về 1 lít!";
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

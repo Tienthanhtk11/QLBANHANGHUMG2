@@ -35,5 +35,9 @@ namespace BLL
         {
             return tb_HoaDonBanDAL.kiemTraTonTai(MaHDB);
         }
+        public static DataTable layDuLieuBaoCao(DateTime tuNgay, DateTime denNgay)
+        {
+            return tb_HoaDonBanDAL.layDuLieuBaoCao(tuNgay, denNgay);
+        }
     }
 }

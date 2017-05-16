@@ -54,6 +54,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BAOCAO\ExportBaoCao.cs" />
+    <Compile Include="BAOCAO\frmBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAOCAO\frmBanHang.Designer.cs">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAOCAO\frmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAOCAO\frmDoanhThu.Designer.cs">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAOCAO\frmTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAOCAO\frmTonKho.Designer.cs">
+      <DependentUpon>frmTonKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Default.cs" />
     <Compile Include="FORM\frmBanHang.cs">
       <SubType>Form</SubType>
@@ -250,6 +269,15 @@
     <Compile Include="USERCONTROLS\ucXuatKho.Designer.cs">
       <DependentUpon>ucXuatKho.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BAOCAO\frmBanHang.resx">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAOCAO\frmDoanhThu.resx">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAOCAO\frmTonKho.resx">
+      <DependentUpon>frmTonKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORM\frmBanHang.resx">
       <DependentUpon>frmBanHang.cs</DependentUpon>
     </EmbeddedResource>

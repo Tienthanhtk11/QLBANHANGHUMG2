@@ -10,7 +10,6 @@ namespace DAL
 {
     public class Unility
     {
-
         public static string conStr = "Data Source='DESKTOP-IEOTL5P\\SQLEXPRESS';Initial Catalog=QuanLyBanHangHUMG;Integrated Security=True";
         public static SqlCommand cmd;
         public static SqlDataAdapter da;
