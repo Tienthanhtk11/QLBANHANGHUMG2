@@ -287,5 +287,22 @@ namespace QuanLyBanHang
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);
         }
+
+        private void bÁOCÁODOANHTHUToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BAOCAO.frmDoanhThu frm = new BAOCAO.frmDoanhThu();
+            frm.ShowDialog();
+        }
+
+        private void bÁOCÁOBÁNHÀNGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bÁOCÁOTỒNKHOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BAOCAO.frmTonKho frm = new BAOCAO.frmTonKho();
+            frm.ShowDialog();
+        }
     }
 }

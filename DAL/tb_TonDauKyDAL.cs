@@ -33,5 +33,13 @@ namespace DAL
         {
             return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_TonDauKy WHERE MaMatHang =N'{0}'", MaMatHang));
         }
+        public static DataTable layDuLieuBCTonDauKy(DateTime tuNgay, DateTime denNgay)
+        {
+            return Unility.GetDataTable(string.Format("select tb_MatHang.TenMatHang 'Mặt hàng', tb_TonDauKy.NgayCapNhat 'Ngày báo cáo', tb_TonDauKy.SoLuong 'Số lượng',tb_MatHang.DVT 'Đơn vị', tb_TonDauKy.GiaTriTon 'Tổng giá trị' from tb_TonDauKy join tb_MatHang on tb_TonDauKy.MaMatHang = tb_MatHang.MaMatHang where tb_TonDauKy.NgayCapNhat BETWEEN '{0}' AND '{1}'", tuNgay, denNgay));
+        }
+        public static DataTable layDuLieuBCHienTai()
+        {
+            return Unility.GetDataTable("select TenMatHang 'Mặt hàng', GETDATE() 'Ngày báo cáo', SoLuong 'Số lượng',DVT 'Đơn vị', (GiaBan * SoLuong) 'Tổng giá trị' from tb_MatHang where tb_MatHang.SoLuong > 0");
+        }
     }
 }

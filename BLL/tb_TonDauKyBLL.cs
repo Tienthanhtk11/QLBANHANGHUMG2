@@ -35,5 +35,13 @@ namespace BLL
         {
             return tb_TonDauKyDAL.kiemTraTonTai(maMatHang);
         }
+        public static DataTable layDuLieuBCTonDauKy(DateTime tuNgay, DateTime denNgay)
+        {
+            return tb_TonDauKyDAL.layDuLieuBCTonDauKy(tuNgay, denNgay);
+        }
+        public static DataTable layDuLieuBCHienTai()
+        {
+            return tb_TonDauKyDAL.layDuLieuBCHienTai();
+        }
     }
 }

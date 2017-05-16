@@ -16,7 +16,7 @@ namespace DAL
         }
         public static DataTable layDuLieuSoDieuKien(string TenChiTietHoaDonBan)
         {
-            return Unility.GetDataTable(string.Format("SELECT MaCTHDB 'Mã chi tiết hóa đơn bán',MaHoaDonBan 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonBan join tb_MatHang on tb_ChiTietHoaDonBan.MaMatHang = tb_MatHang.MaMatHang where MaHoaDonBan = '{0}'", TenChiTietHoaDonBan));
+            return Unility.GetDataTable(string.Format("SELECT MaCTHDB 'Mã chi tiết hóa đơn bán',MaHoaDonBan 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',SoLuong 'Số lượng',DonGia 'Đơn giá'  FROM tb_ChiTietHoaDonBan join tb_MatHang on tb_ChiTietHoaDonBan.MaMatHang = tb_MatHang.MaMatHang where MaHoaDonBan = '{0}'", TenChiTietHoaDonBan));
         }
         public static void them(tb_ChiTietHoaDonBanDBO obj)
         {
