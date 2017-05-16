@@ -191,12 +191,6 @@
     <Compile Include="ThongKe\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongKe\NhaSX.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongKe\NhaSX.Designer.cs">
-      <DependentUpon>NhaSX.cs</DependentUpon>
-    </Compile>
     <Compile Include="ThongKe\NhomHang.cs">
       <SubType>Form</SubType>
     </Compile>
