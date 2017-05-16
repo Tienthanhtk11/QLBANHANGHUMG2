@@ -287,5 +287,10 @@ namespace QuanLyBanHang
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);
         }
+
+        private void bÁOCÁOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

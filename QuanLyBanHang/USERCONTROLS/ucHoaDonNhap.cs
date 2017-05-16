@@ -98,6 +98,12 @@ namespace QuanLyBanHang.USERCONTROLS
          
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmChiTietHDnhap f = new frmChiTietHDnhap(mahoadonnhap);
+            f.ShowDialog();
+        }
+
         private void btnSua_Click(object sender, EventArgs e)
         {
            frmHoaDonNhap fm = new frmHoaDonNhap(mahoadonnhap, manhacungcap, manhanvien, ngaylap);

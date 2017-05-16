@@ -15,7 +15,7 @@ namespace QuanLyBanHang.USERCONTROLS
     public partial class ucTonDauKy : UserControl
     {
         string mamathang, soluong, giatriton;
-        DateTime ngaycapnhat;
+        string ngaycapnhat;
         public ucTonDauKy()
         {
             InitializeComponent();
@@ -59,9 +59,10 @@ namespace QuanLyBanHang.USERCONTROLS
         private void dataTonDauKy_CellClick(object sender, DataGridViewCellEventArgs e)
         {
            mamathang = dataTonDauKy.Rows[e.RowIndex].Cells[0].Value.ToString();
-            ngaycapnhat =DateTime.Parse(dataTonDauKy.Rows[e.RowIndex].Cells[2].Value.ToString());
+            ngaycapnhat =dataTonDauKy.Rows[e.RowIndex].Cells[2].Value.ToString();
             soluong = dataTonDauKy.Rows[e.RowIndex].Cells[3].Value.ToString();
             giatriton = dataTonDauKy.Rows[e.RowIndex].Cells[4].Value.ToString();
+            //MessageBox.Show(ngaycapnhat);
         }
 
         private void xuâtFileExcellToolStripMenuItem_Click(object sender, EventArgs e)

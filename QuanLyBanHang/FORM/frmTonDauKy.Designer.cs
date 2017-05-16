@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTonDauKy));
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -152,8 +153,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtGiaTriTon);
             this.Controls.Add(this.txtMaHT);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmTonDauKy";
-            this.Text = "frmTonDauKy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.frmTonDauKy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

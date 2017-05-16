@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DAL;
 using DBO;
 using System.Data;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -34,6 +35,18 @@ namespace BLL
         public static int kiemTraTonTai(string MaMH)
         {
             return tb_MatHangDAL.kiemTraTonTai(MaMH);
+        }
+        public static void loadCb(ComboBox x)
+        {
+            x.DataSource = layDuLieu();
+            x.DisplayMember = "Tên mặt hàng";
+            x.ValueMember = "Mã mặt hàng";
+            try { x.SelectedIndex = 1; x.SelectedIndex = 0; } catch { };
+        }
+
+        public static string layDonGia(string MaMH)
+        {
+            return tb_MatHangDAL.layDonGia(MaMH);
         }
     }
 }

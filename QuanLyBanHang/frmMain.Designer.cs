@@ -309,6 +309,7 @@
             this.bÁOCÁOTỒNKHOToolStripMenuItem});
             resources.ApplyResources(this.bÁOCÁOToolStripMenuItem, "bÁOCÁOToolStripMenuItem");
             this.bÁOCÁOToolStripMenuItem.Name = "bÁOCÁOToolStripMenuItem";
+            this.bÁOCÁOToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOToolStripMenuItem_Click);
             // 
             // bÁOCÁODOANHTHUToolStripMenuItem
             // 

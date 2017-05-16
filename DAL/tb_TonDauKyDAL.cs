@@ -11,7 +11,7 @@ namespace DAL
     {
         public static DataTable layDuLieu()
         {
-            return Unility.GetDataTable("SELECT tb_TonDauKy.MaMatHang 'Mã mặt hàng',tb_MatHang.TenMatHang 'Tên mặt hàng',CONVERT(nvarchar,tb_TonDauKy.NgayCapNhat,103) 'Ngày cập nhật',SoLuong 'Số lượng',GiaTriTon 'Giá trị tồn'  FROM tb_TonDauKy join tb_MatHang on tb_TonDauKy.MaMatHang = tb_MatHang.MaMatHang");
+            return Unility.GetDataTable("SELECT tb_TonDauKy.MaMatHang 'Mã mặt hàng',tb_MatHang.TenMatHang 'Tên mặt hàng',tb_TonDauKy.NgayCapNhat 'Ngày cập nhật',tb_TonDauKy.SoLuong 'Số lượng',GiaTriTon 'Giá trị tồn'  FROM tb_TonDauKy join tb_MatHang on tb_TonDauKy.MaMatHang = tb_MatHang.MaMatHang");
         }
         public static DataTable layDuLieuSoDieuKien(string maMatHang)
         {
