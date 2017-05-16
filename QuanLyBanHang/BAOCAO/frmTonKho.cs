@@ -67,7 +67,7 @@ namespace QuanLyBanHang.BAOCAO
                 i++; x[i] = 1; y[i] = 1; vanban[i] = Program.tenCongTy;
                 i++; x[i] = 2; y[i] = 1; vanban[i] = Program.slogan;
                 i++; x[i] = 5; y[i] = 3; vanban[i] = string.Format("Từ ngày {0} đến ngày {1}", dateTimePicker1.Value.ToString("dd/MM/yyyy"), dateTimePicker2.Value.ToString("dd/MM/yyyy"));
-                i++; x[i] = 4; y[i] = 3; vanban[i] = "BÁO CÁO DOANH THU";
+                i++; x[i] = 4; y[i] = 3; if(!cb.Checked)vanban[i] = "BÁO CÁO SỐ HÀNG TỒN KHO"; else vanban[i] = "BÁO CÁO SỐ HÀNG TỒN KHO HIỆN TẠI";
 
                 ExportBaoCao.ExportXLSX(dataGridView1, x, y, vanban);
             }

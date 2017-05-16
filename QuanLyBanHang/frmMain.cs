@@ -296,7 +296,8 @@ namespace QuanLyBanHang
 
         private void bÁOCÁOBÁNHÀNGToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            BAOCAO.frmBanHang frm = new BAOCAO.frmBanHang();
+            frm.ShowDialog();
         }
 
         private void bÁOCÁOTỒNKHOToolStripMenuItem_Click(object sender, EventArgs e)

@@ -39,7 +39,7 @@ namespace DAL
         }
         public static DataTable layDuLieuBCHienTai()
         {
-            return Unility.GetDataTable("select TenMatHang 'Mặt hàng', GETDATE() 'Ngày báo cáo', SoLuong 'Số lượng',DVT 'Đơn vị', (GiaBan * SoLuong) 'Tổng giá trị' from tb_MatHang where tb_MatHang.SoLuong > 0");
+            return Unility.GetDataTable("select TenMatHang 'Mặt hàng', GETDATE() 'Ngày báo cáo', SoLuong 'Số lượng',DVT 'Đơn vị', (GiaBan * SoLUONG) 'Tổng giá trị' from tb_MatHang where tb_MatHang.SoLuong > 0");
         }
     }
 }

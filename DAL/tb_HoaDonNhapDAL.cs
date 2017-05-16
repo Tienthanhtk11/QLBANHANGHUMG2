@@ -14,6 +14,10 @@ namespace DAL
         {
             return Unility.GetDataTable("SELECT MaHoaDonNhap 'Mã hóa đơn nhập',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhanVien.TenNhanVien 'Nhân viên',NgayLap 'Ngày lập' FROM tb_HoaDonNhap join tb_NhaCungCap on tb_HoaDonNhap.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhanVien on tb_HoaDonNhap.MaNhanVien =tb_NhanVien.MaNhanVien");
         }
+        public static DataTable layDuLieuBaoCao(DateTime tuNgay, DateTime denNgay)
+        {
+            return Unility.GetDataTable(string.Format("SELECT tb_HoaDonNhap.MaHoaDonNhap 'Mã hóa đơn nhập',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhanVien.TenNhanVien 'Nhân viên',NgayLap 'Ngày lập', count(tb_ChiTietHoaDonNhap.MaMatHang) 'Số mặt hàng nhập',sum(tb_ChiTietHoaDonNhap.SoLuong) 'Số lượng nhập',sum(tb_ChiTietHoaDonNhap.DonGia) 'Tổng đơn giá hóa đơn' FROM tb_HoaDonNhap join tb_NhaCungCap on tb_HoaDonNhap.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhanVien on tb_HoaDonNhap.MaNhanVien =tb_NhanVien.MaNhanVien join tb_ChiTietHoaDonNhap on tb_HoaDonNhap.MaHoaDonNhap = tb_ChiTietHoaDonNhap.MaHoaDonNhap where NgayLap BETWEEN '{0}' AND '{1}' group by tb_HoaDonNhap.MaHoaDonNhap,tb_NhaCungCap.TenNhaCungCap,tb_NhanVien.TenNhanVien,tb_HoaDonNhap.NgayLap", tuNgay, denNgay));
+        }
         public static DataTable layDuLieuSoDieuKien(string MaHDN)
         {
             return Unility.GetDataTable(string.Format("SELECT MaHoaDonNhap 'Mã hóa đơn nhập',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhanVien.TenNhanVien 'Nhân viên',NgayLap 'Ngày lập' FROM tb_HoaDonNhap join tb_NhaCungCap on tb_HoaDonNhap.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhanVien on tb_HoaDonNhap.MaNhanVien =tb_NhanVien.MaNhanVien where MaHoaDonNhap = '{0}'", MaHDN));
