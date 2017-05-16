@@ -246,13 +246,13 @@
             this.tHỐNGKÊToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nHÓMHÀNGToolStripMenuItem1,
             this.hÀNGHÓAToolStripMenuItem,
-            this.kHÁCHHÀNGToolStripMenuItem1,
             this.nHÂNVIÊNToolStripMenuItem1,
+            this.kHÁCHHÀNGToolStripMenuItem1,
             this.nHẦSẢNXUẤTToolStripMenuItem,
+            this.pHÒNGBANToolStripMenuItem1,
             this.toolStripSeparator5,
             this.hÓAĐƠNBÁNToolStripMenuItem1,
-            this.hÓAĐƠNNHẬPToolStripMenuItem,
-            this.pHÒNGBANToolStripMenuItem1});
+            this.hÓAĐƠNNHẬPToolStripMenuItem});
             resources.ApplyResources(this.tHỐNGKÊToolStripMenuItem, "tHỐNGKÊToolStripMenuItem");
             this.tHỐNGKÊToolStripMenuItem.Name = "tHỐNGKÊToolStripMenuItem";
             // 
@@ -315,19 +315,16 @@
             // 
             resources.ApplyResources(this.bÁOCÁODOANHTHUToolStripMenuItem, "bÁOCÁODOANHTHUToolStripMenuItem");
             this.bÁOCÁODOANHTHUToolStripMenuItem.Name = "bÁOCÁODOANHTHUToolStripMenuItem";
-//            this.bÁOCÁODOANHTHUToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁODOANHTHUToolStripMenuItem_Click);
             // 
             // bÁOCÁOBÁNHÀNGToolStripMenuItem
             // 
             resources.ApplyResources(this.bÁOCÁOBÁNHÀNGToolStripMenuItem, "bÁOCÁOBÁNHÀNGToolStripMenuItem");
             this.bÁOCÁOBÁNHÀNGToolStripMenuItem.Name = "bÁOCÁOBÁNHÀNGToolStripMenuItem";
- //           this.bÁOCÁOBÁNHÀNGToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOBÁNHÀNGToolStripMenuItem_Click);
             // 
             // bÁOCÁOTỒNKHOToolStripMenuItem
             // 
             resources.ApplyResources(this.bÁOCÁOTỒNKHOToolStripMenuItem, "bÁOCÁOTỒNKHOToolStripMenuItem");
             this.bÁOCÁOTỒNKHOToolStripMenuItem.Name = "bÁOCÁOTỒNKHOToolStripMenuItem";
- //           this.bÁOCÁOTỒNKHOToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOTỒNKHOToolStripMenuItem_Click);
             // 
             // tHOÁTToolStripMenuItem
             // 

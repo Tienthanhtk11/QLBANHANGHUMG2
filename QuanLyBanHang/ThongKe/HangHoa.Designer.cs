@@ -28,11 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HangHoa));
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnXuatEx = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(747, 446);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // btnXuatEx
+            // 
+            this.btnXuatEx.Location = new System.Drawing.Point(648, 464);
+            this.btnXuatEx.Name = "btnXuatEx";
+            this.btnXuatEx.Size = new System.Drawing.Size(111, 23);
+            this.btnXuatEx.TabIndex = 1;
+            this.btnXuatEx.Text = "Xuất ra Excel";
+            this.btnXuatEx.UseVisualStyleBackColor = true;
+            // 
+            // HangHoa
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "HangHoa";
+            this.ClientSize = new System.Drawing.Size(771, 499);
+            this.Controls.Add(this.btnXuatEx);
+            this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "HangHoa";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnXuatEx;
     }
 }
