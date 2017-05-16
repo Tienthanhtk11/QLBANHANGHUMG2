@@ -16,7 +16,7 @@ namespace DAL
         }
         public static DataTable layDuLieuSoDieuKien(string TenChiTietHoaDonNhap)
         {
-            return Unility.GetDataTable(string.Format("SELECT MaCTHDN 'Mã chi tiết hóa đơn',MaHoaDonNhap 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonNhap join tb_MatHang on tb_ChiTietHoaDonNhap.MaMatHang = tb_MatHang.MaMatHang where MaHoaDonNhap = '{0}'", TenChiTietHoaDonNhap));
+            return Unility.GetDataTable(string.Format("SELECT MaCTHDN 'Mã chi tiết hóa đơn',MaHoaDonNhap 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',tb_ChiTietHoaDonNhap.SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonNhap join tb_MatHang on tb_ChiTietHoaDonNhap.MaMatHang = tb_MatHang.MaMatHang where MaHoaDonNhap = '{0}'", TenChiTietHoaDonNhap));
         }
         public static void them(tb_ChiTietHoaDonNhapDBO obj)
         {
@@ -24,15 +24,15 @@ namespace DAL
         }
         public static void sua(tb_ChiTietHoaDonNhapDBO obj, string MaMatHang)
         {
-            Unility.ExcuteSQL(string.Format("UPDATE tb_ChiTietHoaDonNhap SET MaMatHang = N'{5}' ,DonGia = N'{3}',SoLuong = N'{4}' WHERE MaCTHDN=N'{0}' and MaHoaDonNhap = N'{1}' and MaMatHang = N'{2}'", obj.MaCTHDN, obj.MaHoaDonNhap, obj.MaMatHang, obj.DonGia, obj.SoLuong, MaMatHang));
+            Unility.ExcuteSQL(string.Format("UPDATE tb_ChiTietHoaDonNhap SET DonGia = N'{1}',SoLuong = N'{2}' WHERE MaCTHDN=N'{0}' ", obj.MaCTHDN, obj.DonGia, obj.SoLuong));
         }
         public static void xoa(tb_ChiTietHoaDonNhapDBO obj)
         {
-            Unility.ExcuteSQL(string.Format("DELETE FROM tb_ChiTietHoaDonNhap WHERE MaCTHDN=N'{0}' and MaHoaDonNhap = N'{1}' and MaMatHang = N'{2}'", obj.MaCTHDN, obj.MaHoaDonNhap, obj.MaMatHang));
+            Unility.ExcuteSQL(string.Format("DELETE FROM tb_ChiTietHoaDonNhap WHERE MaCTHDN=N'{0}'", obj.MaCTHDN));
         }
         public static int kiemTraTonTai(tb_ChiTietHoaDonNhapDBO obj)
         {
-            return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_ChiTietHoaDonNhap WHERE MaCTHDN=N'{0}' and MaHoaDonNhap = N'{1}' and MaMatHang = N'{2}'", obj.MaCTHDN, obj.MaHoaDonNhap, obj.MaMatHang));
+            return Unility.AExcuteSQL(string.Format("SELECT COUNT(*) FROM tb_ChiTietHoaDonNhap WHERE MaCTHDN=N'{0}'", obj.MaCTHDN));
         }
     }
 }

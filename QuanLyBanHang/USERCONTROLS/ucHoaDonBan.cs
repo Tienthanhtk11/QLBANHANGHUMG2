@@ -30,6 +30,12 @@ namespace QuanLyBanHang.USERCONTROLS
             fm.ShowDialog();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmChiTietHDban f = new frmChiTietHDban(mahoadonban);
+            f.ShowDialog();
+        }
+
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn xóa không?", " Thông báo!", MessageBoxButtons.YesNo) == DialogResult.Yes)

@@ -309,24 +309,25 @@
             this.bÁOCÁOTỒNKHOToolStripMenuItem});
             resources.ApplyResources(this.bÁOCÁOToolStripMenuItem, "bÁOCÁOToolStripMenuItem");
             this.bÁOCÁOToolStripMenuItem.Name = "bÁOCÁOToolStripMenuItem";
+            this.bÁOCÁOToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOToolStripMenuItem_Click);
             // 
             // bÁOCÁODOANHTHUToolStripMenuItem
             // 
             resources.ApplyResources(this.bÁOCÁODOANHTHUToolStripMenuItem, "bÁOCÁODOANHTHUToolStripMenuItem");
             this.bÁOCÁODOANHTHUToolStripMenuItem.Name = "bÁOCÁODOANHTHUToolStripMenuItem";
-            this.bÁOCÁODOANHTHUToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁODOANHTHUToolStripMenuItem_Click);
+//            this.bÁOCÁODOANHTHUToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁODOANHTHUToolStripMenuItem_Click);
             // 
             // bÁOCÁOBÁNHÀNGToolStripMenuItem
             // 
             resources.ApplyResources(this.bÁOCÁOBÁNHÀNGToolStripMenuItem, "bÁOCÁOBÁNHÀNGToolStripMenuItem");
             this.bÁOCÁOBÁNHÀNGToolStripMenuItem.Name = "bÁOCÁOBÁNHÀNGToolStripMenuItem";
-            this.bÁOCÁOBÁNHÀNGToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOBÁNHÀNGToolStripMenuItem_Click);
+ //           this.bÁOCÁOBÁNHÀNGToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOBÁNHÀNGToolStripMenuItem_Click);
             // 
             // bÁOCÁOTỒNKHOToolStripMenuItem
             // 
             resources.ApplyResources(this.bÁOCÁOTỒNKHOToolStripMenuItem, "bÁOCÁOTỒNKHOToolStripMenuItem");
             this.bÁOCÁOTỒNKHOToolStripMenuItem.Name = "bÁOCÁOTỒNKHOToolStripMenuItem";
-            this.bÁOCÁOTỒNKHOToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOTỒNKHOToolStripMenuItem_Click);
+ //           this.bÁOCÁOTỒNKHOToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOTỒNKHOToolStripMenuItem_Click);
             // 
             // tHOÁTToolStripMenuItem
             // 
