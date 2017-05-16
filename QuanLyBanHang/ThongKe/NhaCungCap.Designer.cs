@@ -1,6 +1,6 @@
 ﻿namespace QuanLyBanHang.ThongKe
 {
-    partial class NhaSX
+    partial class NhaCungCap
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "NhaSX";
+            this.Text = "NhaCungCap";
         }
 
         #endregion

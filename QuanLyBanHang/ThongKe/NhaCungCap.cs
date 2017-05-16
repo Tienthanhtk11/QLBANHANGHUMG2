@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyBanHang.ThongKe
 {
-    public partial class NhaSX : Form
+    public partial class NhaCungCap : Form
     {
-        public NhaSX()
+        public NhaCungCap()
         {
             InitializeComponent();
         }
