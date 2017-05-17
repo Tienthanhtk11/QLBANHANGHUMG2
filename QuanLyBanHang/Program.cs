@@ -21,7 +21,7 @@ namespace QuanLyBanHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ThongKe.HoaDonNhap());
+            Application.Run(new frmDangNhap());
         }
     }
 }
