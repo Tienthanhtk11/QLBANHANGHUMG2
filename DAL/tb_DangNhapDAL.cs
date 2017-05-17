@@ -34,5 +34,22 @@ namespace DAL
         {
             return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_DangNhap WHERE TenDangNhap = N'{0}'", TenDangNhap));
         }
+        public static int DangNhap(string TenDangNhap,string matKhau)
+        {
+            return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_DangNhap WHERE TenDangNhap = N'{0}' and MatKhau = '{1}'", TenDangNhap,matKhau));
+        }
+        public static int Quyen(string TenDangNhap)
+        {
+            return Unility.AExcuteSQL(string.Format("SELECT sum(Role) FROM tb_DangNhap WHERE TenDangNhap = N'{0}'", TenDangNhap));
+        }
+        public static DataTable taiKhoan(string TenDangNhap, string matKhau)
+        {
+            return Unility.GetDataTable(string.Format("SELECT * FROM tb_DangNhap WHERE TenDangNhap = N'{0}' and MatKhau = '{1}'", TenDangNhap, matKhau));
+        }
+        public static void DoiMK(string TenTaiKhoan, string MK)
+        {
+            Unility.ExcuteSQL(string.Format("UPDATE tb_DangNhap SET MatKhau = N'{1}' WHERE  TenDangNhap = N'{0}'", TenTaiKhoan,MK));
+        }
+        
     }
 }

@@ -19,7 +19,14 @@ namespace QuanLyBanHang
         {
             InitializeComponent();
         }
-
+        int quyen = 0;
+        TaiKhoan TTTKM = new TaiKhoan();
+        public frmMain(TaiKhoan TTTK)
+        {
+            InitializeComponent();
+            quyen = TTTK.Role;
+            TTTKM = TTTK;
+        }
         #region TRASH
         //private void btnQLHH_Click(object sender, EventArgs e)
         //{
@@ -173,7 +180,7 @@ namespace QuanLyBanHang
 
         private void tHOÁTToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Dispose();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void mẶTHÀNGToolStripMenuItem_Click(object sender, EventArgs e)
@@ -184,9 +191,70 @@ namespace QuanLyBanHang
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);
         }
-
+        private void preview(Boolean Q)
+        {
+            nHÓMHÀNGToolStripMenuItem.Enabled = Q;
+            mẶTHÀNGToolStripMenuItem.Enabled = Q;
+            nHÀCUNGCẤPToolStripMenuItem.Enabled = Q;
+            kHÁCHHÀNGToolStripMenuItem.Enabled = Q;
+            nHÂNVIÊNToolStripMenuItem.Enabled = Q;
+            pHÒNGBANToolStripMenuItem.Enabled = Q;
+            tÌMKIẾMToolStripMenuItem.Enabled = Q;
+            tỒNĐẦUKỲToolStripMenuItem.Enabled = Q;
+            lẬPPHIẾUNHẬPKHOToolStripMenuItem.Enabled = Q;
+            lẬPPHIẾUXUẤTKHOToolStripMenuItem.Enabled = Q;
+            lẬPHÓAĐƠNToolStripMenuItem.Enabled = Q;
+            nHÓMHÀNGToolStripMenuItem1.Enabled = Q;
+            hÀNGHÓAToolStripMenuItem.Enabled = Q;
+            nHÂNVIÊNToolStripMenuItem1.Enabled = Q;
+            kHÁCHHÀNGToolStripMenuItem1.Enabled = Q;
+            nHẦSẢNXUẤTToolStripMenuItem.Enabled = Q;
+            pHÒNGBANToolStripMenuItem1.Enabled = Q;
+            hÓAĐƠNBÁNToolStripMenuItem1.Enabled = Q;
+            bÁOCÁODOANHTHUToolStripMenuItem.Enabled = Q;
+            bÁOCÁOBÁNHÀNGToolStripMenuItem.Enabled = Q;
+            bÁOCÁOTỒNKHOToolStripMenuItem.Enabled = Q;
+        }
+        private void User()
+        {
+            tÌMKIẾMToolStripMenuItem.Enabled = true;
+        }
+        private void Manager()
+        {
+            Boolean Q = true;
+            tỒNĐẦUKỲToolStripMenuItem.Enabled = Q;
+            lẬPPHIẾUNHẬPKHOToolStripMenuItem.Enabled = Q;
+            lẬPPHIẾUXUẤTKHOToolStripMenuItem.Enabled = Q;
+            lẬPHÓAĐƠNToolStripMenuItem.Enabled = Q;
+            nHÓMHÀNGToolStripMenuItem1.Enabled = Q;
+            hÀNGHÓAToolStripMenuItem.Enabled = Q;
+            nHÂNVIÊNToolStripMenuItem1.Enabled = Q;
+            kHÁCHHÀNGToolStripMenuItem1.Enabled = Q;
+            nHẦSẢNXUẤTToolStripMenuItem.Enabled = Q;
+            pHÒNGBANToolStripMenuItem1.Enabled = Q;
+            hÓAĐƠNBÁNToolStripMenuItem1.Enabled = Q;
+            bÁOCÁODOANHTHUToolStripMenuItem.Enabled = Q;
+            bÁOCÁOBÁNHÀNGToolStripMenuItem.Enabled = Q;
+            bÁOCÁOTỒNKHOToolStripMenuItem.Enabled = Q;
+        }
         private void frmMain_Load(object sender, EventArgs e)
         {
+            if (quyen == 0)
+            {
+                preview(false);
+            }
+            else if (quyen == 1)
+            {
+                preview(true);
+            }
+            else if (quyen == 2)
+            {
+                Manager();
+            }
+            else if (quyen == 3)
+            {
+                User();
+            }
         }
 
         private void nHÀCUNGCẤPToolStripMenuItem_Click(object sender, EventArgs e)
@@ -252,12 +320,12 @@ namespace QuanLyBanHang
             uc.Dock = DockStyle.Fill;
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);
-       
+
         }
 
         private void hÓAĐƠNNHẬPToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void hÓAĐƠNNHẬPToolStripMenuItem1_Click_1(object sender, EventArgs e)
@@ -267,7 +335,7 @@ namespace QuanLyBanHang
             uc.Dock = DockStyle.Fill;
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(uc);
-         
+
         }
 
         private void nHÂNVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
@@ -290,8 +358,51 @@ namespace QuanLyBanHang
 
         private void bÁOCÁOToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void đĂNGNHẬPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bÁOCÁODOANHTHUToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BAOCAO.frmDoanhThu frm = new BAOCAO.frmDoanhThu();
+            frm.ShowDialog();
+        }
+
+        private void bÁOCÁOBÁNHÀNGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             BAOCAO.frmBanHang frm = new BAOCAO.frmBanHang();
             frm.ShowDialog();
+        }
+
+        private void bÁOCÁOTỒNKHOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BAOCAO.frmTonKho frm = new BAOCAO.frmTonKho();
+            frm.ShowDialog();
+        }
+
+        private void đĂNGXUẤTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TTTKM.Clear();
+            Hide();
+            frmDangNhap form2 = new frmDangNhap();
+            form2.ShowDialog();
+            form2 = null;
+            Show();
+        }
+
+        private void đỔIMẬTKHẨUToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangePass frm = new frmChangePass(TTTKM);
+            frm.ShowDialog();
+        }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

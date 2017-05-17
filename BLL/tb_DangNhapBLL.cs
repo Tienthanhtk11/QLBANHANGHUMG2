@@ -35,5 +35,21 @@ namespace BLL
         {
             return tb_DangNhapDAL.kiemTraTonTai(TenTaiKhoan);
         }
+        public static int DangNhap(string TenDangNhap, string matKhau)
+        {
+            return tb_DangNhapDAL.DangNhap(TenDangNhap, matKhau);
+        }
+        public static int Quyen(string TenDangNhap)
+        {
+            return tb_DangNhapDAL.Quyen(TenDangNhap);
+        }
+        public static DataTable taiKhoan(string TenDangNhap, string matKhau)
+        {
+            return tb_DangNhapDAL.taiKhoan(TenDangNhap, matKhau);
+        }
+        public static void DoiMK(string TenTaiKhoan,string MK)
+        {
+            tb_DangNhapDAL.DoiMK(TenTaiKhoan,MK);
+        }
     }
 }
