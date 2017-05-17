@@ -14,6 +14,20 @@ namespace DAL
         {
             return Unility.GetDataTable("SELECT MaKhachHang 'Mã khách hàng',TenKhachHang 'Tên khách hàng',DiaChi 'Địa chỉ',SDT 'Số điện thoại' FROM tb_KhachHang");
         }
+        public static DataTable layDuLieuTimkiem(string k)
+        {
+            return Unility.GetDataTable(string.Format(@"SELECT MaKhachHang 'Mã khách hàng',
+                                                        TenKhachHang 'Tên khách hàng',
+                                                        DiaChi 'Địa chỉ',
+                                                        SDT 'Số điện thoại' 
+                                                        FROM tb_KhachHang
+                                                        WHERE MaKhachHang like N'%{0}%' or
+                                                        TenKhachHang like N'%{0}%' or
+                                                        DiaChi like N'%{0}%' or
+                                                        SDT like N'%{0}%'
+
+                                                        ", k));
+        }
         public static DataTable layDuLieuSoDieuKien(string MaKH)
         {
             return Unility.GetDataTable(string.Format("SELECT MaKhachHang 'Mã khách hàng',TenKhachHang 'Tên khách hàng',DiaChi 'Địa chỉ',SDT 'Số điện thoại' FROM tb_KhachHang where MaKhachHang = '{0}'", MaKH));

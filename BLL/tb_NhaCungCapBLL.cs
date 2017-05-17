@@ -35,5 +35,10 @@ namespace BLL
         {
             return tb_NhaCungCapDAL.kiemTraTonTai(MaNCC);
         }
+
+        public static DataTable thongke()
+        {
+            return tb_NhaCungCapDAL.thongKe();
+        }
     }
 }

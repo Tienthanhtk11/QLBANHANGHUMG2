@@ -34,5 +34,24 @@ namespace DAL
         {
             return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_NhaCungCap WHERE MaNhaCungCap =N'{0}'", MaNCC));
         }
+
+        public static DataTable thongKe()
+        {
+            string sql = string.Format(@"SELECT [tb_NhaCungCap].[MaNhaCungCap] 'MÃ NCC'
+                                                ,[TenNhaCungCap] 'TÊN NCC'
+                                                ,[DiaChi] 'ĐỊA CHỈ'
+                                                ,[SDT] 'SỐ ĐIỆN THOẠI'
+	                                            ,COUNT(tb_MatHang.MaMatHang ) 'SỐ MẶT HÀNG CUNG CẤP'
+	                                            ,COUNT(tb_HoaDonNhap.MaNhaCungCap ) 'SỐ GIAO DỊCH'
+                                            FROM [dbo].[tb_NhaCungCap]
+                                            join tb_MatHang on tb_MatHang.MaMatHang = [tb_NhaCungCap].MaNhaCungCap
+                                            join tb_HoaDonNhap on tb_HoaDonNhap.MaNhaCungCap =  [tb_NhaCungCap].MaNhaCungCap
+                                            Group by  [tb_NhaCungCap].[MaNhaCungCap]
+                                                ,[TenNhaCungCap]
+                                                ,[DiaChi]
+                                                ,[SDT]");
+
+            return Unility.GetDataTable(sql);
+        }
     }
 }

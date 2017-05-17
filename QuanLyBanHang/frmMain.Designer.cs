@@ -44,6 +44,7 @@
             this.kHÁCHHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nHÂNVIÊNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pHÒNGBANToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tÌMKIẾMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qUẢNLÝBÁNHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tỒNĐẦUKỲToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -52,7 +53,6 @@
             this.lẬPHÓAĐƠNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hÓAĐƠNNHẬPToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hÓAĐƠNBÁNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tÌMKIẾMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tHỐNGKÊToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nHÓMHÀNGToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hÀNGHÓAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -113,6 +113,7 @@
             // 
             resources.ApplyResources(this.đĂNGKÝToolStripMenuItem, "đĂNGKÝToolStripMenuItem");
             this.đĂNGKÝToolStripMenuItem.Name = "đĂNGKÝToolStripMenuItem";
+            this.đĂNGKÝToolStripMenuItem.Click += new System.EventHandler(this.đĂNGKÝToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -185,6 +186,12 @@
             this.pHÒNGBANToolStripMenuItem.Name = "pHÒNGBANToolStripMenuItem";
             this.pHÒNGBANToolStripMenuItem.Click += new System.EventHandler(this.pHÒNGBANToolStripMenuItem_Click);
             // 
+            // tÌMKIẾMToolStripMenuItem
+            // 
+            resources.ApplyResources(this.tÌMKIẾMToolStripMenuItem, "tÌMKIẾMToolStripMenuItem");
+            this.tÌMKIẾMToolStripMenuItem.Name = "tÌMKIẾMToolStripMenuItem";
+            this.tÌMKIẾMToolStripMenuItem.Click += new System.EventHandler(this.tÌMKIẾMToolStripMenuItem_Click);
+            // 
             // qUẢNLÝBÁNHÀNGToolStripMenuItem
             // 
             this.qUẢNLÝBÁNHÀNGToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -239,11 +246,6 @@
             this.hÓAĐƠNBÁNToolStripMenuItem.Name = "hÓAĐƠNBÁNToolStripMenuItem";
             this.hÓAĐƠNBÁNToolStripMenuItem.Click += new System.EventHandler(this.hÓAĐƠNBÁNToolStripMenuItem_Click);
             // 
-            // tÌMKIẾMToolStripMenuItem
-            // 
-            resources.ApplyResources(this.tÌMKIẾMToolStripMenuItem, "tÌMKIẾMToolStripMenuItem");
-            this.tÌMKIẾMToolStripMenuItem.Name = "tÌMKIẾMToolStripMenuItem";
-            // 
             // tHỐNGKÊToolStripMenuItem
             // 
             this.tHỐNGKÊToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -263,31 +265,37 @@
             // 
             resources.ApplyResources(this.nHÓMHÀNGToolStripMenuItem1, "nHÓMHÀNGToolStripMenuItem1");
             this.nHÓMHÀNGToolStripMenuItem1.Name = "nHÓMHÀNGToolStripMenuItem1";
+            this.nHÓMHÀNGToolStripMenuItem1.Click += new System.EventHandler(this.nHÓMHÀNGToolStripMenuItem1_Click);
             // 
             // hÀNGHÓAToolStripMenuItem
             // 
             resources.ApplyResources(this.hÀNGHÓAToolStripMenuItem, "hÀNGHÓAToolStripMenuItem");
             this.hÀNGHÓAToolStripMenuItem.Name = "hÀNGHÓAToolStripMenuItem";
+            this.hÀNGHÓAToolStripMenuItem.Click += new System.EventHandler(this.hÀNGHÓAToolStripMenuItem_Click);
             // 
             // nHÂNVIÊNToolStripMenuItem1
             // 
             resources.ApplyResources(this.nHÂNVIÊNToolStripMenuItem1, "nHÂNVIÊNToolStripMenuItem1");
             this.nHÂNVIÊNToolStripMenuItem1.Name = "nHÂNVIÊNToolStripMenuItem1";
+            this.nHÂNVIÊNToolStripMenuItem1.Click += new System.EventHandler(this.nHÂNVIÊNToolStripMenuItem1_Click);
             // 
             // kHÁCHHÀNGToolStripMenuItem1
             // 
             resources.ApplyResources(this.kHÁCHHÀNGToolStripMenuItem1, "kHÁCHHÀNGToolStripMenuItem1");
             this.kHÁCHHÀNGToolStripMenuItem1.Name = "kHÁCHHÀNGToolStripMenuItem1";
+            this.kHÁCHHÀNGToolStripMenuItem1.Click += new System.EventHandler(this.kHÁCHHÀNGToolStripMenuItem1_Click);
             // 
             // nHẦSẢNXUẤTToolStripMenuItem
             // 
             resources.ApplyResources(this.nHẦSẢNXUẤTToolStripMenuItem, "nHẦSẢNXUẤTToolStripMenuItem");
             this.nHẦSẢNXUẤTToolStripMenuItem.Name = "nHẦSẢNXUẤTToolStripMenuItem";
+            this.nHẦSẢNXUẤTToolStripMenuItem.Click += new System.EventHandler(this.nHẦSẢNXUẤTToolStripMenuItem_Click);
             // 
             // pHÒNGBANToolStripMenuItem1
             // 
             resources.ApplyResources(this.pHÒNGBANToolStripMenuItem1, "pHÒNGBANToolStripMenuItem1");
             this.pHÒNGBANToolStripMenuItem1.Name = "pHÒNGBANToolStripMenuItem1";
+            this.pHÒNGBANToolStripMenuItem1.Click += new System.EventHandler(this.pHÒNGBANToolStripMenuItem1_Click);
             // 
             // toolStripSeparator5
             // 
@@ -298,11 +306,13 @@
             // 
             resources.ApplyResources(this.hÓAĐƠNBÁNToolStripMenuItem1, "hÓAĐƠNBÁNToolStripMenuItem1");
             this.hÓAĐƠNBÁNToolStripMenuItem1.Name = "hÓAĐƠNBÁNToolStripMenuItem1";
+            this.hÓAĐƠNBÁNToolStripMenuItem1.Click += new System.EventHandler(this.hÓAĐƠNBÁNToolStripMenuItem1_Click);
             // 
             // hÓAĐƠNNHẬPToolStripMenuItem
             // 
             resources.ApplyResources(this.hÓAĐƠNNHẬPToolStripMenuItem, "hÓAĐƠNNHẬPToolStripMenuItem");
             this.hÓAĐƠNNHẬPToolStripMenuItem.Name = "hÓAĐƠNNHẬPToolStripMenuItem";
+            this.hÓAĐƠNNHẬPToolStripMenuItem.Click += new System.EventHandler(this.hÓAĐƠNNHẬPToolStripMenuItem_Click);
             // 
             // bÁOCÁOToolStripMenuItem
             // 

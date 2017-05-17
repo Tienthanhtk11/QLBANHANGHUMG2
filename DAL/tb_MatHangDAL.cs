@@ -14,7 +14,30 @@ namespace DAL
 		{
 			return Unility.GetDataTable("SELECT MaMatHang 'Mã mặt hàng',TenMatHang 'Tên mặt hàng',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhomHang.TenNhomHang 'Nhóm hàng',DVT 'Đơn vị tính',GiaBan 'Giá bán',NgayCapNhat 'Ngày cập nhật' FROM tb_MatHang join tb_NhaCungCap on tb_MatHang.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhomHang on tb_MatHang.MaNhomHang = tb_NhomHang.MaNhomHang");
 		}
-		public static DataTable layDuLieuSoDieuKien(string MaMH)
+        public static DataTable layDuLieuTimkiem(string k)
+        {
+            return Unility.GetDataTable(string.Format(@"SELECT MaMatHang 'Mã mặt hàng',
+                                                        TenMatHang 'Tên mặt hàng',
+                                                        tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',
+                                                        tb_NhomHang.TenNhomHang 'Nhóm hàng',
+                                                        DVT 'Đơn vị tính',
+                                                        GiaBan 'Giá bán',
+                                                        NgayCapNhat 'Ngày cập nhật' 
+                                                        FROM tb_MatHang 
+                                                        join tb_NhaCungCap on tb_MatHang.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap 
+                                                        join tb_NhomHang on tb_MatHang.MaNhomHang = tb_NhomHang.MaNhomHang
+                                                        WHERE 
+                                                         MaMatHang like N'%{0}%' or
+                                                        TenMatHang like N'%{0}%' or
+                                                        tb_NhaCungCap.TenNhaCungCap like N'%{0}%' or
+                                                        tb_NhomHang.TenNhomHang like N'%{0}%' or
+                                                        DVT like N'%{0}%' or
+                                                        GiaBan like N'%{0}%' or
+                                                        NgayCapNhat like N'%{0}%'
+                                                        ", k));
+        }
+
+        public static DataTable layDuLieuSoDieuKien(string MaMH)
 		{
 			return Unility.GetDataTable(string.Format("SELECT MaMatHang 'Mã mặt hàng',TenMatHang 'Tên mặt hàng',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhomHang.TenNhomHang 'Nhóm hàng',DVT 'Đơn vị tính',GiaBan 'Giá bán',CONVERT(nvarchar,NgayCapNhat,103) 'Ngày cập nhật' FROM tb_MatHang join tb_NhaCungCap on tb_MatHang.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhomHang on tb_MatHang.MaNhomHang = tb_NhomHang.MaNhomHang where MaMatHang = '{0}'", MaMH));
 		}

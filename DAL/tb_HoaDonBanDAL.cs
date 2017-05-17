@@ -14,6 +14,27 @@ namespace DAL
         {
             return Unility.GetDataTable("SELECT MaHoaDonBan 'Mã hóa đơn bán',tb_KhachHang.TenKhachHang 'Khách hàng' ,tb_NhanVien.TenNhanVien 'Nhân viên' ,NgayLap 'Ngày nhập',TongThanhToan 'Tổng thanh toán',DaThanhToan 'Đã thanh toán' FROM tb_HoaDonBan join tb_KhachHang on tb_HoaDonBan.MaKhachHang = tb_KhachHang.MaKhachHang join tb_NhanVien on tb_HoaDonBan.MaNhanVien =tb_NhanVien.MaNhanVien");
         }
+        public static DataTable layDuLieuTimkiem(string k)
+        {
+            return Unility.GetDataTable(string.Format(@"SELECT MaHoaDonBan 'Mã hóa đơn bán',
+                                                        tb_KhachHang.TenKhachHang 'Khách hàng' ,
+                                                        tb_NhanVien.TenNhanVien 'Nhân viên' ,
+                                                        NgayLap 'Ngày nhập',
+                                                        TongThanhToan 'Tổng thanh toán',
+                                                        DaThanhToan 'Đã thanh toán' 
+                                                        FROM tb_HoaDonBan 
+                                                        join tb_KhachHang on tb_HoaDonBan.MaKhachHang = tb_KhachHang.MaKhachHang 
+                                                        join tb_NhanVien on tb_HoaDonBan.MaNhanVien =tb_NhanVien.MaNhanVien
+                                                        WHERE
+                                                        MaHoaDonBan like N'%{0}%' or
+                                                        tb_KhachHang.TenKhachHang  like N'%{0}%' or
+                                                        tb_NhanVien.TenNhanVien  like N'%{0}%' or
+                                                        NgayLap  like N'%{0}%' or
+                                                        TongThanhToan  like N'%{0}%' or
+                                                        DaThanhToan  like N'%{0}%'
+
+                                                        ", k));
+        }
         public static DataTable layDuLieuSoDieuKien(string MaHDB)
         {
             return Unility.GetDataTable(string.Format("SELECT MaHoaDonBan 'Mã hóa đơn bán',tb_KhachHang.TenKhachHang 'Khách hàng' ,tb_NhanVien.TenNhanVien 'Nhân viên' ,NgayLap 'Ngày nhập',TongThanhToan 'Tổng thanh toán',DaThanhToan 'Đã thanh toán' FROM tb_HoaDonBan join tb_KhachHang on tb_HoaDonBan.MaKhachHang = tb_KhachHang.MaKhachHang join tb_NhanVien on tb_HoaDonBan.MaNhanVien =tb_NhanVien.MaNhanVien where MaHoaDonBan = '{0}'", MaHDB));

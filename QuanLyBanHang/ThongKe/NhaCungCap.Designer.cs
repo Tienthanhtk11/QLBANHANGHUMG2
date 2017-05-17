@@ -36,12 +36,13 @@
             // btnXuatEx
             // 
             this.btnXuatEx.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXuatEx.Location = new System.Drawing.Point(649, 464);
+            this.btnXuatEx.Location = new System.Drawing.Point(649, 468);
             this.btnXuatEx.Name = "btnXuatEx";
             this.btnXuatEx.Size = new System.Drawing.Size(111, 23);
             this.btnXuatEx.TabIndex = 3;
             this.btnXuatEx.Text = "Xuất ra Excel";
             this.btnXuatEx.UseVisualStyleBackColor = true;
+            this.btnXuatEx.Click += new System.EventHandler(this.btnXuatEx_Click);
             // 
             // dataGridView1
             // 
@@ -51,11 +52,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(747, 446);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // NhaCungCap
             // 
@@ -65,7 +67,8 @@
             this.Controls.Add(this.btnXuatEx);
             this.Controls.Add(this.dataGridView1);
             this.Name = "NhaCungCap";
-            this.Text = "NhaCungCap";
+            this.Text = "NHÀ CUNG CẤP";
+            this.Load += new System.EventHandler(this.NhaCungCap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -56,6 +56,7 @@
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 19;
             this.label2.Text = "đến";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // dateTimePicker2
             // 
@@ -65,6 +66,7 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(136, 20);
             this.dateTimePicker2.TabIndex = 18;
             this.dateTimePicker2.Value = new System.DateTime(2018, 1, 6, 0, 0, 0, 0);
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label1
             // 
@@ -74,6 +76,7 @@
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 17;
             this.label1.Text = "Từ ngày";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dateTimePicker1
             // 
@@ -83,6 +86,7 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(136, 20);
             this.dateTimePicker1.TabIndex = 16;
             this.dateTimePicker1.Value = new System.DateTime(2010, 2, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // btnXuatEx
             // 
@@ -108,6 +112,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(747, 413);
             this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // HoaDonNhap
             // 

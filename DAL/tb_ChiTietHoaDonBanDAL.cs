@@ -12,8 +12,18 @@ namespace DAL
     {
         public static DataTable layDuLieu()
         {
-            return Unility.GetDataTable("SELECT MaCTHDB 'Mã chi tiết hóa đơn bán',MaHoaDonBan 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonBan join tb_MatHang on tb_ChiTietHoaDonBan.MaMatHang = tb_MatHang.MaMatHang");
+            return Unility.GetDataTable("SELECT MaCTHDB 'Mã chi tiết hóa đơn bán',MaHoaDonBan 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',tb_ChiTietHoaDonBan.SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonBan join tb_MatHang on tb_ChiTietHoaDonBan.MaMatHang = tb_MatHang.MaMatHang");
         }
+        public static DataTable layDuLieuTimkiem(string k)
+        {
+            return Unility.GetDataTable(string.Format(@"SELECT MaCTHDB 'Mã chi tiết hóa đơn bán',MaHoaDonBan 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',tb_ChiTietHoaDonBan.SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonBan join tb_MatHang on tb_ChiTietHoaDonBan.MaMatHang = tb_MatHang.MaMatHang
+WHERE MaHoaDonBan like N'%{0}%'
+or TenMatHang like N'%{0}%'", k));
+        }
+        //public static DataTable layDuLieuTimkiem(string k)
+        //{
+        //    return Unility.GetDataTable(string.Format("",k));
+        //}
         public static DataTable layDuLieuSoDieuKien(string TenChiTietHoaDonBan)
         {
             return Unility.GetDataTable(string.Format("SELECT MaCTHDB 'Mã chi tiết hóa đơn bán',MaHoaDonBan 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',tb_ChiTietHoaDonBan.SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonBan join tb_MatHang on tb_ChiTietHoaDonBan.MaMatHang = tb_MatHang.MaMatHang where MaHoaDonBan = '{0}'", TenChiTietHoaDonBan));

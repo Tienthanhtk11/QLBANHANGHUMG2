@@ -42,6 +42,7 @@
             this.btnXuatEx.TabIndex = 3;
             this.btnXuatEx.Text = "Xuất ra Excel";
             this.btnXuatEx.UseVisualStyleBackColor = true;
+            this.btnXuatEx.Click += new System.EventHandler(this.btnXuatEx_Click);
             // 
             // dataGridView1
             // 
@@ -65,7 +66,8 @@
             this.Controls.Add(this.btnXuatEx);
             this.Controls.Add(this.dataGridView1);
             this.Name = "NhanVien";
-            this.Text = "NhanVien";
+            this.Text = "NHÂN VIÊN";
+            this.Load += new System.EventHandler(this.NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

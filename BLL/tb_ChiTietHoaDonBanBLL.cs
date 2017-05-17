@@ -15,6 +15,10 @@ namespace BLL
         {
             return tb_ChiTietHoaDonBanDAL.layDuLieu();
         }
+        public static DataTable layDuLieuTimkiem(string k)
+        {
+            return tb_ChiTietHoaDonBanDAL.layDuLieuTimkiem(k);
+        }
         public static DataTable layDuLieuSoHD(string TenChiTietHoaDonBan)
         {
             return tb_ChiTietHoaDonBanDAL.layDuLieuSoDieuKien(TenChiTietHoaDonBan);

@@ -363,7 +363,8 @@ namespace QuanLyBanHang
 
         private void đĂNGNHẬPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new frmDangNhap().Show();
         }
 
         private void bÁOCÁODOANHTHUToolStripMenuItem_Click(object sender, EventArgs e)
@@ -403,6 +404,56 @@ namespace QuanLyBanHang
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void nHÓMHÀNGToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new ThongKe.NhomHang().ShowDialog();
+        }
+
+        private void hÀNGHÓAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ThongKe.HangHoa().ShowDialog();
+        }
+
+        private void nHÂNVIÊNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new ThongKe.NhanVien().ShowDialog();
+        }
+
+        private void kHÁCHHÀNGToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new ThongKe.KhachHang().ShowDialog();
+        }
+
+        private void nHẦSẢNXUẤTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ThongKe.NhaCungCap().ShowDialog();
+        }
+
+        private void pHÒNGBANToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new ThongKe.PhongBan().ShowDialog();
+        }
+
+        private void hÓAĐƠNBÁNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new ThongKe.HoaDonBan().ShowDialog();
+        }
+
+        private void hÓAĐƠNNHẬPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ThongKe.HoaDonNhap().ShowDialog();
+        }
+
+        private void đĂNGKÝToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tÌMKIẾMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmTimKiem().ShowDialog();
         }
     }
 }

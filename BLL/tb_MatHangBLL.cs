@@ -16,6 +16,10 @@ namespace BLL
         {
             return tb_MatHangDAL.layDuLieu();
         }
+        public static DataTable layDuLieuTimkiem(string k)
+        {
+            return tb_MatHangDAL.layDuLieuTimkiem(k);
+        }
         public static DataTable layDuLieuSoHD(string MaMH)
         {
             return tb_MatHangDAL.layDuLieuSoDieuKien(MaMH);

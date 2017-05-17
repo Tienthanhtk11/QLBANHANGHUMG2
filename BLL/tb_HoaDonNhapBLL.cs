@@ -20,7 +20,10 @@ namespace BLL
         {
             return tb_HoaDonNhapDAL.layDuLieuBaoCao(tuNgay, denNgay);
         }
-        
+        public static DataTable layDuLieuTimkiem(string k)
+        {
+            return tb_HoaDonNhapDAL.layDuLieuTimkiem(k);
+        }
         public static DataTable layDuLieuSoHD(string MaHDN)
         {
             return tb_HoaDonNhapDAL.layDuLieuSoDieuKien(MaHDN);

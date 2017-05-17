@@ -12,7 +12,31 @@ namespace DAL
     {
         public static DataTable layDuLieu()
         {
-            return Unility.GetDataTable("SELECT MaCTHDN 'Mã chi tiết hóa đơn',MaHoaDonNhap 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonNhap join tb_MatHang on tb_ChiTietHoaDonNhap.MaMatHang = tb_MatHang.MaMatHang");
+            return Unility.GetDataTable(@"SELECT 
+	                                            MaCTHDN 'Mã chi tiết hóa đơn',
+	                                            MaHoaDonNhap 'Mã hóa đơn',
+	                                            tb_MatHang.TenMatHang 'Mặt hàng',
+	                                            DonGia 'Đơn giá',tb_ChiTietHoaDonNhap.SoLuong 'Số lượng'  
+                                            FROM 
+	                                            tb_ChiTietHoaDonNhap 
+	                                            join tb_MatHang on tb_ChiTietHoaDonNhap.MaMatHang = tb_MatHang.MaMatHang");
+        }
+
+        public static DataTable layDuLieuTimkiem(string k)
+        {
+            return Unility.GetDataTable(string.Format(@"SELECT 
+	                                                        MaCTHDN 'Mã chi tiết hóa đơn',
+	                                                        MaHoaDonNhap 'Mã hóa đơn',
+	                                                        tb_MatHang.TenMatHang 'Mặt hàng',
+	                                                        DonGia 'Đơn giá',tb_ChiTietHoaDonNhap.SoLuong 'Số lượng'  
+                                                        FROM 
+	                                                        tb_ChiTietHoaDonNhap 
+	                                                        join tb_MatHang on tb_ChiTietHoaDonNhap.MaMatHang = tb_MatHang.MaMatHang
+                                                        WHERE
+	                                                        MaCTHDN like N'%{0}%' or
+	                                                        MaHoaDonNhap like N'%{0}%' or
+	                                                        tb_MatHang.TenMatHang like N'%{0}%'
+                                                        ", k));
         }
         public static DataTable layDuLieuSoDieuKien(string TenChiTietHoaDonNhap)
         {
