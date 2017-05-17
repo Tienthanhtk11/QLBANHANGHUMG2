@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DAL;
 using DBO;
 using System.Data;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -40,5 +41,11 @@ namespace BLL
         {
             return tb_HoaDonNhapDAL.kiemTraTonTai(MaHDN);
         }
+
+        public static DataTable thongke(DateTimePicker d1, DateTimePicker d2)
+        {
+            return tb_HoaDonNhapDAL.thongKe(d1.Value, d2.Value);
+        }
+
     }
 }

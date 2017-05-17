@@ -34,5 +34,30 @@ namespace DAL
         {
             return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_KhachHang WHERE MaKhachHang = N'{0}'", MaKH));
         }
+        public static DataTable thongKe(DateTime d1, DateTime d2)
+        {
+            string sql = string.Format(@"SELECT [tb_KhachHang].[MaKhachHang] 'MÃ KH'
+                                          ,[TenKhachHang] 'Tên khách hàng'
+                                          ,[DiaChi] 'Địa chỉ'
+                                          ,[SDT] 'SĐT'
+	                                      ,count(MaHoaDonBan) 'Số giao dịch'
+	                                      ,case when sum(tb_HoaDonBan.TongThanhToan) is not null 
+			                                    then sum(tb_HoaDonBan.TongThanhToan) 
+			                                    else '0'
+		                                    end 'Doanh thu mang lại'
+                                      FROM [dbo].[tb_KhachHang]
+                                      full outer join tb_HoaDonBan on tb_HoaDonBan.MaKhachHang = [tb_KhachHang].MaKhachHang
+                                      WHERE
+                                      NgayLap between '{0}' and '{1}'
+                                      GROUP BY 
+                                      [tb_KhachHang].[MaKhachHang]
+                                          ,[TenKhachHang]
+                                          ,[DiaChi]
+                                          ,[SDT]",
+                                        d1.ToString("yyyy/MM/dd"),
+                                        d2.ToString("yyyy/MM/dd"));
+
+            return Unility.GetDataTable(sql);
+        }
     }
 }

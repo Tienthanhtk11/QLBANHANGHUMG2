@@ -24,6 +24,12 @@ namespace BLL
         {
             tb_MatHangDAL.them(obj);
         }
+
+        public static DataTable thongke(DateTimePicker d1, DateTimePicker d2)
+        {
+            return tb_MatHangDAL.thongKe(d1.Value, d2.Value);
+        }
+
         public static void sua(tb_MatHangDBO obj)
         {
             tb_MatHangDAL.sua(obj);

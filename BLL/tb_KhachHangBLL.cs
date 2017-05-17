@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DAL;
 using DBO;
 using System.Data;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -34,6 +35,10 @@ namespace BLL
         public static int kiemTraTonTai(string MaKH)
         {
             return tb_KhachHangDAL.kiemTraTonTai(MaKH);
+        }
+        public static DataTable thongke(DateTimePicker d1, DateTimePicker d2)
+        {
+            return tb_KhachHangDAL.thongKe(d1.Value, d2.Value);
         }
     }
 }
