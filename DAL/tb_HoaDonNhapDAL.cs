@@ -82,5 +82,9 @@ namespace DAL
 
 			return Unility.GetDataTable(sql);
 		}
-	}
+        public static DataTable timKiem(string MaHoaDonNhap)
+        {
+            return Unility.GetDataTable("SELECT MaHoaDonNhap 'Mã hóa đơn nhập',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhanVien.TenNhanVien 'Nhân viên',NgayLap 'Ngày lập' FROM tb_HoaDonNhap join tb_NhaCungCap on tb_HoaDonNhap.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhanVien on tb_HoaDonNhap.MaNhanVien =tb_NhanVien.MaNhanVien where MaHoaDonNhap like '%"+MaHoaDonNhap+"%'");
+        }
+    }
 }

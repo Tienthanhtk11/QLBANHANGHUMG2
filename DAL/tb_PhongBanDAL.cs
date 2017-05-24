@@ -34,5 +34,10 @@ namespace DAL
         {
             return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_PhongBan WHERE MaPhongBan =N'{0}'", MaPhongBan));
         }
+
+        public static DataTable timKiem(string MaPhongBan)
+        {
+            return Unility.GetDataTable("SELECT MaPhongBan 'Mã phòng ban',TenPhongBan 'Tên phòng ban' FROM tb_PhongBan where MaPhongBan like '%"+MaPhongBan+ "%' or TenPhongBan like '%"+ MaPhongBan + "%'");
+        }
     }
 }

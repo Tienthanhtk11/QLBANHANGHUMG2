@@ -40,5 +40,9 @@ namespace BLL
         {
             return tb_NhaCungCapDAL.thongKe();
         }
+        public static DataTable timKiem(string MaNhaCungCap)
+        {
+            return tb_NhaCungCapDAL.timKiem(MaNhaCungCap);
+        }
     }
 }

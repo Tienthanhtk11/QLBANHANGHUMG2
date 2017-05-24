@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BLL;
 namespace QuanLyBanHang.ThongKe
 {
     public partial class HoaDonBan : Form
@@ -40,6 +40,21 @@ namespace QuanLyBanHang.ThongKe
             i++; x[i] = 4; y[i] = 3; vanban[i] = Text;
 
             Export.ToExcel(dataGridView1, x, y, vanban);
+        }
+
+        private void HoaDonBan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tb_HoaDonBanBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tb_HoaDonBanBLL.timKiem(txtTimKiem.Text);
         }
     }
 }

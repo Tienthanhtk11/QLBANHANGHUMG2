@@ -55,6 +55,16 @@ namespace QuanLyBanHang.USERCONTROLS
             tenphongban = dataPhongBan.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataPhongBan.DataSource = tb_PhongBanBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataPhongBan.DataSource = tb_PhongBanBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void ucPhongBan_Load(object sender, EventArgs e)
         {
             MethodLoad.LoadDatagridview(dataPhongBan,tb_PhongBanBLL.layDuLieu());

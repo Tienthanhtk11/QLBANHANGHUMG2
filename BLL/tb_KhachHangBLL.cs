@@ -44,5 +44,9 @@ namespace BLL
         {
             return tb_KhachHangDAL.thongKe(d1.Value, d2.Value);
         }
+        public static DataTable timKiem(string MaKhachHang)
+        {
+            return tb_KhachHangDAL.timKiem(MaKhachHang);
+        }
     }
 }

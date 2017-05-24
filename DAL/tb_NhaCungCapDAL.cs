@@ -53,5 +53,10 @@ namespace DAL
 
             return Unility.GetDataTable(sql);
         }
+        public static DataTable timKiem(string MaNhaCungCap)
+        {
+            return Unility.GetDataTable("SELECT MaNhaCungCap 'Mã nhà cung cấp' ,TenNhaCungCap 'Tên nhà cung cấp' ,DiaChi 'Địa chỉ' ,SDT 'Số điện thoại' FROM tb_NhaCungCap where MaNhaCungCap like '%"+MaNhaCungCap+"%' or TenNhaCungCap like '%"+ MaNhaCungCap + "%' ");
+
+        }
     }
 }

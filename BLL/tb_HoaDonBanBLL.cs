@@ -43,5 +43,10 @@ namespace BLL
         {
             return tb_HoaDonBanDAL.layDuLieuBaoCao(tuNgay, denNgay);
         }
+        public static DataTable timKiem(string MaHoaDonBan)
+        {
+            return tb_HoaDonBanDAL.timKiem(MaHoaDonBan);
+        }
+
     }
 }

@@ -41,6 +41,8 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataHoaDonBan)).BeginInit();
             this.MN.SuspendLayout();
             this.SuspendLayout();
@@ -55,10 +57,10 @@
             this.dataHoaDonBan.BackgroundColor = System.Drawing.Color.White;
             this.dataHoaDonBan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataHoaDonBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataHoaDonBan.Location = new System.Drawing.Point(3, 3);
+            this.dataHoaDonBan.Location = new System.Drawing.Point(3, 30);
             this.dataHoaDonBan.Name = "dataHoaDonBan";
             this.dataHoaDonBan.ReadOnly = true;
-            this.dataHoaDonBan.Size = new System.Drawing.Size(542, 296);
+            this.dataHoaDonBan.Size = new System.Drawing.Size(542, 269);
             this.dataHoaDonBan.TabIndex = 12;
             this.dataHoaDonBan.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHoaDonBan_CellClick);
             // 
@@ -167,10 +169,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(3, 6);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(388, 20);
+            this.txtTimKiem.TabIndex = 20;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(430, 4);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(98, 23);
+            this.btnTimKiem.TabIndex = 21;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
             // ucHoaDonBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataHoaDonBan);
             this.Controls.Add(this.btnXoa);
@@ -182,6 +204,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataHoaDonBan)).EndInit();
             this.MN.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -199,5 +222,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Button btnTimKiem;
     }
 }

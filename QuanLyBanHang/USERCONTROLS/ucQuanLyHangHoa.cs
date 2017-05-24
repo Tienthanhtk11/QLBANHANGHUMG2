@@ -92,6 +92,16 @@ namespace QuanLyBanHang.USERCONTROLS
         {
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataHangHoa.DataSource = tb_MatHangBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataHangHoa.DataSource = tb_MatHangBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void cbNhomHang_SelectedIndexChanged(object sender, EventArgs e)
         {
         }

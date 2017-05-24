@@ -59,5 +59,9 @@ namespace DAL
         {
             return Unility.GetDataTable(string.Format("select tb_HoaDonBan.MaHoaDonBan 'Mã hóa đơn',tb_KhachHang.TenKhachHang 'Khách hàng', tb_NhanVien.TenNhanVien 'Nhân viên',tb_HoaDonBan.NgayLap 'Ngày lập',count(tb_ChiTietHoaDonBan.MaMatHang) 'Tổng mặt hàng bán',sum(tb_ChiTietHoaDonBan.SoLuong) 'Tổng số lượng hàng bán', TongThanhToan 'Giá trị hóa đơn'  from tb_HoaDonBan join tb_ChiTietHoaDonBan on tb_HoaDonBan.MaHoaDonBan = tb_ChiTietHoaDonBan.MaHoaDonBan join tb_NhanVien on tb_HoaDonBan.MaNhanVien = tb_NhanVien.MaNhanVien join tb_KhachHang on tb_HoaDonBan.MaKhachHang = tb_KhachHang.MaKhachHang WHERE tb_HoaDonBan.NgayLap BETWEEN '{0}' AND '{1}' GROUP BY tb_HoaDonBan.MaHoaDonBan,tb_KhachHang.TenKhachHang,tb_NhanVien.TenNhanVien,tb_HoaDonBan.NgayLap,tb_HoaDonBan.TongThanhToan", tuNgay, denNgay));
         }
+        public static DataTable timKiem(string MaHoaDonBan)
+        {
+            return Unility.GetDataTable("SELECT MaHoaDonBan 'Mã hóa đơn bán',tb_KhachHang.TenKhachHang 'Khách hàng' ,tb_NhanVien.TenNhanVien 'Nhân viên' ,NgayLap 'Ngày nhập',TongThanhToan 'Tổng thanh toán',DaThanhToan 'Đã thanh toán' FROM tb_HoaDonBan join tb_KhachHang on tb_HoaDonBan.MaKhachHang = tb_KhachHang.MaKhachHang join tb_NhanVien on tb_HoaDonBan.MaNhanVien =tb_NhanVien.MaNhanVien where MaHoaDonBan like '%"+MaHoaDonBan+"%'");
+        }
     }
 }

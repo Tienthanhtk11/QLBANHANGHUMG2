@@ -69,6 +69,16 @@ namespace QuanLyBanHang.USERCONTROLS
         {
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataTonDauKy.DataSource = tb_TonDauKyBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataTonDauKy.DataSource = tb_TonDauKyBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void TaiLaiok_Click(object sender, EventArgs e)
         {
         }

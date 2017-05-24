@@ -83,6 +83,16 @@ namespace QuanLyBanHang.USERCONTROLS
           
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataNhaCungCap.DataSource = tb_NhaCungCapBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataNhaCungCap.DataSource = tb_NhaCungCapBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void Fm_FormClosed(object sender, FormClosedEventArgs e)
         {
             dataNhaCungCap.DataSource = tb_NhaCungCapBLL.layDuLieu();

@@ -36,6 +36,16 @@ namespace QuanLyBanHang.USERCONTROLS
             f.ShowDialog();
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataHoaDonBan.DataSource = tb_HoaDonBanBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataHoaDonBan.DataSource = tb_HoaDonBanBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn xóa không?", " Thông báo!", MessageBoxButtons.YesNo) == DialogResult.Yes)

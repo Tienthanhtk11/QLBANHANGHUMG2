@@ -57,6 +57,16 @@ namespace QuanLyBanHang.USERCONTROLS
             }
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataNhomHang.DataSource = tb_NhomHangBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataNhomHang.DataSource = tb_NhomHangBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void dataNhomHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
            manhomhang  = dataNhomHang.Rows[e.RowIndex].Cells[0].Value.ToString();

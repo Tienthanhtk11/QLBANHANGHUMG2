@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,10 @@ namespace BLL
         public static int kiemTraTonTai(tb_ChiTietHoaDonNhapDBO obj)
         {
             return tb_ChiTietHoaDonNhapDAL.kiemTraTonTai(obj);
+        }
+        public static DataTable timKiem(string MaCTHDN)
+        {
+            return tb_ChiTietHoaDonNhapDAL.timKiem(MaCTHDN);
         }
     }
 }

@@ -104,6 +104,16 @@ namespace QuanLyBanHang.USERCONTROLS
             f.ShowDialog();
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataHoaDonNhap.DataSource = tb_HoaDonNhapBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataHoaDonNhap.DataSource = tb_HoaDonNhapBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void btnSua_Click(object sender, EventArgs e)
         {
            frmHoaDonNhap fm = new frmHoaDonNhap(mahoadonnhap, manhacungcap, manhanvien, ngaylap);

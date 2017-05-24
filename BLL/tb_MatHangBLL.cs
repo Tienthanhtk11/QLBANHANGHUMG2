@@ -58,5 +58,11 @@ namespace BLL
         {
             return tb_MatHangDAL.layDonGia(MaMH);
         }
+        public static DataTable timKiem(string MaMatHang)
+        {
+            return tb_MatHangDAL.timKiem(MaMatHang);
+        }
+
     }
+    
 }

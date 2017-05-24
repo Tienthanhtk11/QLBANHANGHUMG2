@@ -44,5 +44,9 @@ or TenMatHang like N'%{0}%'", k));
         {
             return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_ChiTietHoaDonBan WHERE MaCTHDB=N'{0}' and MaHoaDonBan = N'{1}' and MaMatHang = N'{2}'", obj.MaCTHDB, obj.MaHoaDonBan, obj.MaMatHang));
         }
+        public static DataTable timKiem(string MaCTHDB)
+        {
+            return Unility.GetDataTable("SELECT MaCTHDB 'Mã chi tiết hóa đơn bán',MaHoaDonBan 'Mã hóa đơn',tb_MatHang.TenMatHang 'Mặt hàng',DonGia 'Đơn giá',tb_ChiTietHoaDonBan.SoLuong 'Số lượng'  FROM tb_ChiTietHoaDonBan join tb_MatHang on tb_ChiTietHoaDonBan.MaMatHang = tb_MatHang.MaMatHang where MaCTHDB like '%"+MaCTHDB+ "%' or MaHoaDonBan like '%" + MaCTHDB + "%'");
+        }
     }
 }

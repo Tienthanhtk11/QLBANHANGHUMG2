@@ -43,5 +43,9 @@ namespace BLL
         {
             return tb_TonDauKyDAL.layDuLieuBCHienTai();
         }
+        public static DataTable timKiem(string MaMatHang)
+        {
+            return tb_TonDauKyDAL.timKiem(MaMatHang);
+        }
     }
 }

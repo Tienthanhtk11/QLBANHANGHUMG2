@@ -32,6 +32,8 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dataPhongBan = new System.Windows.Forms.DataGridView();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataPhongBan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,14 +87,35 @@
             this.dataPhongBan.Location = new System.Drawing.Point(3, 30);
             this.dataPhongBan.Name = "dataPhongBan";
             this.dataPhongBan.ReadOnly = true;
-            this.dataPhongBan.Size = new System.Drawing.Size(592, 404);
+            this.dataPhongBan.Size = new System.Drawing.Size(592, 377);
             this.dataPhongBan.TabIndex = 15;
             this.dataPhongBan.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataPhongBan_CellClick);
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(511, 3);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(84, 23);
+            this.btnTimKiem.TabIndex = 23;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtTimKiem.Location = new System.Drawing.Point(235, 6);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(270, 20);
+            this.txtTimKiem.TabIndex = 22;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // ucPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
@@ -102,6 +125,7 @@
             this.Load += new System.EventHandler(this.ucPhongBan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataPhongBan)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -111,5 +135,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dataPhongBan;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }

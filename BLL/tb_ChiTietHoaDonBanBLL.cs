@@ -39,5 +39,9 @@ namespace BLL
         {
             return tb_ChiTietHoaDonBanDAL.kiemTraTonTai(obj);
         }
+        public static DataTable timKiem(string MaCTHDB)
+        {
+            return tb_ChiTietHoaDonBanDAL.timKiem(MaCTHDB);
+        }
     }
 }

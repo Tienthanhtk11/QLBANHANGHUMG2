@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BLL;
 namespace QuanLyBanHang.ThongKe
 {
     public partial class HangHoa : Form
@@ -49,6 +49,16 @@ namespace QuanLyBanHang.ThongKe
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tb_HoaDonBanBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tb_HoaDonBanBLL.timKiem(txtTimKiem.Text);
         }
     }
 }

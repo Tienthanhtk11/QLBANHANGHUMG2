@@ -41,5 +41,9 @@ namespace DAL
         {
             return Unility.GetDataTable("select TenMatHang 'Mặt hàng', GETDATE() 'Ngày báo cáo', SoLuong 'Số lượng',DVT 'Đơn vị', (GiaBan * SoLUONG) 'Tổng giá trị' from tb_MatHang where tb_MatHang.SoLuong > 0");
         }
+        public static DataTable timKiem(string MaMatHang)
+        {
+            return Unility.GetDataTable("SELECT tb_TonDauKy.MaMatHang 'Mã mặt hàng',tb_MatHang.TenMatHang 'Tên mặt hàng',tb_TonDauKy.NgayCapNhat 'Ngày cập nhật',tb_TonDauKy.SoLuong 'Số lượng',GiaTriTon 'Giá trị tồn'  FROM tb_TonDauKy join tb_MatHang on tb_TonDauKy.MaMatHang = tb_MatHang.MaMatHang where tb_TonDauKy.MaMatHang like '%" + MaMatHang+ "%' or tb_MatHang.TenMatHang like '%" + MaMatHang + "%'");
+        }
     }
 }

@@ -38,6 +38,8 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataTonDauKy)).BeginInit();
             this.Vll.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +55,7 @@
             this.dataTonDauKy.Location = new System.Drawing.Point(3, 30);
             this.dataTonDauKy.Name = "dataTonDauKy";
             this.dataTonDauKy.ReadOnly = true;
-            this.dataTonDauKy.Size = new System.Drawing.Size(558, 345);
+            this.dataTonDauKy.Size = new System.Drawing.Size(808, 345);
             this.dataTonDauKy.TabIndex = 0;
             this.dataTonDauKy.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTonDauKy_CellClick);
             // 
@@ -63,7 +65,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(151, 3);
+            this.label1.Location = new System.Drawing.Point(276, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(271, 25);
             this.label1.TabIndex = 1;
@@ -106,7 +108,7 @@
             this.btnXoa.BackColor = System.Drawing.Color.LightCoral;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(490, 381);
+            this.btnXoa.Location = new System.Drawing.Point(740, 381);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(71, 23);
             this.btnXoa.TabIndex = 11;
@@ -120,7 +122,7 @@
             this.btnSua.BackColor = System.Drawing.Color.LightCoral;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(413, 381);
+            this.btnSua.Location = new System.Drawing.Point(663, 381);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(71, 23);
             this.btnSua.TabIndex = 10;
@@ -134,7 +136,7 @@
             this.btnThem.BackColor = System.Drawing.Color.LightCoral;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(335, 381);
+            this.btnThem.Location = new System.Drawing.Point(585, 381);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(72, 23);
             this.btnThem.TabIndex = 9;
@@ -142,18 +144,40 @@
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnTimKiem.Location = new System.Drawing.Point(240, 381);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(88, 23);
+            this.btnTimKiem.TabIndex = 27;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtTimKiem.Location = new System.Drawing.Point(3, 381);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(231, 20);
+            this.txtTimKiem.TabIndex = 26;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            // 
             // ucTonDauKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ContextMenuStrip = this.Vll;
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataTonDauKy);
             this.Name = "ucTonDauKy";
-            this.Size = new System.Drawing.Size(564, 407);
+            this.Size = new System.Drawing.Size(814, 407);
             this.Load += new System.EventHandler(this.ucHangTon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataTonDauKy)).EndInit();
             this.Vll.ResumeLayout(false);
@@ -173,5 +197,7 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }

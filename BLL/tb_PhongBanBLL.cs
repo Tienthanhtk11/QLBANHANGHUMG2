@@ -35,5 +35,9 @@ namespace BLL
         {
             return tb_PhongBanDAL.kiemTraTonTai(MaPhongBan);
         }
+        public static DataTable timKiem(string MaPhongBan)
+        {
+            return tb_PhongBanDAL.timKiem(MaPhongBan);
+        }
     }
 }

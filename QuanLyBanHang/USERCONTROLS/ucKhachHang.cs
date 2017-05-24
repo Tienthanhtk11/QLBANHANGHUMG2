@@ -70,6 +70,18 @@ namespace QuanLyBanHang.USERCONTROLS
             sodienthoai = dataKhachHang.Rows[e.RowIndex].Cells[2].Value.ToString();
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
+            dataKhachHang.DataSource = tb_KhachHangBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+
+            dataKhachHang.DataSource = tb_KhachHangBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void Fm_FormClosed(object sender, FormClosedEventArgs e)
         {
             dataKhachHang.DataSource = tb_KhachHangBLL.layDuLieu();

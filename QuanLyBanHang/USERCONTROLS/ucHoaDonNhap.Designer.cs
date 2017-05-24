@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbNhaCC = new System.Windows.Forms.ComboBox();
             this.dataHoaDonNhap = new System.Windows.Forms.DataGridView();
             this.MN = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tảiLạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,40 +37,15 @@
             this.xóaHóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xuấtFileExcellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblNCC = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataHoaDonNhap)).BeginInit();
             this.MN.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(297, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "CÔNG CỤ LỌC";
-            this.label1.Visible = false;
-            // 
-            // cbNhaCC
-            // 
-            this.cbNhaCC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbNhaCC.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbNhaCC.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbNhaCC.FormattingEnabled = true;
-            this.cbNhaCC.Location = new System.Drawing.Point(383, 3);
-            this.cbNhaCC.Name = "cbNhaCC";
-            this.cbNhaCC.Size = new System.Drawing.Size(178, 21);
-            this.cbNhaCC.TabIndex = 6;
-            this.cbNhaCC.Visible = false;
-            this.cbNhaCC.SelectedIndexChanged += new System.EventHandler(this.cbNhaCC_SelectedIndexChanged);
-            this.cbNhaCC.TextChanged += new System.EventHandler(this.cbNhaCC_TextChanged);
             // 
             // dataHoaDonNhap
             // 
@@ -84,10 +57,10 @@
             this.dataHoaDonNhap.BackgroundColor = System.Drawing.Color.White;
             this.dataHoaDonNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataHoaDonNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataHoaDonNhap.Location = new System.Drawing.Point(3, 29);
+            this.dataHoaDonNhap.Location = new System.Drawing.Point(3, 30);
             this.dataHoaDonNhap.Name = "dataHoaDonNhap";
             this.dataHoaDonNhap.ReadOnly = true;
-            this.dataHoaDonNhap.Size = new System.Drawing.Size(558, 346);
+            this.dataHoaDonNhap.Size = new System.Drawing.Size(558, 345);
             this.dataHoaDonNhap.TabIndex = 5;
             this.dataHoaDonNhap.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHoaDonNhap_CellClick);
             // 
@@ -146,20 +119,6 @@
             this.xuấtFileExcellToolStripMenuItem.Text = "Xuất file excell";
             this.xuấtFileExcellToolStripMenuItem.Click += new System.EventHandler(this.xuấtFileExcellToolStripMenuItem_Click);
             // 
-            // lblNCC
-            // 
-            this.lblNCC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNCC.AutoSize = true;
-            this.lblNCC.BackColor = System.Drawing.Color.White;
-            this.lblNCC.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblNCC.Location = new System.Drawing.Point(387, 7);
-            this.lblNCC.Name = "lblNCC";
-            this.lblNCC.Size = new System.Drawing.Size(100, 13);
-            this.lblNCC.TabIndex = 8;
-            this.lblNCC.Text = "Theo nhà mặt hàng";
-            this.lblNCC.Visible = false;
-            this.lblNCC.Click += new System.EventHandler(this.lblNCC_Click);
-            // 
             // btnXoa
             // 
             this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -216,19 +175,36 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(423, 3);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(98, 23);
+            this.btnTimKiem.TabIndex = 23;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(6, 6);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(388, 20);
+            this.txtTimKiem.TabIndex = 22;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            // 
             // ucHoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.ContextMenuStrip = this.MN;
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.lblNCC);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbNhaCC);
             this.Controls.Add(this.dataHoaDonNhap);
             this.Name = "ucHoaDonNhap";
             this.Size = new System.Drawing.Size(564, 407);
@@ -242,8 +218,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbNhaCC;
         private System.Windows.Forms.DataGridView dataHoaDonNhap;
         private System.Windows.Forms.ContextMenuStrip MN;
         private System.Windows.Forms.ToolStripMenuItem tảiLạiToolStripMenuItem;
@@ -252,10 +226,11 @@
         private System.Windows.Forms.ToolStripMenuItem xóaHóaĐơnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xuấtFileExcellToolStripMenuItem;
-        private System.Windows.Forms.Label lblNCC;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }

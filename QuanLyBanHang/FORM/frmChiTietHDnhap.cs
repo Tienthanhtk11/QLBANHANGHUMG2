@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-
+using BLL;
 namespace QuanLyBanHang.FORM
 {
     public partial class frmChiTietHDnhap : Form
@@ -126,6 +126,16 @@ namespace QuanLyBanHang.FORM
 
                 btnTaiLai_Click(sender, e);
             }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tb_ChiTietHoaDonNhapBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tb_ChiTietHoaDonNhapBLL.timKiem(txtTimKiem.Text);
         }
     }
 }

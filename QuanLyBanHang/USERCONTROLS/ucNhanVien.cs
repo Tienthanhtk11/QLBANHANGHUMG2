@@ -52,6 +52,16 @@ namespace QuanLyBanHang.USERCONTROLS
             dataNhanVien_CellClick(sender, new DataGridViewCellEventArgs(0, 0));
         }
 
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataNhanVien.DataSource = tb_NhanVienBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataNhanVien.DataSource = tb_NhanVienBLL.timKiem(txtTimKiem.Text);
+        }
+
         private void dataNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             gioitinh = dataNhanVien.Rows[e.RowIndex].Cells[4].Value.ToString();

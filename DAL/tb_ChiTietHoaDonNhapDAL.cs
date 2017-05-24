@@ -58,5 +58,17 @@ namespace DAL
         {
             return Unility.AExcuteSQL(string.Format("SELECT COUNT(*) FROM tb_ChiTietHoaDonNhap WHERE MaCTHDN=N'{0}'", obj.MaCTHDN));
         }
+        public static DataTable timKiem(string MaCTHDN)
+        {
+            return Unility.GetDataTable(@"SELECT 
+	                                            MaCTHDN 'Mã chi tiết hóa đơn',
+	                                            MaHoaDonNhap 'Mã hóa đơn',
+	                                            tb_MatHang.TenMatHang 'Mặt hàng',
+	                                            DonGia 'Đơn giá',tb_ChiTietHoaDonNhap.SoLuong 'Số lượng'  
+                                            FROM 
+	                                            tb_ChiTietHoaDonNhap 
+	                                            join tb_MatHang on tb_ChiTietHoaDonNhap.MaMatHang = tb_MatHang.MaMatHang
+where MaCTHDN like '%"+MaCTHDN+ "%' or MaHoaDonNhap like '%"+ MaCTHDN + "%' or MaHoaDonNhap like '%"+ MaCTHDN + "%'");
+        }
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BLL;
 namespace QuanLyBanHang.ThongKe
 {
     public partial class HoaDonNhap : Form
@@ -66,6 +66,21 @@ namespace QuanLyBanHang.ThongKe
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void HoaDonNhap_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tb_HoaDonNhapBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tb_HoaDonNhapBLL.timKiem(txtTimKiem.Text);
         }
     }
 }

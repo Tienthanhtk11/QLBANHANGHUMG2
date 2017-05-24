@@ -37,11 +37,11 @@
             this.xóaNhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xuấtRaFileExcellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblNCC = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataNhaCungCap)).BeginInit();
             this.VL.SuspendLayout();
             this.SuspendLayout();
@@ -55,10 +55,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataNhaCungCap.ContextMenuStrip = this.VL;
-            this.dataNhaCungCap.Location = new System.Drawing.Point(0, 26);
+            this.dataNhaCungCap.Location = new System.Drawing.Point(0, 36);
             this.dataNhaCungCap.Name = "dataNhaCungCap";
             this.dataNhaCungCap.ReadOnly = true;
-            this.dataNhaCungCap.Size = new System.Drawing.Size(564, 352);
+            this.dataNhaCungCap.Size = new System.Drawing.Size(564, 342);
             this.dataNhaCungCap.TabIndex = 0;
             this.dataNhaCungCap.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhaCungCap_CellClick);
             // 
@@ -117,28 +117,6 @@
             this.xuấtRaFileExcellToolStripMenuItem.Text = "Xuất ra file excell";
             this.xuấtRaFileExcellToolStripMenuItem.Click += new System.EventHandler(this.xuấtRaFileExcellToolStripMenuItem_Click);
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(406, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nhà cung cấp";
-            // 
-            // lblNCC
-            // 
-            this.lblNCC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNCC.AutoSize = true;
-            this.lblNCC.ForeColor = System.Drawing.Color.DimGray;
-            this.lblNCC.Location = new System.Drawing.Point(487, 6);
-            this.lblNCC.Name = "lblNCC";
-            this.lblNCC.Size = new System.Drawing.Size(70, 13);
-            this.lblNCC.TabIndex = 2;
-            this.lblNCC.Text = "<chưa chọn>";
-            // 
             // btnXoa
             // 
             this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -181,15 +159,33 @@
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(423, 7);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(98, 23);
+            this.btnTimKiem.TabIndex = 23;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(6, 10);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(388, 20);
+            this.txtTimKiem.TabIndex = 22;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            // 
             // ucNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.lblNCC);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataNhaCungCap);
             this.Name = "ucNhaCungCap";
             this.Size = new System.Drawing.Size(564, 407);
@@ -204,8 +200,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataNhaCungCap;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblNCC;
         private System.Windows.Forms.ContextMenuStrip VL;
         private System.Windows.Forms.ToolStripMenuItem tảiLạiF5ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thêmNhàCungCấpToolStripMenuItem;
@@ -216,5 +210,7 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }

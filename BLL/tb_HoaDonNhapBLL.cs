@@ -49,6 +49,9 @@ namespace BLL
         {
             return tb_HoaDonNhapDAL.thongKe(d1.Value, d2.Value);
         }
-
+        public static DataTable timKiem(string MaHoaDonNhap)
+        {
+            return tb_HoaDonNhapDAL.timKiem(MaHoaDonNhap);
+        }
     }
 }
