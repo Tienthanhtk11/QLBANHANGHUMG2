@@ -455,5 +455,10 @@ namespace QuanLyBanHang
         {
             new frmTimKiem().ShowDialog();
         }
+
+        private void trởLạiTrangChủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }

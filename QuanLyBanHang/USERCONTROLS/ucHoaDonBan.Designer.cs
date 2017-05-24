@@ -115,11 +115,10 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnXoa.BackColor = System.Drawing.Color.LightCoral;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(474, 305);
+            this.btnXoa.Location = new System.Drawing.Point(158, 3);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(71, 23);
             this.btnXoa.TabIndex = 18;
@@ -129,11 +128,10 @@
             // 
             // btnSua
             // 
-            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSua.BackColor = System.Drawing.Color.LightCoral;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(397, 305);
+            this.btnSua.Location = new System.Drawing.Point(81, 3);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(71, 23);
             this.btnSua.TabIndex = 17;
@@ -143,11 +141,10 @@
             // 
             // btnThem
             // 
-            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThem.BackColor = System.Drawing.Color.LightCoral;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(319, 305);
+            this.btnThem.Location = new System.Drawing.Point(3, 3);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(72, 23);
             this.btnThem.TabIndex = 16;
@@ -171,15 +168,15 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(3, 6);
+            this.txtTimKiem.Location = new System.Drawing.Point(235, 5);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(388, 20);
+            this.txtTimKiem.Size = new System.Drawing.Size(206, 20);
             this.txtTimKiem.TabIndex = 20;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(430, 4);
+            this.btnTimKiem.Location = new System.Drawing.Point(447, 4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(98, 23);
             this.btnTimKiem.TabIndex = 21;

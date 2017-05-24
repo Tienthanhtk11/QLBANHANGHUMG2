@@ -52,7 +52,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataTonDauKy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataTonDauKy.Location = new System.Drawing.Point(3, 30);
+            this.dataTonDauKy.Location = new System.Drawing.Point(3, 59);
             this.dataTonDauKy.Name = "dataTonDauKy";
             this.dataTonDauKy.ReadOnly = true;
             this.dataTonDauKy.Size = new System.Drawing.Size(808, 345);
@@ -104,11 +104,10 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnXoa.BackColor = System.Drawing.Color.LightCoral;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(740, 381);
+            this.btnXoa.Location = new System.Drawing.Point(172, 30);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(71, 23);
             this.btnXoa.TabIndex = 11;
@@ -118,11 +117,10 @@
             // 
             // btnSua
             // 
-            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSua.BackColor = System.Drawing.Color.LightCoral;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(663, 381);
+            this.btnSua.Location = new System.Drawing.Point(95, 30);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(71, 23);
             this.btnSua.TabIndex = 10;
@@ -132,11 +130,10 @@
             // 
             // btnThem
             // 
-            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThem.BackColor = System.Drawing.Color.LightCoral;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(585, 381);
+            this.btnThem.Location = new System.Drawing.Point(17, 30);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(72, 23);
             this.btnThem.TabIndex = 9;
@@ -146,8 +143,7 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnTimKiem.Location = new System.Drawing.Point(240, 381);
+            this.btnTimKiem.Location = new System.Drawing.Point(723, 30);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(88, 23);
             this.btnTimKiem.TabIndex = 27;
@@ -157,8 +153,7 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtTimKiem.Location = new System.Drawing.Point(3, 381);
+            this.txtTimKiem.Location = new System.Drawing.Point(486, 30);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(231, 20);
             this.txtTimKiem.TabIndex = 26;

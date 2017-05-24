@@ -74,6 +74,7 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.trởLạiTrangChủToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.SuspendLayout();
@@ -347,7 +348,8 @@
             this.tHOÁTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pHÓNGTOToolStripMenuItem,
             this.ẩNToolStripMenuItem,
-            this.tHOÁTToolStripMenuItem1});
+            this.tHOÁTToolStripMenuItem1,
+            this.trởLạiTrangChủToolStripMenuItem});
             resources.ApplyResources(this.tHOÁTToolStripMenuItem, "tHOÁTToolStripMenuItem");
             this.tHOÁTToolStripMenuItem.Name = "tHOÁTToolStripMenuItem";
             // 
@@ -389,6 +391,12 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
+            // 
+            // trởLạiTrangChủToolStripMenuItem
+            // 
+            this.trởLạiTrangChủToolStripMenuItem.Name = "trởLạiTrangChủToolStripMenuItem";
+            resources.ApplyResources(this.trởLạiTrangChủToolStripMenuItem, "trởLạiTrangChủToolStripMenuItem");
+            this.trởLạiTrangChủToolStripMenuItem.Click += new System.EventHandler(this.trởLạiTrangChủToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -458,6 +466,7 @@
         private System.Windows.Forms.ToolStripMenuItem hÓAĐƠNBÁNToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nHÓMHÀNGToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pHÒNGBANToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem trởLạiTrangChủToolStripMenuItem;
     }
 }
 
