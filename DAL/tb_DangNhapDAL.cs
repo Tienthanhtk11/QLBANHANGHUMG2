@@ -22,6 +22,12 @@ namespace DAL
         {
             Unility.ExcuteSQL(string.Format("INSERT INTO tb_DangNhap (TenDangNhap,MatKhau,MaNhanVien,Role) VALUES(N'{0}',N'{1}',N'{2}',N'{3}')", obj.TenDangNhap, obj.MatKhau, obj.MaNhanVien, obj.Role));
         }
+
+        public static int kiemTraTonTai(tb_DangNhapDBO obj)
+        {
+            return Unility.AExcuteSQL(string.Format("SELECT count(*) FROM tb_NhanVien WHERE TenDangNhap = N'{0}'", obj.TenDangNhap));
+        }
+
         public static void sua(tb_DangNhapDBO obj)
         {
             Unility.ExcuteSQL(string.Format("UPDATE tb_DangNhap SET MatKhau = N'{1}' ,MaNhanVien = N'{2}',Role = N'{3}' WHERE  TenDangNhap = N'{0}'", obj.TenDangNhap, obj.MatKhau, obj.MaNhanVien, obj.Role));

@@ -74,7 +74,8 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.trởLạiTrangChủToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bÁNHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tRỞLẠITRANGCHỦToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.SuspendLayout();
@@ -200,7 +201,8 @@
             this.toolStripSeparator3,
             this.lẬPPHIẾUNHẬPKHOToolStripMenuItem,
             this.lẬPPHIẾUXUẤTKHOToolStripMenuItem,
-            this.lẬPHÓAĐƠNToolStripMenuItem});
+            this.lẬPHÓAĐƠNToolStripMenuItem,
+            this.bÁNHÀNGToolStripMenuItem});
             resources.ApplyResources(this.qUẢNLÝBÁNHÀNGToolStripMenuItem, "qUẢNLÝBÁNHÀNGToolStripMenuItem");
             this.qUẢNLÝBÁNHÀNGToolStripMenuItem.Name = "qUẢNLÝBÁNHÀNGToolStripMenuItem";
             // 
@@ -349,7 +351,7 @@
             this.pHÓNGTOToolStripMenuItem,
             this.ẩNToolStripMenuItem,
             this.tHOÁTToolStripMenuItem1,
-            this.trởLạiTrangChủToolStripMenuItem});
+            this.tRỞLẠITRANGCHỦToolStripMenuItem});
             resources.ApplyResources(this.tHOÁTToolStripMenuItem, "tHOÁTToolStripMenuItem");
             this.tHOÁTToolStripMenuItem.Name = "tHOÁTToolStripMenuItem";
             // 
@@ -392,11 +394,17 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
-            // trởLạiTrangChủToolStripMenuItem
+            // bÁNHÀNGToolStripMenuItem
             // 
-            this.trởLạiTrangChủToolStripMenuItem.Name = "trởLạiTrangChủToolStripMenuItem";
-            resources.ApplyResources(this.trởLạiTrangChủToolStripMenuItem, "trởLạiTrangChủToolStripMenuItem");
-            this.trởLạiTrangChủToolStripMenuItem.Click += new System.EventHandler(this.trởLạiTrangChủToolStripMenuItem_Click);
+            this.bÁNHÀNGToolStripMenuItem.Name = "bÁNHÀNGToolStripMenuItem";
+            resources.ApplyResources(this.bÁNHÀNGToolStripMenuItem, "bÁNHÀNGToolStripMenuItem");
+            this.bÁNHÀNGToolStripMenuItem.Click += new System.EventHandler(this.bÁNHÀNGToolStripMenuItem_Click);
+            // 
+            // tRỞLẠITRANGCHỦToolStripMenuItem
+            // 
+            this.tRỞLẠITRANGCHỦToolStripMenuItem.Name = "tRỞLẠITRANGCHỦToolStripMenuItem";
+            resources.ApplyResources(this.tRỞLẠITRANGCHỦToolStripMenuItem, "tRỞLẠITRANGCHỦToolStripMenuItem");
+            this.tRỞLẠITRANGCHỦToolStripMenuItem.Click += new System.EventHandler(this.tRỞLẠITRANGCHỦToolStripMenuItem_Click_1);
             // 
             // frmMain
             // 
@@ -466,7 +474,8 @@
         private System.Windows.Forms.ToolStripMenuItem hÓAĐƠNBÁNToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nHÓMHÀNGToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pHÒNGBANToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem trởLạiTrangChủToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bÁNHÀNGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tRỞLẠITRANGCHỦToolStripMenuItem;
     }
 }
 

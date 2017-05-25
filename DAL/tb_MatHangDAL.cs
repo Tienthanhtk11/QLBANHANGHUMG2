@@ -14,6 +14,18 @@ namespace DAL
 		{
 			return Unility.GetDataTable("SELECT MaMatHang 'Mã mặt hàng',TenMatHang 'Tên mặt hàng',tb_NhaCungCap.TenNhaCungCap 'Nhà cung cấp',tb_NhomHang.TenNhomHang 'Nhóm hàng',DVT 'Đơn vị tính',GiaBan 'Giá bán',NgayCapNhat 'Ngày cập nhật' FROM tb_MatHang join tb_NhaCungCap on tb_MatHang.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap join tb_NhomHang on tb_MatHang.MaNhomHang = tb_NhomHang.MaNhomHang");
 		}
+
+        public static DataTable layDuLieuRutGon()
+        {
+            return Unility.GetDataTable(string.Format(@"SELECT MaMatHang 'Mã mặt hàng',
+                                                        TenMatHang 'Tên mặt hàng',
+                                                        DVT 'Đơn vị tính',
+                                                        GiaBan 'Giá bán'
+                                                        FROM tb_MatHang 
+                                                        join tb_NhaCungCap on tb_MatHang.MaNhaCungCap = tb_NhaCungCap.MaNhaCungCap 
+                                                        join tb_NhomHang on tb_MatHang.MaNhomHang = tb_NhomHang.MaNhomHang"));
+        }
+
         public static DataTable layDuLieuTimkiem(string k)
         {
             return Unility.GetDataTable(string.Format(@"SELECT MaMatHang 'Mã mặt hàng',

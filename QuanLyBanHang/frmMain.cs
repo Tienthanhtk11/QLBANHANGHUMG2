@@ -26,6 +26,8 @@ namespace QuanLyBanHang
             InitializeComponent();
             quyen = TTTK.Role;
             TTTKM = TTTK;
+
+            
         }
         #region TRASH
         //private void btnQLHH_Click(object sender, EventArgs e)
@@ -237,6 +239,7 @@ namespace QuanLyBanHang
             bÁOCÁOBÁNHÀNGToolStripMenuItem.Enabled = Q;
             bÁOCÁOTỒNKHOToolStripMenuItem.Enabled = Q;
         }
+        Image main;
         private void frmMain_Load(object sender, EventArgs e)
         {
             if (quyen == 0)
@@ -255,6 +258,8 @@ namespace QuanLyBanHang
             {
                 User();
             }
+            main = pnlMain.BackgroundImage;
+            DEFAULT = pnlMain;
         }
 
         private void nHÀCUNGCẤPToolStripMenuItem_Click(object sender, EventArgs e)
@@ -448,7 +453,7 @@ namespace QuanLyBanHang
 
         private void đĂNGKÝToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new frmDangKy().ShowDialog();
         }
 
         private void tÌMKIẾMToolStripMenuItem_Click(object sender, EventArgs e)
@@ -459,6 +464,19 @@ namespace QuanLyBanHang
         private void trởLạiTrangChủToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //
+        }
+
+        private void bÁNHÀNGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmBanHang().ShowDialog();
+        }
+
+        Panel DEFAULT = new Panel();
+        private void tRỞLẠITRANGCHỦToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            pnlMain.Controls.Clear();
+            pnlMain = DEFAULT;
+            pnlMain.BackgroundImage = main;
         }
     }
 }

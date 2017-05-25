@@ -38,6 +38,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lb = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtDN
@@ -122,7 +123,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(281, 242);
+            this.label4.Location = new System.Drawing.Point(12, 239);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 13);
             this.label4.TabIndex = 7;
@@ -139,6 +140,19 @@
             this.lb.Size = new System.Drawing.Size(0, 16);
             this.lb.TabIndex = 8;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(252, 229);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Đăng ký tài khoản mới";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +160,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(423, 264);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkBox1);
@@ -173,5 +188,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lb;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -68,5 +68,10 @@ namespace QuanLyBanHang
             frmMain frm = new frmMain();
             frm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new frmDangKy().ShowDialog();
+        }
     }
 }

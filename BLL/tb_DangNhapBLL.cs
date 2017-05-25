@@ -35,6 +35,10 @@ namespace BLL
         {
             return tb_DangNhapDAL.kiemTraTonTai(TenTaiKhoan);
         }
+        public static int kiemTraTonTai(DBO.tb_DangNhapDBO obj)
+        {
+            return tb_DangNhapDAL.kiemTraTonTai(obj);
+        }
         public static int DangNhap(string TenDangNhap, string matKhau)
         {
             return tb_DangNhapDAL.DangNhap(TenDangNhap, matKhau);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTonKho));
             this.lblDT = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -46,7 +47,7 @@
             // 
             this.lblDT.AutoSize = true;
             this.lblDT.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDT.Location = new System.Drawing.Point(627, 437);
+            this.lblDT.Location = new System.Drawing.Point(623, 434);
             this.lblDT.Name = "lblDT";
             this.lblDT.Size = new System.Drawing.Size(24, 26);
             this.lblDT.TabIndex = 53;
@@ -55,7 +56,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(534, 444);
+            this.label4.Location = new System.Drawing.Point(530, 441);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 52;
@@ -63,7 +64,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(412, 107);
+            this.button2.Location = new System.Drawing.Point(149, 431);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 23);
             this.button2.TabIndex = 51;
@@ -73,7 +74,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(275, 107);
+            this.button1.Location = new System.Drawing.Point(12, 431);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 23);
             this.button1.TabIndex = 50;
@@ -84,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(288, 61);
+            this.label3.Location = new System.Drawing.Point(576, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 49;
@@ -93,7 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(288, 35);
+            this.label2.Location = new System.Drawing.Point(576, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 48;
@@ -103,7 +104,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(270, 0);
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1.Location = new System.Drawing.Point(32, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 26);
             this.label1.TabIndex = 47;
@@ -112,7 +114,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(365, 55);
+            this.dateTimePicker2.Location = new System.Drawing.Point(653, 38);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(123, 20);
             this.dateTimePicker2.TabIndex = 46;
@@ -120,7 +122,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(365, 29);
+            this.dateTimePicker1.Location = new System.Drawing.Point(653, 12);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(123, 20);
             this.dateTimePicker1.TabIndex = 45;
@@ -131,16 +133,16 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 140);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 87);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(787, 293);
+            this.dataGridView1.Size = new System.Drawing.Size(764, 338);
             this.dataGridView1.TabIndex = 44;
             // 
             // cb
             // 
             this.cb.AutoSize = true;
-            this.cb.Location = new System.Drawing.Point(365, 84);
+            this.cb.Location = new System.Drawing.Point(653, 64);
             this.cb.Name = "cb";
             this.cb.Size = new System.Drawing.Size(103, 17);
             this.cb.TabIndex = 54;
@@ -163,8 +165,9 @@
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTonKho";
-            this.Text = "frmTonKho";
+            this.Text = "BÁO CÁO TỒN KHO";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
