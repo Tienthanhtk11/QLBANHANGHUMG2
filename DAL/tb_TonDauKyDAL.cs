@@ -45,5 +45,59 @@ namespace DAL
         {
             return Unility.GetDataTable("SELECT tb_TonDauKy.MaMatHang 'Mã mặt hàng',tb_MatHang.TenMatHang 'Tên mặt hàng',tb_TonDauKy.NgayCapNhat 'Ngày cập nhật',tb_TonDauKy.SoLuong 'Số lượng',GiaTriTon 'Giá trị tồn'  FROM tb_TonDauKy join tb_MatHang on tb_TonDauKy.MaMatHang = tb_MatHang.MaMatHang where tb_TonDauKy.MaMatHang like '%" + MaMatHang+ "%' or tb_MatHang.TenMatHang like '%" + MaMatHang + "%'");
         }
+        public static DataTable tdk(DateTime d1, DateTime d2)
+        {
+            string sql = string.Format(@"SELECT	  tb_MatHang.MaMatHang 'MÃ HÀNG'
+		                    , tb_MatHang.TenMatHang 'TÊN HÀNG'
+		                    , CASE
+			                    WHEN SUM(tb_ChiTietHoaDonNhap.SOLUONG) IS NULL
+			                    THEN 0
+			                    ELSE SUM(tb_ChiTietHoaDonNhap.SOLUONG)
+		                        END 'SỐ LƯỢNG NHẬP'
+		                    , CASE
+			                    WHEN SUM(tb_ChiTietHoaDonBan.SOLUONG) IS NULL
+			                    THEN 0
+			                    ELSE SUM(tb_ChiTietHoaDonBan.SOLUONG)
+		                        END 'SỐ LƯỢNG BÁN'
+		                    , CASE
+			                    WHEN SUM(tb_ChiTietHoaDonNhap.SOLUONG) IS NULL
+			                    THEN 0
+			                    ELSE SUM(tb_ChiTietHoaDonNhap.SOLUONG)
+		                        END
+		                        -
+		                        CASE
+			                    WHEN SUM(tb_ChiTietHoaDonBan.SOLUONG) IS NULL
+			                    THEN 0
+			                    ELSE SUM(tb_ChiTietHoaDonBan.SOLUONG)
+		                        END 'HÀNG TỒN TRONG THÁNG'
+                            , 
+		                        case when (CASE
+			                    WHEN SUM(tb_ChiTietHoaDonBan.SOLUONG) IS NULL
+			                    THEN 0
+			                    ELSE SUM(tb_ChiTietHoaDonBan.SOLUONG)
+		                        END != 0)
+		                        then
+		                        (sum(tb_ChiTietHoaDonNhap.DONGIA * tb_ChiTietHoaDonNhap.SOLUONG)
+		                        - sum(tb_ChiTietHoaDonBan.DONGIA * tb_ChiTietHoaDonBan.SOLUONG)) 
+		                        else sum(tb_ChiTietHoaDonNhap.DONGIA * tb_ChiTietHoaDonNhap.SOLUONG)
+		                        end 'GÍA TRỊ TỒN'
+                    FROM tb_MatHang
+                    FULL OUTER JOIN tb_ChiTietHoaDonBan ON tb_ChiTietHoaDonBan.MaMatHang = tb_MatHang.MaMatHang
+                    FULL OUTER JOIN tb_ChiTietHoaDonNhap ON tb_ChiTietHoaDonNhap.MaMatHang = tb_MatHang.MaMatHang
+                    FULL OUTER JOIN tb_HoaDonBan ON tb_HoaDonBan.MaHoaDonBan = tb_ChiTietHoaDonBan.MaHoaDonBan
+                    FULL OUTER JOIN tb_HoaDonNhap ON tb_HoaDonNhap.MaHoaDonNhap = tb_ChiTietHoaDonNhap.MaHoaDonNhap
+                    WHERE (
+		                    tb_HoaDonBan.NgayLap BETWEEN '{0}' AND '{1}' AND
+		                    tb_HoaDonNhap.NgayLap BETWEEN '{0}' AND '{1}'
+	                        ) OR 
+	                        (
+	                        tb_HoaDonBan.NgayLap IS NULL AND
+		                    tb_HoaDonNhap.NgayLap BETWEEN '{0}' AND '{1}'
+	                        )
+
+                    GROUP BY tb_MatHang.MaMatHang,
+                    tb_MatHang.TenMatHang", d1, d2);
+            return Unility.GetDataTable(sql);
+        }
     }
 }

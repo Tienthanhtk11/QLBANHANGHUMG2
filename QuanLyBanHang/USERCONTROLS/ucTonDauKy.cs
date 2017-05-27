@@ -23,8 +23,9 @@ namespace QuanLyBanHang.USERCONTROLS
 
         private void ucHangTon_Load(object sender, EventArgs e)
         {
-            MethodLoad.LoadDatagridview(dataTonDauKy, tb_TonDauKyBLL.layDuLieu());
-            try { dataTonDauKy_CellClick(sender, new DataGridViewCellEventArgs(0, 0)); } catch { };
+            
+            //MethodLoad.LoadDatagridview(dataTonDauKy, tb_TonDauKyBLL.layDuLieu());
+            //try { dataTonDauKy_CellClick(sender, new DataGridViewCellEventArgs(0, 0)); } catch { };
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -77,6 +78,12 @@ namespace QuanLyBanHang.USERCONTROLS
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             dataTonDauKy.DataSource = tb_TonDauKyBLL.timKiem(txtTimKiem.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MethodLoad.LoadDatagridview(dataTonDauKy, tb_TonDauKyBLL.tdk(dateTimePicker1.Value, dateTimePicker2.Value));
+            dataTonDauKy.Columns[dataTonDauKy.Columns.Count - 1].Visible = false;
         }
 
         private void TaiLaiok_Click(object sender, EventArgs e)

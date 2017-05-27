@@ -47,5 +47,10 @@ namespace BLL
         {
             return tb_TonDauKyDAL.timKiem(MaMatHang);
         }
+
+        public static DataTable tdk(DateTime d1, DateTime d2)
+        {
+            return tb_TonDauKyDAL.tdk(d1, d2);
+        }
     }
 }
