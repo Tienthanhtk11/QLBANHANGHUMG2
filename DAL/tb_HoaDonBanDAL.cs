@@ -12,7 +12,7 @@ namespace DAL
     {
         public static DataTable layDuLieu()
         {
-            return Unility.GetDataTable("SELECT MaHoaDonBan 'Mã hóa đơn bán',tb_KhachHang.TenKhachHang 'Khách hàng' ,tb_NhanVien.TenNhanVien 'Nhân viên' ,NgayLap 'Ngày nhập',TongThanhToan 'Tổng thanh toán',DaThanhToan 'Đã thanh toán' FROM tb_HoaDonBan join tb_KhachHang on tb_HoaDonBan.MaKhachHang = tb_KhachHang.MaKhachHang join tb_NhanVien on tb_HoaDonBan.MaNhanVien =tb_NhanVien.MaNhanVien");
+            return Unility.GetDataTable("SELECT MaHoaDonBan 'Mã hóa đơn bán',tb_KhachHang.TenKhachHang 'Khách hàng' ,tb_NhanVien.TenNhanVien 'Nhân viên' ,NgayLap 'Ngày nhập',TongThanhToan 'Tổng thanh toán',DaThanhToan 'Đã thanh toán' FROM tb_HoaDonBan join tb_KhachHang on tb_HoaDonBan.MaKhachHang = tb_KhachHang.MaKhachHang join tb_NhanVien on tb_HoaDonBan.MaNhanVien =tb_NhanVien.MaNhanVien order by cast(MaHoaDonBan as int) asc");
         }
         public static DataTable layDuLieuTimkiem(string k)
         {

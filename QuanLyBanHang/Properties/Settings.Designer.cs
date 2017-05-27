@@ -32,5 +32,16 @@ namespace QuanLyBanHang.Properties {
                 return ((string)(this["QuanLyBanHangConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-IEOTL5P\\SQLEXPRESS;Initial Catalog=QuanLyBanHangHUMG;Integrat" +
+            "ed Security=True")]
+        public string QuanLyBanHangHUMGConnectionString {
+            get {
+                return ((string)(this["QuanLyBanHangHUMGConnectionString"]));
+            }
+        }
     }
 }

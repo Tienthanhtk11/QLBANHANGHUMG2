@@ -31,6 +31,8 @@ namespace QuanLyBanHang.FORM
             dataGridView1.Columns[3].ReadOnly = true;
             dataGridView1.Columns[4].ReadOnly = true;
 
+            btnIn.Enabled = false;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,7 +56,7 @@ namespace QuanLyBanHang.FORM
             }
             txtTT.Text = sum.ToString();
         }
-
+        string mahd;
         private void button1_Click(object sender, EventArgs e)
         {
             button2_Click(sender, e);
@@ -69,6 +71,8 @@ namespace QuanLyBanHang.FORM
                 obj.MaKhachHang = cbxKH.SelectedValue.ToString();
                 obj.TongThanhToan = Convert.ToDouble(txtTT.Text);
                 obj.DaThanhToan = checkBox1.Checked;
+
+                mahd = obj.MaHoaDonBan;
 
                 BLL.tb_HoaDonBanBLL.them(obj);
 
@@ -91,12 +95,13 @@ namespace QuanLyBanHang.FORM
                 }
                 MessageBox.Show("Đã xong");
                 button1.Enabled = false;
+                btnIn.Enabled = true;
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("'"+dataGridView1.Rows[0].Cells[0].Value.ToString()+"'");
+            new frmBanHangIN(mahd).ShowDialog();
         }
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)

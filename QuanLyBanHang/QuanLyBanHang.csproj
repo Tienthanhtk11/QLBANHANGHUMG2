@@ -80,6 +80,12 @@
     <Compile Include="FORM\frmBanHang.Designer.cs">
       <DependentUpon>frmBanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORM\frmBanHangIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\frmBanHangIN.Designer.cs">
+      <DependentUpon>frmBanHangIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORM\frmChiTietHDban.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,11 @@
     <Compile Include="MethodLoad.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyBanHangHUMGDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBanHangHUMGDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ThongKe\Export.cs" />
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="ThongKe\HangHoa.cs">
@@ -319,6 +330,9 @@
     <EmbeddedResource Include="FORM\frmBanHang.resx">
       <DependentUpon>frmBanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FORM\frmBanHangIN.resx">
+      <DependentUpon>frmBanHangIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORM\frmChiTietHDban.resx">
       <DependentUpon>frmChiTietHDban.cs</DependentUpon>
     </EmbeddedResource>
@@ -355,6 +369,7 @@
     <EmbeddedResource Include="FORM\frmTonDauKy.resx">
       <DependentUpon>frmTonDauKy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Report1.rdlc" />
     <EmbeddedResource Include="frmChangePass.resx">
       <DependentUpon>frmChangePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -445,6 +460,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuanLyBanHangHUMGDataSet.xsc">
+      <DependentUpon>QuanLyBanHangHUMGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyBanHangHUMGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyBanHangHUMGDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyBanHangHUMGDataSet.xss">
+      <DependentUpon>QuanLyBanHangHUMGDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
